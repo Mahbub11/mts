@@ -66,9 +66,9 @@ export default function Process() {
                md:text-[2rem] lg:text-[2rem]   text-gray-900 font-[500]"
                 >
                   <TextHover
-                    titile1="0"
+                    title1="0"
                     subTitle1={item.id}
-                    titile2={item.title}
+                    title2={item.title}
                     subTitle2={item.subTitle}
                   />
                 </div>

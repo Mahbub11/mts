@@ -30,6 +30,11 @@ const variants = {
     opacity: 0,
   },
 };
+const navItems = [
+  { title: "Case Studies", href: "/case-studies", id: 1 },
+  { title: "Services", href: "/services", id: 2 },
+  { title: "Contact Us", href: "/contact", id: 3 },
+];
 
 const AnimatedText: React.FC = () => {
   const [index, setIndex] = useState<number>(0);
@@ -72,7 +77,7 @@ const AnimatedText: React.FC = () => {
             </h2>
             <AnimatePresence>
               <motion.span
-                className=" text-customDark md:ml-2 w-fit
+                className=" text-[#00B4D8] md:ml-2 w-fit
                  text-[26px] md:text-[50px]  lg:text-[55px]
               sm:tracking-tighter"
                 style={{ position: "absolute" }}
@@ -98,20 +103,24 @@ const AnimatedText: React.FC = () => {
             sm:ml-2  md:ml-[10px]  lg:ml-[8px]
            flex items-center md:space-x-8  lg:space-x-8 sm:space-x-2"
           >
-            {["Case Studies", "Services", "Contact Us"].map((item, i) => (
-              <div key={i} className="flex items-center">
+            {navItems.map((item, i) => (
+              <div key={item.id} className="flex items-center">
                 <Link
-                  className={`w-fit paragraph font-medium font-NeueMontreal text-secondry capitalize hover`}
-                  href={item.toLocaleLowerCase()}
+                  className="w-fit paragraph font-medium font-NeueMontreal
+                   text-secondry capitalize hover"
+                  href={item.href}
                 >
-                  <TextHoverSingle titile1={item} titile2={item} />
+                  <TextHoverSingle
+                    subTitle1=""
+                    subTitle2=""
+                    title1={item.title}
+                    title2={item.title}
+                  />
                 </Link>
                 {/* Add a dot after the second and third items */}
                 {i < 2 && (
-                  <span className="w-2 h-2  bg-current rounded-full md:ml-5 lg:ml-8
-                  sm:ml-2" />
-                )}{" "}
-                {/* Dot */}
+                  <span className="w-2 h-2 bg-current rounded-full md:ml-5 lg:ml-8 sm:ml-2" />
+                )}
               </div>
             ))}
           </div>

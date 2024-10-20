@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { project1, project2, project3, project4 } from "@/public";
-import RoundButton from "../RoundButton";
+import RoundButton from "../../../components/RoundButton";
 
 export default function Card() {
   const container1 = useRef(null);

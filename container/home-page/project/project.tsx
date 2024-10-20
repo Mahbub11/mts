@@ -4,8 +4,8 @@ import { project, projectItem } from "@/constants";
 
 import { useScroll, motion, useTransform } from "framer-motion";
 import ProjectCard from "./project-card";
-import Tags from "../Tags";
-import RoundButton from "../RoundButton";
+import Tags from "../../../components/Tags";
+import RoundButton from "../../../components/RoundButton";
 
 export default function Project() {
   const container = useRef(null);
@@ -15,16 +15,7 @@ export default function Project() {
     offset: ["start end", "end start"],
   });
 
-  const transformStyles = [
-    useTransform(scrollYProgress, [0, 1], [0, -100]),
-    useTransform(scrollYProgress, [0, 1], [0, 100]),
-    useTransform(scrollYProgress, [0, 1], [0, -100]),
-    useTransform(scrollYProgress, [0, 1], [0, 100]),
-    useTransform(scrollYProgress, [0, 1], [0, -100]),
-    useTransform(scrollYProgress, [0, 1], [0, 100]),
-    useTransform(scrollYProgress, [0, 1], [0, -100]),
-    useTransform(scrollYProgress, [0, 1], [0, 100]),
-  ];
+  
 
   // New opacity transformation
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0]);
@@ -58,12 +49,13 @@ export default function Project() {
 
       <div>
         <div
-          className="w-full flex  gap-10 justify-center gap-y-[3rem]
-        sm:px-5 flex-wrap mt-[4rem]"
+          className="w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2
+         space-x-5 xl:flex xl:gap-10 xl:justify-center xl:space-x-10 xl:flex-wrap
+        sm:px-5 mt-[4rem]"
         >
           {projectItem.map((item) => (
             <div key={item.id}>
-              <div className="flex gap-[15px] items-center  ">
+              <div className="flex gap-[15px] items-center  mt-10">
                 <span className="w-[10px] h-[10px] rounded-full bg-customDark" />
                 <h1
                   className="small-text uppercase font-medium font-NeueMontreal

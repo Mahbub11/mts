@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { brand01, brand02, brand03 } from "@/public";
-import Rounded from "../Rounded";
+import Rounded from "../../../components/Rounded";
 
 export default function Ratings() {
 	return (

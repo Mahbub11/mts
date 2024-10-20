@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { useInView, motion } from "framer-motion";
-import RoundButton from "../RoundButton";
-import Rounded from "../Rounded";
+import RoundButton from "../../../components/RoundButton";
+import Rounded from "../../../components/Rounded";
 
 const phrases = ["Ready", "to start", "the project"];
 

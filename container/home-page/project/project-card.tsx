@@ -8,22 +8,28 @@ export default function ProjectCard({ item }: { item: any }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="relative group bg-customLight/20 w-full rounded-md">
+    <div className="relative group w-full rounded-md">
       <div
-        className="rounded-md overflow-hidden hover:scale-[0.95] transition cursor-pointer transform duration-[1s] ease-[.4,0,.2,1] block"
+        className="rounded-md overflow-hidden hover:scale-[0.95]
+         transition cursor-pointer transform duration-[1s] ease-[.4,0,.2,1] block"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
         <Image
           src={item.src}
           alt={`${item.title}Img`}
-          className="object-cover rounded-md group-hover:scale-[1.09] transform duration-[1s] ease-[.4,0,.2,1]"
+          className="object-cover rounded-md
+           group-hover:scale-[1.09] transform duration-[1s] ease-[.4,0,.2,1]"
         />
       </div>
       <div
         // Adjust position for responsive behavior
         className={`absolute w-fit flex top-[50%] -translate-x-[50%] -translate-y-1/2 overflow-hidden z-10 group-hover:opacity-100 opacity-0 transition duration-500 ease-[.4,0,.2,1] 
-          ${item.id % 2 === 0 ? "sm:left-1/2 md:left-[15%] lg:left-[15%]" : "sm:left-1/2 md:left-[90%] lg:left-[90%]"}
+          ${
+            item.id % 2 === 0
+              ? "sm:left-1/2 md:left-[15%] lg:left-[15%]"
+              : "sm:left-1/2 md:left-[90%] lg:left-[90%]"
+          }
         `}
       >
         {item.title.split("").map((char: any, i: any) => (

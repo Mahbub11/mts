@@ -17,10 +17,12 @@ export default function Footer() {
         <div>
           <MeghNameFooter></MeghNameFooter>
         </div>
-        <div className="h-full flex flex-col justify-between sm:w-full xm:w-full w-1/2">
+        <div className="h-full flex flex-col
+         justify-between sm:w-full sm:px-5 w-1/2">
           <div>
             <div className="pt-[50px]">
-              <h1 className="paragraph font-medium font-NeueMontreal text-secondry pb-[20px]">
+              <h1 className="paragraph font-medium
+               font-NeueMontreal text-secondry pb-[20px]">
                 S:
               </h1>
               {footerItems.map((item) => (
@@ -74,7 +76,7 @@ export default function Footer() {
                 ))}
               </div>
             </div>
-            <div className="pt-[50px] flex gap-x-[20px]">
+            <div className="pt-[50px] flex sm:justify-center gap-x-[20px]">
               <h1 className="paragraph font-medium font-NeueMontreal text-secondry">
                 E:
               </h1>
@@ -92,14 +94,16 @@ export default function Footer() {
 	   pb-[30px] flex justify-center sm:flex-col
 	    xm:flex-col sm:gap-[20px] xm:gap-[20px]"
       >
-        <div className="flex sm:flex-col xm:flex-col gap-[10px]">
+        <div className="flex sm:flex-col sm:mx-auto xm:flex-col gap-[10px]
+        ">
           <h1 className="paragraph font-medium font-NeueMontreal text-secondry opacity-40">
             © mT design 2024.
           </h1>
           <LinkHover
             title="Legal Terms"
             href="/"
-            className="before:h-[1px] after:h-[1px] paragraph font-medium text-secondry opacity-40 before:bottom-[-3px] after:bottom-[-3px]"
+            className="before:h-[1px] after:h-[1px] sm:w-full sm:ml-5
+            paragraph font-medium text-secondry opacity-40 before:bottom-[-3px] after:bottom-[-3px]"
           />
         </div>
       </div>

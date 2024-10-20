@@ -10,7 +10,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import Button from "../Button";
+import Button from "../../../components/Button";
 
 export default function Clients() {
   const [activeAccordion, setActiveAccordion] = useState(clientsItem[0].id);
