@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/nav/navBar";
-import LocomotiveWrapper from "@/components/LocomotiveWrapper";
-import TextHover from "@/animation/TextHover";
 import Footer from "@/components/footer/Footer";
-import TransactionWrapper from "@/components/Transaction-wrapper";
 import { AnimatePresence } from "framer-motion";
 
 const geistSans = localFont({
