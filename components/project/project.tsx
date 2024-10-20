@@ -1,0 +1,120 @@
+"use client";
+import { useRef } from "react";
+import { project, projectItem } from "@/constants";
+
+import { useScroll, motion, useTransform } from "framer-motion";
+import ProjectCard from "./project-card";
+import Tags from "../Tags";
+import RoundButton from "../RoundButton";
+
+export default function Project() {
+  const container = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+
+  const transformStyles = [
+    useTransform(scrollYProgress, [0, 1], [0, -100]),
+    useTransform(scrollYProgress, [0, 1], [0, 100]),
+    useTransform(scrollYProgress, [0, 1], [0, -100]),
+    useTransform(scrollYProgress, [0, 1], [0, 100]),
+    useTransform(scrollYProgress, [0, 1], [0, -100]),
+    useTransform(scrollYProgress, [0, 1], [0, 100]),
+    useTransform(scrollYProgress, [0, 1], [0, -100]),
+    useTransform(scrollYProgress, [0, 1], [0, 100]),
+  ];
+
+  // New opacity transformation
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0]);
+
+  return (
+    <div className="w-full mt-[5rem] sm:px-2 md:px-10 lg:px-10 font-gvf">
+      <div className="w-full flex justify-start">
+        <motion.h1
+          className="text-customDark uppercase leading-none font-gvf
+          sm:text-[3rem] md:text-[6rem] lg:text-[6rem]  font-bold overflow-hidden -z-10 text-start"
+          style={{ opacity }} // Apply opacity transformation
+        >
+          {"Featured".split("").map((item: string, i: number) => (
+            <motion.span
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                delay: i * 0.1,
+                duration: 0.5,
+                ease: [0.4, 0, 0.2, 1],
+              }}
+              className="inline-block"
+              key={i}
+            >
+              {item}
+            </motion.span>
+          ))}
+        </motion.h1>
+      </div>
+
+      <div>
+        <div
+          className="w-full flex  gap-10 justify-center gap-y-[3rem]
+        sm:px-5 flex-wrap mt-[4rem]"
+        >
+          {projectItem.map((item) => (
+            <div key={item.id}>
+              <div className="flex gap-[15px] items-center  ">
+                <span className="w-[10px] h-[10px] rounded-full bg-customDark" />
+                <h1
+                  className="small-text uppercase font-medium font-NeueMontreal
+                 text-secondry"
+                >
+                  {item.title}
+                </h1>
+              </div>
+              <ProjectCard item={item} key={item.id} />
+              <div className="flex items-center gap-[10px] mt-[20px] flex-wrap">
+                {item.links.map((link) => (
+                  <Tags
+                    className="hover:text-white"
+                    bgcolor="#00d4fff5"
+                    item={link}
+                    key={link.id}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="w-full flex justify-center mt-[5rem]">
+          <div
+            className="flex items-center justify-center
+               bg-[#6ae0f8] cursor-pointer rounded-full group "
+          >
+            <RoundButton
+              href="/presentation"
+              title="view all case studies"
+              bgcolor="#00d4ff"
+              className="bg-white text-customDark"
+              style={{ color: "#fff" }}
+            />
+          </div>
+        </div>
+      </div>
+      {/* <div
+        className="mt-10 w-full flex justify-between gap-y-[2rem] padding-x flex-wrap"
+        ref={container}
+      >
+        {project.map((project, index) => (
+          <motion.div
+            key={project.id}
+            className="w-[49%]"
+            style={{ y: transformStyles[index % transformStyles.length] }}
+          >
+            <ProjectCard item={project} />
+          </motion.div>
+        ))}
+      </div> */}
+    </div>
+  );
+}
