@@ -8,6 +8,10 @@
   font-family: NeueMontreal;
 }
 @font-face {
+  src: url("./fonts/NeueMontreal.woff");
+  font-family: NM;
+}
+@font-face {
   src: url("./fonts/FoundersGrotesk.woff");
   font-family: FG;
 }

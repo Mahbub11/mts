@@ -53,7 +53,7 @@ export default function Process() {
               key={item.id}
               className="sm:w-full w-[90%] flex-col flex md:py-[1rem] lg:py-[1rem]
               sm:py-[5px]
-               border-b border-black"
+               border-b border-gray-300"
             >
               <div
                 className="flex items-center justify-between transition-all
@@ -63,7 +63,8 @@ export default function Process() {
                 <div
                   className="flex gap-x-[1rem] 
               font-gvf items-center sm:text-[20px]
-               md:text-[2rem] lg:text-[2rem]   text-gray-900 font-[500]"
+               md:text-[2rem] lg:text-[1.5rem]   text-gray-900 font-[500]
+               font-NeueMontreal"
                 >
                   <TextHover
                     title1="0"
@@ -88,9 +89,8 @@ export default function Process() {
                       type: "tween",
                     }}
                   >
-                    <p className="font-montreal md:text-[20px] lg:text-[20px]
-                    sm:text-[15px] mt-2
-                     text-justify py-5 px-5">
+                    <p className="small-text text-justify tracking-wider font-normal font-NeueMontreal
+                     text-secondry px-2 py-5">
                       {item.para}
                     </p>
                   </motion.div>

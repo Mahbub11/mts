@@ -41,7 +41,7 @@ export default function Card() {
     <>
       <div
         ref={container1}
-        className="font-gvf h-auto flex items-center justify-center sticky
+        className="font-NeueMontreal h-auto flex items-center justify-center sticky
          top-20  sm:top-[10%] text-gray-600"
       >
         <motion.div
@@ -111,7 +111,7 @@ export default function Card() {
 
       <div
         ref={container1}
-        className="font-gvf h-auto flex items-center justify-center sticky
+        className="font-NeueMontreal h-auto flex items-center justify-center sticky
          top-20 xm:top-[10%] sm:top-[10%] text-gray-600"
       >
         <motion.div
@@ -180,7 +180,7 @@ export default function Card() {
 
       <div
         ref={container1}
-        className="font-gvf h-auto flex items-center justify-center sticky
+        className="font-NeueMontreal h-auto flex items-center justify-center sticky
          top-20 xm:top-[10%] sm:top-[10%] text-gray-600"
       >
         <motion.div
@@ -250,7 +250,7 @@ export default function Card() {
 
       <div
         ref={container1}
-        className="font-gvf h-auto flex items-center justify-center sticky
+        className="font-NeueMontreal h-auto flex items-center justify-center sticky
          top-40 xm:top-[10%] sm:top-[10%] text-gray-600"
       >
         <motion.div

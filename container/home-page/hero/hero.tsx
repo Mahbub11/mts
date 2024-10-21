@@ -97,17 +97,17 @@ const AnimatedText: React.FC = () => {
           </div>
 
           <div
-            className="font-montreal mt-[5rem] md:mt-[7rem] lg:mt-[8rem]
+            className=" mt-[5rem] md:mt-[7rem] lg:mt-[8rem]
              text-[16px] md:text-[25px]
             lg:text-[25px]
             sm:ml-2  md:ml-[10px]  lg:ml-[8px]
-           flex items-center md:space-x-8  lg:space-x-8 sm:space-x-2"
+           flex items-center md:space-x-8  lg:space-x-8 sm:space-x-2
+           small-text text-justify font-[500] font-NeueMontreal"
           >
             {navItems.map((item, i) => (
               <div key={item.id} className="flex items-center">
                 <Link
-                  className="w-fit paragraph font-medium font-NeueMontreal
-                   text-secondry capitalize hover"
+                  className="w-fit hover"
                   href={item.href}
                 >
                   <TextHoverSingle
