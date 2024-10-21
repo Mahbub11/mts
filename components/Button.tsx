@@ -7,7 +7,7 @@ export default function Button({ href, title }: TButtonProps) {
 		<div className="flex flex-col pb-[10px] w-fit">
 			<div className="flex items-center gap-[5px] group">
 				<div className="rounded-[50px] border border-[#21212199]
-				hover:border-[#FFFF] group-hover:bg-customDark 
+				hover:border-[#FFFF] group-hover:bg-btn_clr 
 				 py-[3px] px-[12px] cursor-pointer">
 					<Link
 						className="small-text font-NeueMontreal text-secondry
@@ -17,7 +17,7 @@ export default function Button({ href, title }: TButtonProps) {
 					</Link>
 				</div>
 				<div className="w-[33px] flex items-center justify-center h-[33px] border border-[#FFFF]
-				 rounded-[50px] group-hover:bg-customLight transition-all duration-200 ease-in-out cursor-pointer 
+				 rounded-[50px] group-hover:bg-btn_clr transition-all duration-200 ease-in-out cursor-pointer 
 				 scale-0 group-hover:scale-100 sm:hidden xm:hidden">
 					<p className="small-text font-normal text-white group-hover:text-white">
 						<ArrowUpRight

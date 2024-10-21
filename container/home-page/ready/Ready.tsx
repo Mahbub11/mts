@@ -52,12 +52,12 @@ export default function Ready() {
           <div className="w-full flex justify-center mt-[3rem]">
             <div
               className="flex items-center justify-center
-               bg-customDark/80 cursor-pointer rounded-full group "
+               bg-[#00B4D8] cursor-pointer rounded-full group "
             >
               <RoundButton
                 href="/presentation"
                 title="view all case studies"
-                bgcolor="#00d4ff"
+                bgcolor="#00B4D8"
                 className="bg-white text-customDark"
                 style={{ color: "#fff" }}
               />
@@ -72,7 +72,7 @@ export default function Ready() {
               className="xl:text-[18px] xl:leading-[28px] text-[14px] leading-[24px] uppercase font-normal font-NeueMontreal"
               href="/contact"
             >
-              <Rounded className="py-[6px]" backgroundColor="#00d4ff">
+              <Rounded className="py-[6px]" backgroundColor="#00B4D8">
                 <p className="z-10 px-[10px] ml-[15px] py-[6px] group-hover:text-white text-black">
                   hello@ochi.design
                 </p>

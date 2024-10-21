@@ -15,6 +15,7 @@ const config: Config = {
         black: "1px black", // Change to your desired color and width
       },
       colors: {
+        btn_clr: "#00B4D8",
         secondry: "#212121",
         marquee: "#004d43",
         about: "#cdea68",

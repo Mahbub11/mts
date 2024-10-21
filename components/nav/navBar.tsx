@@ -104,7 +104,7 @@ export default function Navbar() {
             Blog
           </h3>
           <div className="lg:hidden md:hidden">
-          <MobileNav></MobileNav>
+            <MobileNav></MobileNav>
           </div>
         </div>
       </div>

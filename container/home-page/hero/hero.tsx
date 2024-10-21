@@ -70,8 +70,8 @@ const AnimatedText: React.FC = () => {
         <div>
           <div className="font-gvf ">
             <h2
-              className="text-gray-800 text-[28px] md:text-[50px] 
-              sm:tracking-tighter  lg:text-[55px]"
+              className="text-gray-800 text-[28px] md:text-[45px] 
+              sm:tracking-tighter  lg:text-[50px]"
             >
               Your Trusted Partner For
             </h2>
@@ -87,8 +87,8 @@ const AnimatedText: React.FC = () => {
                 animate="center"
                 exit="exit"
                 transition={{
-                  y: { type: "spring", stiffness: 300, damping: 200 },
-                  opacity: { duration: 0.5 },
+                  y: { type: "spring", stiffness: 400, damping: 100 },
+                  opacity: { duration: 0.2 },
                 }}
               >
                 {texts[index]}

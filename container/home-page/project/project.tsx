@@ -69,7 +69,7 @@ export default function Project() {
                 {item.links.map((link) => (
                   <Tags
                     className="hover:text-white"
-                    bgcolor="#00d4fff5"
+                    bgcolor="#00B4D8"
                     item={link}
                     key={link.id}
                   />
@@ -81,12 +81,12 @@ export default function Project() {
         <div className="w-full flex justify-center mt-[5rem]">
           <div
             className="flex items-center justify-center
-               bg-[#6ae0f8] cursor-pointer rounded-full group "
+               bg-btn_clr/80 cursor-pointer rounded-full group "
           >
             <RoundButton
               href="/presentation"
               title="view all case studies"
-              bgcolor="#00d4ff"
+              bgcolor="#00B4D8"
               className="bg-white text-customDark"
               style={{ color: "#fff" }}
             />

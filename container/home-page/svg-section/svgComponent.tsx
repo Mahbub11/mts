@@ -65,8 +65,7 @@ const SvgComponent: React.FC = () => {
   return (
     <div
     data-scroll-container data-scroll-speed="1"
-      className="container mx-auto  flex justify-center md:h-[50rem] 
-      lg:h-[50rem] sm:h-[25rem]
+      className="container mx-auto  flex justify-center h-auto
       sm:px-2"
       style={{  position: "relative" }}
     >
