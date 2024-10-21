@@ -57,7 +57,7 @@ const AnimatedText: React.FC = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[#c1dee9] to-[#ffff] 
+    <div className="bg-gradient-to-br from-[#9db7c1] to-[#ffff] 
     h-screen sticky">
       <div
         className="absolute sm:mt-[15rem] md:mt-[17rem] lg:mt-[17rem] w-full
