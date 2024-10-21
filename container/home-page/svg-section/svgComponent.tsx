@@ -14,7 +14,7 @@ const SvgComponent: React.FC = () => {
       // Check if the SVG is in the viewport
       if (rect.top >= 0 && rect.bottom <= windowHeight) {
         const offset = Math.max(0, windowHeight - rect.top);
-        const progress = Math.min(offset / (windowHeight / 2.5)/2, 1);
+        const progress = Math.min(offset / (windowHeight / 2.5) / 2, 1);
         setScrollY(progress);
       } else {
         setScrollY(100);
@@ -59,15 +59,14 @@ const SvgComponent: React.FC = () => {
   const fillOffset = Math.min(scrollY * 100, 100);
   const strokeColor = scrollY === 1 ? "#" : "#b9d7ed"; // Same color for stroke when filled
   const strokeLinecap = scrollY === 1 ? "round" : "butt"; // Make stroke rounded when fully filled
-  const shadowFilter =
-    scrollY === 1 ? "" : "none"; // Add shadow effect
+  const shadowFilter = scrollY === 1 ? "" : "none"; // Add shadow effect
 
   return (
     <div
-    data-scroll-container data-scroll-speed="1"
+      
       className="container mx-auto  flex justify-center h-auto
       sm:px-2"
-      style={{  position: "relative" }}
+      style={{ position: "relative" }}
     >
       <svg
         ref={svgRef}
@@ -79,7 +78,13 @@ const SvgComponent: React.FC = () => {
         style={{ position: "relative", zIndex: 1 }}
       >
         <defs>
-          <linearGradient id="blueGradient" x1="0%" y1="10%" x2="100%" y2="100%">
+          <linearGradient
+            id="blueGradient"
+            x1="0%"
+            y1="10%"
+            x2="100%"
+            y2="100%"
+          >
             <stop
               offset="0%"
               style={{ stopColor: "rgba(0, 212, 255, 0.4)", stopOpacity: 1 }}
@@ -104,14 +109,13 @@ const SvgComponent: React.FC = () => {
           filter={shadowFilter} // Apply shadow filter based on fill state
           initial={{ pathLength: 1 }}
           animate={{ pathLength: 1 }}
-         
-				transition={{
-					repeat: Infinity,
-					repeatType: "loop",
-					duration: 20,
-					ease: "linear",
-				}}
-        // Add transition for smooth filling
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 20,
+            ease: "linear",
+          }}
+          // Add transition for smooth filling
         />
       </svg>
     </div>

@@ -79,3 +79,18 @@ export type TRoundedProps = {
     href: string;
     className?: string;
  };
+ export type TpageSkillsProps = {
+    id: string;
+    title: string;
+    heading1: string;
+    heading2: string;
+    heading3: string;
+    heading4: string;
+    heading5: string;
+    skillNo1: string;
+    skillNo2: string;
+    skillNo3: string;
+    skillNo4: string;
+    skillNo5: string;
+    images: string[];
+ };
