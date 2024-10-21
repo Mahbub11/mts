@@ -31,11 +31,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased 
+        bg-gradient-to-br from-[#C4E2EE] to-[#ffff]/40
          `}
       >
         <NavBar></NavBar>
 
-        <div className="md:py-10">
+        <div className="md:py-10 ">
           <div
             className="sm:hidden  md:fixed lg:fixed z-100 right-0 top-1/2 transform 
               -translate-y-1/2 w-10 h-[15rem] rounded-sm bg-customDark/60 
