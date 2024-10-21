@@ -57,78 +57,77 @@ const AnimatedText: React.FC = () => {
   };
 
   return (
-    <div
-      className="relative sm:mt-[15rem] md:mt-[17rem] lg:mt-[17rem] w-full
+    <div className="bg-gradient-to-br from-[#c1dee9] to-[#ffff] 
+    h-screen sticky">
+      <div
+        className="absolute sm:mt-[15rem] md:mt-[17rem] lg:mt-[17rem] w-full
       sm:h-[30rem] md:h-screen lg:h-screen md:px-10 
     font-montreal"
-    >
-      <div
-        className="w-full flex justify-center
+      >
+        <div
+          className="w-full flex justify-center
        md:ml-[-5rem]  lg:ml-[-5rem] text-[25px]  md:text-[50px] lg:text-[55px]
              font-[700]"
-      >
-        <div>
-          <div className="font-gvf ">
-            <h2
-              className="text-gray-800 text-[28px] md:text-[45px] 
+        >
+          <div>
+            <div className="font-gvf ">
+              <h2
+                className="text-gray-800 text-[28px] md:text-[45px] 
               sm:tracking-tighter  lg:text-[50px]"
-            >
-              Your Trusted Partner For
-            </h2>
-            <AnimatePresence>
-              <motion.span
-                className=" text-[#00B4D8] md:ml-2 w-fit
+              >
+                Your Trusted Partner For
+              </h2>
+              <AnimatePresence>
+                <motion.span
+                  className=" text-[#00B4D8] md:ml-2 w-fit
                  text-[26px] md:text-[50px]  lg:text-[55px]
               sm:tracking-tighter"
-                style={{ position: "absolute" }}
-                variants={variants}
-                key={index}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                  y: { type: "spring", stiffness: 400, damping: 100 },
-                  opacity: { duration: 0.2 },
-                }}
-              >
-                {texts[index]}
-              </motion.span>
-            </AnimatePresence>
-          </div>
+                  style={{ position: "absolute" }}
+                  variants={variants}
+                  key={index}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{
+                    y: { type: "spring", stiffness: 400, damping: 100 },
+                    opacity: { duration: 0.2 },
+                  }}
+                >
+                  {texts[index]}
+                </motion.span>
+              </AnimatePresence>
+            </div>
 
-          <div
-            className=" mt-[5rem] md:mt-[7rem] lg:mt-[8rem]
+            <div
+              className=" mt-[5rem] md:mt-[7rem] lg:mt-[8rem]
              text-[16px] md:text-[25px]
             lg:text-[25px]
             sm:ml-2  md:ml-[10px]  lg:ml-[8px]
            flex items-center md:space-x-8  lg:space-x-8 sm:space-x-2
            small-text text-justify font-[500] font-NeueMontreal"
-          >
-            {navItems.map((item, i) => (
-              <div key={item.id} className="flex items-center">
-                <Link
-                  className="w-fit hover"
-                  href={item.href}
-                >
-                  <TextHoverSingle
-                    subTitle1=""
-                    subTitle2=""
-                    title1={item.title}
-                    title2={item.title}
-                  />
-                </Link>
-                {/* Add a dot after the second and third items */}
-                {i < 2 && (
-                  <span className="w-2 h-2 bg-current rounded-full md:ml-5 lg:ml-8 sm:ml-2" />
-                )}
-              </div>
-            ))}
+            >
+              {navItems.map((item, i) => (
+                <div key={item.id} className="flex items-center">
+                  <Link className="w-fit hover" href={item.href}>
+                    <TextHoverSingle
+                      subTitle1=""
+                      subTitle2=""
+                      title1={item.title}
+                      title2={item.title}
+                    />
+                  </Link>
+                  {/* Add a dot after the second and third items */}
+                  {i < 2 && (
+                    <span className="w-2 h-2 bg-current rounded-full md:ml-5 lg:ml-8 sm:ml-2" />
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Uncomment if you want to display the SVG icon */}
-      {/* <div className="w-full mx-auto">
+        {/* Uncomment if you want to display the SVG icon */}
+        {/* <div className="w-full mx-auto">
         <div className="flex justify-center mt-[12rem] px-3 py-3">
           <Image
             priority
@@ -139,6 +138,7 @@ const AnimatedText: React.FC = () => {
           />
         </div>
       </div> */}
+      </div>
     </div>
   );
 };

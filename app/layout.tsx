@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased 
-        bg-gradient-to-br from-[#C4E2EE] to-[#ffff]/40
+       
          `}
       >
         <NavBar></NavBar>
