@@ -63,9 +63,8 @@ const SvgComponent: React.FC = () => {
 
   return (
     <div
-      
       className="container mx-auto  flex justify-center h-auto
-      sm:px-2"
+      sm:px-2 mt-[10rem]"
       style={{ position: "relative" }}
     >
       <svg

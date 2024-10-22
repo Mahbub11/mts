@@ -17,7 +17,7 @@ export default function CaseStudies() {
 		<>
 			{/* <Curve > */}
                 
-                <div className="h-full w-full mt-[3rem]">
+                <div className="h-[40rem] w-full mt-[15rem]">
                      <HeroCaseStudies></HeroCaseStudies>
 					 <Projectspresentation></Projectspresentation>
                 </div>

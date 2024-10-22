@@ -1,5 +1,3 @@
-
-
 export default function HeroCaseStudies() {
 	return (
 		<section className="w-full padding-x bg-transparent sticky top-0 h-[65vh]">
