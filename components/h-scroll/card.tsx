@@ -33,11 +33,11 @@ export default function Card() {
     <>
       {data?.map((item) => (
         <div
-          className=" w-[20%] h-full flex-col flex 
+          className="w-[20%] xxlg:w-[25%] h-full flex-col flex 
 					items-center justify-between shrink-0 relative"
           key={item.id}
         >
-          <div className="absolute top-[45%] right-[4%]">
+          <div className="absolute lg:top-[45%] lg:right-[2%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -54,7 +54,7 @@ export default function Card() {
                   {item.skillNo1}
                 </h1>
                 <h1
-                  className="drop-shadow-md text-[40px] tracking-tighter
+                  className="drop-shadow-md lg:text-[40px] tracking-tighter
 							 font-IBMPlex font-extrabold uppercase text-[#52a0ee] leading-tight"
                 >
                   Requirenment
@@ -92,7 +92,7 @@ export default function Card() {
 					items-center justify-between shrink-0 relative "
           key={item.id}
         >
-          <div className="absolute top-[2%] left-[50%]">
+          <div className="absolute lg:top-[2%] lg:left-[50%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -147,7 +147,7 @@ export default function Card() {
 					items-center justify-between shrink-0 relative "
           key={item.id}
         >
-          <div className="absolute top-[48%] left-[70%]">
+          <div className="absolute lg:top-[53%] lg:left-[70%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -202,7 +202,7 @@ export default function Card() {
 					 justify-between shrink-0 relative"
           key={item.id}
         >
-          <div className="absolute top-[2%] left-[50%]">
+          <div className="absolute lg:top-[2%] lg:left-[53%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -257,7 +257,7 @@ export default function Card() {
 					items-center justify-between shrink-0 relative "
           key={item.id}
         >
-          <div className="absolute top-[50%] left-[48%]">
+          <div className="absolute lg:top-[51%] lg:left-[48%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -309,7 +309,7 @@ export default function Card() {
 
 {data?.map((item) => (
         <div
-          className=" w-[40%] h-full flex-col flex 
+          className="w-[40%] xxlg:w-[10%] h-full flex-col flex 
 					 justify-between shrink-0 relative"
           key={item.id}
         >

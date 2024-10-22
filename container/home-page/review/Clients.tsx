@@ -11,6 +11,8 @@ import {
   useTransform,
 } from "framer-motion";
 import Button from "../../../components/Button";
+import Rounded from "@/components/Rounded";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Clients() {
   const [activeAccordion, setActiveAccordion] = useState(clientsItem[0].id);
@@ -53,7 +55,7 @@ export default function Clients() {
 
       <div className="w-full flex justify-end mt-[3rem] ml-[-3rem]">
         <div className=" w-[70%] ">
-          {clientsItem.map((item) => (
+          {clientsItem.slice(0, 3).map((item) => (
             <div
               key={item.id}
               className={`w-full flex py-[10px] mt-[3rem]  flex-col ${
@@ -97,10 +99,10 @@ export default function Clients() {
                     <button
                       className={`small-text font-normal font-NeueMontreal uppercase 
 					  transition-all duration-200 ease-in-out ${
-                        activeAccordion === item.id
-                          ? "text-gray-300"
-                          : "text-secondry link-flash"
-                      }`}
+              activeAccordion === item.id
+                ? "text-gray-300"
+                : "text-secondry link-flash"
+            }`}
                       onClick={() => toggleAccordion(item.id)}
                     >
                       {activeAccordion === item.id ? "read" : "read"}
@@ -170,6 +172,35 @@ export default function Clients() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="mt-[3rem] mx-auto w-full flex justify-center">
+        <div
+          className="flex w-fit items-center justify-between bg-transparent cursor-pointer rounded-full group border 
+          border-[#212121] hover:border-[#00d4ff] hover:text-customDark "
+        >
+          <Link
+            className="xl:text-[18px] xl:leading-[28px] text-[14px] leading-[24px] uppercase font-normal font-NeueMontreal"
+            href="/contact"
+          >
+            <Rounded className="py-[6px]" backgroundColor="#00B4D8">
+              <p className="z-10 px-[10px] ml-[15px] py-[6px] group-hover:text-white text-black">
+                READ MORE
+              </p>
+              <div
+                className="bg-black group-hover:bg-white text-black
+                p-[10px]
+                 rounded-full scale-[0.3] mr-[10px] group-hover:scale-[0.9] 
+                 transition-all z-10 transform duration-[0.3s] ease-[.215,.61,.355,1]"
+              >
+                <ArrowUpRight
+                  strokeWidth={1.5}
+                  size={30}
+                  className="scale-[0] group-hover:scale-[1]"
+                />
+              </div>
+            </Rounded>
+          </Link>
         </div>
       </div>
     </section>

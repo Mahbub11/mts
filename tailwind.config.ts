@@ -28,7 +28,10 @@ const config: Config = {
         sm: { min: "360px", max: "768px" },
         md: { min: "769px", max: "1024px" },
         lg: { min: "1025px" },
+        xxlg: { min: "1230px" },
+        xlg: { min: "1360px" },
         xl: { min: "1491px" },
+        xxl: { min: "1630px" },
       },
     },
 

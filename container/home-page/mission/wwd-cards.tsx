@@ -80,18 +80,18 @@ export default function Card() {
               </h4>
             </div>
             <div className="w-fit  mt-10">
-            <div
-            className="flex items-center justify-center
+              <div
+                className="flex items-center justify-center
                bg-[#6ae0f8] cursor-pointer rounded-full group "
-          >
-            <RoundButton
-              href="/presentation"
-              title="view all case studies"
-              bgcolor="#00d4ff"
-              className="bg-white text-customDark sm:text-[15px]"
-              style={{ color: "#fff" }}
-            />
-          </div>
+              >
+                <RoundButton
+                  href="/presentation"
+                  title="view all case studies"
+                  bgcolor="#00d4ff"
+                  className="bg-white text-customDark sm:text-[15px]"
+                  style={{ color: "#fff" }}
+                />
+              </div>
             </div>
           </div>
           <motion.div
@@ -149,18 +149,18 @@ export default function Card() {
               </h4>
             </div>
             <div className="w-fit  mt-10">
-            <div
-            className="flex items-center justify-center
+              <div
+                className="flex items-center justify-center
                bg-[#6ae0f8] cursor-pointer rounded-full group "
-          >
-            <RoundButton
-              href="/presentation"
-              title="view all case studies"
-              bgcolor="#00d4ff"
-              className="bg-white text-customDark"
-              style={{ color: "#fff" }}
-            />
-          </div>
+              >
+                <RoundButton
+                  href="/presentation"
+                  title="view all case studies"
+                  bgcolor="#00d4ff"
+                  className="bg-white text-customDark"
+                  style={{ color: "#fff" }}
+                />
+              </div>
             </div>
           </div>
           <motion.div
@@ -219,18 +219,18 @@ export default function Card() {
               </h4>
             </div>
             <div className="w-fit  mt-10">
-            <div
-            className="flex items-center justify-center
+              <div
+                className="flex items-center justify-center
                bg-[#6ae0f8] cursor-pointer rounded-full group "
-          >
-            <RoundButton
-              href="/presentation"
-              title="view all case studies"
-              bgcolor="#00d4ff"
-              className="bg-white text-customDark"
-              style={{ color: "#fff" }}
-            />
-          </div>
+              >
+                <RoundButton
+                  href="/presentation"
+                  title="view all case studies"
+                  bgcolor="#00d4ff"
+                  className="bg-white text-customDark"
+                  style={{ color: "#fff" }}
+                />
+              </div>
             </div>
           </div>
           <motion.div
@@ -289,18 +289,18 @@ export default function Card() {
               </h4>
             </div>
             <div className="w-fit  mt-10">
-            <div
-            className="flex items-center justify-center
+              <div
+                className="flex items-center justify-center
                bg-btn_clr/80 cursor-pointer rounded-full group "
-          >
-            <RoundButton
-              href="/presentation"
-              title="view all case studies"
-              bgcolor="#00B4D8"
-              className="bg-white text-customDark"
-              style={{ color: "#fff" }}
-            />
-          </div>
+              >
+                <RoundButton
+                  href="/presentation"
+                  title="view all case studies"
+                  bgcolor="#00B4D8"
+                  className="bg-white text-customDark"
+                  style={{ color: "#fff" }}
+                />
+              </div>
             </div>
           </div>
           <motion.div

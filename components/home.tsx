@@ -17,12 +17,10 @@ import { AnimatePresence } from "framer-motion";
 export default function Home() {
   return (
     <>
-     
+      <Curve>
         <TransactionWrapper>
           <AnimatedText></AnimatedText>
         </TransactionWrapper>
-
-        
 
         <SvgComponent></SvgComponent>
         <TextBannarSection></TextBannarSection>
@@ -30,16 +28,14 @@ export default function Home() {
         <TransactionWrapper>
           <Whatwedo></Whatwedo>
         </TransactionWrapper>
-        
-        <TransactionWrapper>
+
+        {/* <TransactionWrapper>
           <Process />
-        </TransactionWrapper>
-        
-       <div >
-        
-       <HorizontalScrollCarousel></HorizontalScrollCarousel>
-   
-       </div>
+        </TransactionWrapper> */}
+
+        <div >
+          <HorizontalScrollCarousel></HorizontalScrollCarousel>
+        </div>
 
         <TransactionWrapper>
           <Project />
@@ -52,7 +48,7 @@ export default function Home() {
         <TransactionWrapper>
           <Ready />
         </TransactionWrapper>
-      
+      </Curve>
     </>
   );
 }

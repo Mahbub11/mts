@@ -1,19 +1,24 @@
 export default function HeroCaseStudies() {
-	return (
-		<section className="w-full padding-x bg-transparent sticky top-0 h-[65vh]">
-			<div className="w-full pt-[170px] pb-[20px]">
-				<div className="w-fit relative">
-					<h1 className="heading tracking-[-1.3px]
-					 text-[#212121] font-semibold font-FoundersGrotesk uppercase">
-						work
-						<sup className="paragraph font-normal 
-						absolute top-[20px] ml-[10px] font-NeueMontreal">
-							(9)
-						</sup>
-					</h1>
-				</div>
-			</div>
-			
-		</section>
-	);
+  return (
+    <section className="w-full padding-x
+    bg-gradient-to-b from-[#96b9c6] to-[#ffffff]
+     sticky top-0 h-[65vh]">
+      <div className="w-full pt-[170px] pb-[20px]">
+        <div>
+          <h1
+            className="text-[60px] text-center
+					font-bold"
+          >
+            Case Studies
+          </h1>
+
+          <p className="text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            porro, debitis rerum accusantium dicta perferendis commodi assumenda
+            dolorem ullam maiores.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }

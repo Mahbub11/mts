@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
 
 const navItems = [
-  { title: "Insights" },
-  { title: "About" },
-  { title: "Project" },
+  { title: "Case Studies" },
+  { title: "services" },
+  { title: "About Us" },
 ];
 
 const itemVariants = {
@@ -82,7 +82,7 @@ export default function Navbar() {
               animate={isScrolled ? "visible" : "initial"}
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
-              <h3 className="z-10 cursor-pointer">{item.title}</h3>
+              <h3 className="z-10 cursor-pointer tracking-tight">{item.title}</h3>
               <motion.div className="absolute left-0 bottom-0 h-[2px] bg-black w-full scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
             </motion.div>
           ))}

@@ -62,3 +62,23 @@ export { default as client09 } from './client09.png';
 export { default as brand01 } from './brand01.svg';
 export { default as brand02 } from './brand02.svg';
 export { default as brand03 } from './brand03.png';
+
+// workiz page
+export { default as workiz } from './workiz.jpeg';
+export { default as welcome } from './welcome.jpeg';
+export { default as chelengeBg } from './chelengeBg.jpeg';
+export { default as showcase1 } from './showcase1.jpeg';
+export { default as showcase2 } from './showcase2.png';
+export { default as showcase3 } from './showcase3.jpeg';
+export { default as showcase4 } from './showcase4.jpeg';
+export { default as showcase5 } from './showcase5.jpeg';
+export { default as showcase6 } from './showcase6.jpeg';
+export { default as after } from './after.png';
+export { default as workizhero } from './workizhero.jpg';
+
+
+export { default as phase1 } from './phase1.png';
+export { default as phase2 } from './phase2.png';
+export { default as phase3 } from './phase3.png';
+export { default as phase4 } from './phase4.png';
+export { default as phase5 } from './phase5.png';

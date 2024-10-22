@@ -9,7 +9,8 @@ export default function ProjectCard({ item }: { item: any }) {
 
   return (
     <div className="relative group w-full rounded-md">
-      <div
+      <Link
+      href='/case-studies/1'
         className="rounded-md overflow-hidden hover:scale-[0.95]
          transition cursor-pointer transform duration-[1s] ease-[.4,0,.2,1] block"
         onMouseEnter={() => setHovered(true)}
@@ -21,7 +22,7 @@ export default function ProjectCard({ item }: { item: any }) {
           className="object-cover rounded-md
            group-hover:scale-[1.09] transform duration-[1s] ease-[.4,0,.2,1]"
         />
-      </div>
+      </Link>
       <div
         // Adjust position for responsive behavior
         className={`absolute w-fit flex top-[50%] -translate-x-[50%] -translate-y-1/2 overflow-hidden z-10 group-hover:opacity-100 opacity-0 transition duration-500 ease-[.4,0,.2,1] 

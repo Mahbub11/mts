@@ -2,10 +2,12 @@
 import Curve from "@/components/Curve/Curve";
 import HeroCaseStudies from "@/container/case-studies-page/Hero";
 import Projectspresentation from "@/container/case-studies-page/Projects";
+import CaseDetail from "@/container/view-case/case-des";
+import HeroCaseStudy from "@/container/view-case/case-hero";
 import Lenis from "lenis";
 import { useEffect, useState } from "react";
 
-export default function CaseStudies() {
+export default function Page() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -37,9 +39,9 @@ export default function CaseStudies() {
     <>
       {/* <Curve > */}
 
-      <div className="h-autow-full">
-        <HeroCaseStudies></HeroCaseStudies>
-        <Projectspresentation></Projectspresentation>
+      <div className="h-autow-full ">
+       <HeroCaseStudy></HeroCaseStudy>
+       <CaseDetail></CaseDetail>
       </div>
 
       {/* </Curve> */}
