@@ -95,7 +95,7 @@ export default function Card() {
           key={item.id}
         >
           <div className="absolute xl:top-[8%] xl:left-[50%]
-          lg:top-[8%] lg:left-[50%]">
+          lg:top-[8%] lg:left-[50%] slg:top-[12%]">
             
             <div
               className="w-full h-full 
@@ -152,7 +152,7 @@ export default function Card() {
           key={item.id}
         >
           <div className="absolute xl:top-[53%] xl:left-[60%]
-          lg:top-[53%] lg:left-[60%] tlg:top-[55%] tlg:left-[75%]">
+          lg:top-[53%] lg:left-[60%] tlg:top-[55%] tlg:left-[75%] slg:top-[65%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -208,7 +208,8 @@ export default function Card() {
           key={item.id}
         >
           <div className="absolute xl:top-[8%] xl:left-[45%]
-          lg:top-[8%] lg:left-[45%]  tlg:top-[8%] tlg:left-[62%]">
+          lg:top-[8%] lg:left-[45%]  tlg:top-[8%] tlg:left-[62%] slg:top-[12%] 
+          slg:left-[50%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -264,7 +265,8 @@ export default function Card() {
           key={item.id}
         >
           <div className="absolute xl:top-[51%] xl:left-[35%] 
-          lg:top-[50%] lg:left-[60%] tlg:top-[55%] tlg:left-[70%]">
+          lg:top-[50%] lg:left-[60%] tlg:top-[55%] tlg:left-[70%]
+          slg:top-[65%]  slg:left-[50%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"

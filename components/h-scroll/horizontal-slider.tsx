@@ -146,13 +146,13 @@ export default function HorizontalScrollCarousel() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1548 245.8"
                 className="overflow-visible absolute
-                 xl:w-[150rem] xl:top-[40%] xl:left-[15%]
-                 lg:w-[115rem] lg:top-[40%] lg:left-[15%]
-                 flg:w-[160rem] flg:top-[40%] flg:left-[15%]
-                 fflg:w-[170rem] fflg:top-[40%] fflg:left-[15%]
-                 slg:w-[178rem]
-                
-                
+                xl:w-[150rem] xl:top-[40%] xl:left-[15%]
+                lg:w-[115rem] lg:top-[40%] lg:left-[15%]
+                flg:w-[160rem] flg:top-[40%] flg:left-[15%]
+                fflg:w-[170rem] fflg:top-[40%] fflg:left-[15%]
+                slg:w-[178rem]
+                ttlg:w-[140rem]
+                tlg:w-[145rem]
                 
                  
                  "
