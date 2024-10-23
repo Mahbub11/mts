@@ -38,12 +38,13 @@ export default function RootLayout({
 
         <div className="md:py-10 ">
           <div
-            className="sm:hidden  md:fixed lg:fixed z-100 right-0 top-1/2 transform 
-              -translate-y-1/2 w-10 h-[15rem] rounded-sm bg-customDark/60 
-              flex flex-col items-center space-y-10 justify-center rotate-180 animate-rotate"
+            className="sm:hidden md:fixed lg:fixed z-50 right-0 top-1/2 transform 
+              -translate-y-1/2 w-10 h-[15rem] rounded-sm bg-btn_clr
+              flex flex-col items-center space-y-10 justify-center rotate-180 
+              animate-rotate"
           >
             <div className="text-white font-gvf text-center rotate-90 whitespace-nowrap">
-              Contact Us
+              Contact US
             </div>
           </div>
 
@@ -52,7 +53,7 @@ export default function RootLayout({
           <AnimatePresence>{children}</AnimatePresence>
         </div>
 
-       <Footer></Footer>
+        <Footer></Footer>
       </body>
     </html>
   );

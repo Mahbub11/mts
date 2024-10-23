@@ -27,10 +27,10 @@ export default function Clients() {
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0]);
 
   return (
-    <section className="w-full mt-[5rem] sm:px-2 md:px-10 lg:px-10 font-gvf">
+    <section className="w-full mt-[15rem] sm:px-2 md:px-10 lg:px-10 font-gvf">
       <div className="w-full flex justify-start">
         <motion.h1
-          className="text-customDark uppercase leading-none font-gvf
+          className="text-btn_clr uppercase leading-none font-gvf
           sm:text-[3rem] md:text-[6rem] lg:text-[6rem]  font-bold overflow-hidden -z-10 text-start"
           style={{ opacity }} // Apply opacity transformation
         >

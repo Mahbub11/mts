@@ -70,10 +70,9 @@ const SvgComponent: React.FC = () => {
       <svg
         ref={svgRef}
         xmlns="http://www.w3.org/2000/svg"
-        width="861.3"
-        height="250.106"
+       
         viewBox="0 0 871.3 215.106"
-        className="lg:w-[66rem] md:w-[66rem]"
+        className="lg:w-[66rem] md:w-[66rem] sm:[100rem]"
         style={{ position: "relative", zIndex: 1 }}
       >
         <defs>

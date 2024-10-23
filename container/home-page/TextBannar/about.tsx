@@ -23,7 +23,7 @@ const TextBannarSection: React.FC = () => {
   ];
 
   return (
-    <section className="w-full mt-[10rem] sm:text-[3rem] md:text-[5rem] lg:text-[5rem] overflow-hidden relative
+    <section className="w-full sm:mt-[5rem] md:mt-[10rem] lg:mt-[10rem] sm:text-[3rem] md:text-[5rem] lg:text-[5rem] overflow-hidden relative
     font-montreal">
       <Marquee baseVelocity={0.5}>
         <h1 className="text-[#ffffff] uppercase font-semibold flex items-center justify-center w-full h-[10rem] z-10">
@@ -41,11 +41,11 @@ const TextBannarSection: React.FC = () => {
 
           {/* Second Dot */}
           <span
-            className="sm:w-[2.5rem] sm:h-[2.5rem] md:w-[3rem] md:h-[3rem] 
-            lg:w-[3rem] lg:h-[3rem] border border-black rounded-full mt-2
+            className="sm:w-[2.5rem] sm:h-[2.5rem] md:w-[3rem] md:h-[3rem]  border border-black rounded-full mt-2
+            lg:w-[3rem] lg:h-[3rem]
           mx-3 bg-transparent flex items-center justify-center"
           >
-            <span className="sm:w-[1rem] sm:h-[1rem]  md:w-[1.5rem] md:h-[1.5rem] 
+            <span className="sm:w-[1rem] sm:h-[1rem]  md:w-[1.5rem] md:h-[1.5rem]
             lg:w-[1.5rem] lg:h-[1.5rem] border border-black rounded-full mx-3 bg-transparent flex items-center justify-center" />
           </span>
           <span />
@@ -53,11 +53,11 @@ const TextBannarSection: React.FC = () => {
 
           {/* Third Dot */}
           <span
-            className="sm:w-[2.5rem] sm:h-[2.5em] md:w-[3rem] md:h-[3rem]
-            lg:w-[3rem] lg:h-[3rem] border border-black rounded-full mt-2
+            className="sm:w-[2.5rem] sm:h-[2.5rem] md:w-[3rem] md:h-[3rem]  border border-black rounded-full mt-2
+            lg:w-[3rem] lg:h-[3rem]
           mx-3 bg-transparent flex items-center justify-center"
           >
-            <span className="sm:w-[1rem] sm:h-[1rem]  md:w-[1.5rem] md:h-[1.5rem] 
+            <span className="sm:w-[1rem] sm:h-[1rem]  md:w-[1.5rem] md:h-[1.5rem]
             lg:w-[1.5rem] lg:h-[1.5rem] border border-black rounded-full mx-3 bg-transparent flex items-center justify-center" />
           </span>
           <span />

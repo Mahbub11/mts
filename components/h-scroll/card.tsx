@@ -33,14 +33,16 @@ export default function Card() {
     <>
       {data?.map((item) => (
         <div
-          className="w-[20%] xxlg:w-[25%] h-full flex-col flex 
+          className="w-[20%] h-full flex-col flex 
 					items-center justify-between shrink-0 relative"
           key={item.id}
-        >
-          <div className="absolute lg:top-[45%] lg:right-[2%]">
+         >
+          <div className="absolute xl:top-[50%] xl:right-[8%] fflg:right-[5%]
+          slg:right-[1%] slg:top-[52%] elg:top-[55%]
+          lg:top-[50%] lg:right-[-20%]">
             <div
               className="w-full h-full 
-		   flex items-center justify-center flex-col"
+		      flex items-center justify-center flex-col"
             >
               <div className="flex flex-col items-center relative z-[99]">
                 <h1
@@ -54,8 +56,8 @@ export default function Card() {
                   {item.skillNo1}
                 </h1>
                 <h1
-                  className="drop-shadow-md lg:text-[40px] tracking-tighter
-							 font-IBMPlex font-extrabold uppercase text-[#52a0ee] leading-tight"
+                  className="drop-shadow-md lg:text-[30px] tracking-tighter
+							 font-IBMPlex font-extrabold uppercase text-btn_clr leading-tight"
                 >
                   Requirenment
                 </h1>
@@ -67,7 +69,7 @@ export default function Card() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                   viewport={{ once: true }}
-                  className="w-[250px] h-[250px]  rounded-full 
+                  className="w-[200px] h-[200px]  rounded-full 
 								border-4 border-[#bbb0d2] flex items-center
 								 justify-center bg-white z-50"
                 >
@@ -92,7 +94,9 @@ export default function Card() {
 					items-center justify-between shrink-0 relative "
           key={item.id}
         >
-          <div className="absolute lg:top-[2%] lg:left-[50%]">
+          <div className="absolute xl:top-[8%] xl:left-[50%]
+          lg:top-[8%] lg:left-[50%]">
+            
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -109,7 +113,7 @@ export default function Card() {
                   {item.skillNo2}
                 </h1>
                 <h1
-                  className="drop-shadow-md text-[40px] tracking-tighter
+                  className="drop-shadow-md text-[30px] tracking-tighter
 							 font-IBMPlex font-extrabold uppercase text-[#52a0ee] leading-tight"
                 >
                   Requirenment
@@ -122,7 +126,7 @@ export default function Card() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                   viewport={{ once: true }}
-                  className="w-[250px] h-[250px]  rounded-full 
+                  className="w-[200px] h-[200px]  rounded-full 
 								border-4 border-[#bbb0d2] flex items-center
 								 justify-center bg-white z-50"
                 >
@@ -147,7 +151,8 @@ export default function Card() {
 					items-center justify-between shrink-0 relative "
           key={item.id}
         >
-          <div className="absolute lg:top-[53%] lg:left-[70%]">
+          <div className="absolute xl:top-[53%] xl:left-[60%]
+          lg:top-[53%] lg:left-[60%] tlg:top-[55%] tlg:left-[75%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -164,7 +169,7 @@ export default function Card() {
                   {item.skillNo3}
                 </h1>
                 <h1
-                  className="drop-shadow-md text-[40px] tracking-tighter
+                  className="drop-shadow-md text-[30px] tracking-tighter
 							 font-IBMPlex font-extrabold uppercase text-[#52a0ee] leading-tight"
                 >
                   Requirenment
@@ -177,7 +182,7 @@ export default function Card() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                   viewport={{ once: true }}
-                  className="w-[250px] h-[250px]  rounded-full 
+                  className="w-[200px] h-[200px]  rounded-full 
 								border-4 border-[#bbb0d2] flex items-center
 								 justify-center bg-white z-50"
                 >
@@ -202,7 +207,8 @@ export default function Card() {
 					 justify-between shrink-0 relative"
           key={item.id}
         >
-          <div className="absolute lg:top-[2%] lg:left-[53%]">
+          <div className="absolute xl:top-[8%] xl:left-[45%]
+          lg:top-[8%] lg:left-[45%]  tlg:top-[8%] tlg:left-[62%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -219,7 +225,7 @@ export default function Card() {
                   {item.skillNo4}
                 </h1>
                 <h1
-                  className="drop-shadow-md text-[40px] tracking-tighter
+                  className="drop-shadow-md text-[30px] tracking-tighter
 							 font-IBMPlex font-extrabold uppercase text-[#52a0ee] leading-tight"
                 >
                   Requirenment
@@ -232,7 +238,7 @@ export default function Card() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                   viewport={{ once: true }}
-                  className="w-[250px] h-[250px]  rounded-full 
+                  className="w-[200px] h-[200px]  rounded-full 
 								border-4 border-[#bbb0d2] flex items-center
 								 justify-center bg-white z-50"
                 >
@@ -257,7 +263,8 @@ export default function Card() {
 					items-center justify-between shrink-0 relative "
           key={item.id}
         >
-          <div className="absolute lg:top-[51%] lg:left-[48%]">
+          <div className="absolute xl:top-[51%] xl:left-[35%] 
+          lg:top-[50%] lg:left-[60%] tlg:top-[55%] tlg:left-[70%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -274,7 +281,7 @@ export default function Card() {
                   {item.skillNo2}
                 </h1>
                 <h1
-                  className="drop-shadow-md text-[40px] tracking-tighter
+                  className="drop-shadow-md text-[30px] tracking-tighter
 							 font-IBMPlex font-extrabold uppercase text-[#52a0ee] leading-tight"
                 >
                   Requirenment
@@ -287,7 +294,7 @@ export default function Card() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                   viewport={{ once: true }}
-                  className="w-[250px] h-[250px]  rounded-full 
+                  className="w-[200px] h-[200px]  rounded-full 
 								border-4 border-[#bbb0d2] flex items-center
 								 justify-center bg-white z-50"
                 >
@@ -309,11 +316,13 @@ export default function Card() {
 
 {data?.map((item) => (
         <div
-          className="w-[40%] xxlg:w-[10%] h-full flex-col flex 
-					 justify-between shrink-0 relative"
+          className="w-[40%]  h-full flex-col flex 
+					 justify-between shrink-0 relative "
           key={item.id}
         >
-          <div className="absolute top-[2%] left-[50%]">
+          <div className="absolute xl:top-[8%] xl:right-[30%]
+          lg:top-[8%] lg:right-[5%] tlg:top-[8%] tlg:right-[10%]
+          slg:right-[30%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"
@@ -330,7 +339,7 @@ export default function Card() {
                   {item.skillNo5}
                 </h1>
                 <h1
-                  className="drop-shadow-md text-[40px] tracking-tighter
+                  className="drop-shadow-md text-[30px] tracking-tighter
 							 font-IBMPlex font-extrabold uppercase text-[#52a0ee] leading-tight"
                 >
                   Requirenment
@@ -343,7 +352,7 @@ export default function Card() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                   viewport={{ once: true }}
-                  className="w-[250px] h-[250px]  rounded-full 
+                  className="w-[200px] h-[200px]  rounded-full 
 								border-4 border-[#bbb0d2] flex items-center
 								 justify-center bg-white z-50"
                 >

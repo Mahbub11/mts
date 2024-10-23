@@ -5,8 +5,8 @@ import { useInView } from "react-intersection-observer";
 
 export default function MaskText({ children }: { children: string[] }) {
 	const { ref, inView } = useInView({
-		threshold: 0.75,
-		triggerOnce: true,
+		threshold: 0.,
+		triggerOnce: false,
 	});
 
 	return (
@@ -14,7 +14,7 @@ export default function MaskText({ children }: { children: string[] }) {
 			{children.map((phrase, index) => (
 				<div
 					key={index}
-					className="overflow-hidden">
+					className="">
 					<motion.p
 						custom={index}
 						variants={animation}

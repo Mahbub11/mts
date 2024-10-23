@@ -88,7 +88,7 @@ export default function HorizontalScrollCarousel() {
         const percentage = distance / totalDistance;
 
         const slowDownFactor = 0.55;
-        const adjustedPercentage = percentage * slowDownFactor - 0.9;
+        const adjustedPercentage = percentage * slowDownFactor - 0.7;
 
         console.log(adjustedPercentage - 1);
 
@@ -108,8 +108,9 @@ export default function HorizontalScrollCarousel() {
       <div>
         <div className="px-10">
           <h1
-            className="text-customDark uppercase leading-none font-gvf
-                sm:text-[3rem] md:text-[6rem] lg:text-[6rem]  font-bold overflow-hidden -z-10 text-start"
+            className="text-btn_clr uppercase leading-none font-gvf
+                sm:text-[3rem] md:text-[6rem] lg:text-[6rem]
+                  font-bold overflow-hidden -z-10 text-start"
           >
             {"process".split("").map((item: string, i: number) => (
               <motion.span
@@ -130,7 +131,7 @@ export default function HorizontalScrollCarousel() {
           </h1>
         </div>
 
-        <section ref={targetRef} className="relative xm:h-[220rem] h-[200rem]  line-draw ">
+        <section ref={targetRef} className="relative h-[300rem] line-draw ">
           <div
             className="sticky top-0 flex h-screen items-center 
         overflow-hidden  svg-container"
@@ -144,8 +145,17 @@ export default function HorizontalScrollCarousel() {
                 ref={svgRef}
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1548 245.8"
-                className="overflow-visible absolute left-[16%] 
-              sm:w-[195rem] xlg:w-[150rem] xxlg:w-[130rem] lg:w-[165rem] xl:w-[165rem] xxl:w-[170rem] h-[50rem] mt-[5%]"
+                className="overflow-visible absolute
+                 xl:w-[150rem] xl:top-[40%] xl:left-[15%]
+                 lg:w-[115rem] lg:top-[40%] lg:left-[15%]
+                 flg:w-[160rem] flg:top-[40%] flg:left-[15%]
+                 fflg:w-[170rem] fflg:top-[40%] fflg:left-[15%]
+                 slg:w-[178rem]
+                
+                
+                
+                 
+                 "
               >
                 <path
                   className="path"

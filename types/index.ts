@@ -40,6 +40,7 @@ export type TlogoMarqueeProps = {
 };
 
 export type TtextHoverProps = {
+    classname?:string,
     title1: string;
     subTitle1: string;
     title2: string;

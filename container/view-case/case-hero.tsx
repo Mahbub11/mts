@@ -9,7 +9,7 @@ export default function HeroCaseStudy() {
       bg-gradient-to-b from-[#9bd6eb] to-[#ffffff]
        sticky top-0 py-10"
     >
-      <div className="flex justify-center pt-[130px] pb-[20px] sm:px-5 md:px-10">
+      <div className="flex justify-center sm:pt-[70px] pt-[130px] pb-[20px] sm:px-5 md:px-10">
         <div
           className="sm:flex-col sm:space-y-10
          items-center flex justify-center md:space-x-[3rem] lg:space-x-[5rem]"

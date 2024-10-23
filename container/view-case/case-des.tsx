@@ -17,10 +17,11 @@ export default function CaseDetail() {
         <div
           data-scroll
           data-scroll-speed="-.2"
-          className="bg-[#96b9c623] w-[75%] py-[20px] rounded-t-[10px]	"
+          className="bg-[#96b9c623] sm:w-full w-[75%] py-[20px] rounded-t-[10px]	"
         />
         <div
-          className="bg-[#96b9c67c] relative z-20 w-[90%] py-[20px] rounded-t-[10px]"
+          className="bg-[#96b9c67c] relative z-20 sm:w-full 
+          w-[90%] py-[20px] sm:rounded-none rounded-t-[10px]"
           data-scroll
           data-scroll-speed="-.1"
         />

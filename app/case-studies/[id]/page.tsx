@@ -39,7 +39,7 @@ export default function Page() {
     <>
       {/* <Curve > */}
 
-      <div className="h-autow-full ">
+      <div className="h-auto w-full ">
        <HeroCaseStudy></HeroCaseStudy>
        <CaseDetail></CaseDetail>
       </div>

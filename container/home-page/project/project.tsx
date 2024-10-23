@@ -21,10 +21,10 @@ export default function Project() {
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0]);
 
   return (
-    <div className="w-full mt-[5rem] sm:px-2 md:px-10 lg:px-10 font-gvf">
+    <div className="w-full mt-[15rem] sm:px-2 md:px-10 lg:px-10 font-gvf">
       <div className="w-full flex justify-start">
         <motion.h1
-          className="text-customDark uppercase leading-none font-gvf
+          className="text-btn_clr uppercase leading-none font-gvf
           sm:text-[3rem] md:text-[6rem] lg:text-[6rem]  font-bold overflow-hidden -z-10 text-start"
           style={{ opacity }} // Apply opacity transformation
         >
@@ -56,7 +56,7 @@ export default function Project() {
           {projectItem.map((item) => (
             <div key={item.id}>
               <div className="flex gap-[15px] items-center  mt-10">
-                <span className="w-[10px] h-[10px] rounded-full bg-customDark" />
+                <span className="w-[10px] h-[10px] rounded-full bg-btn_clr" />
                 <h1
                   className="small-text uppercase font-medium font-NeueMontreal
                  text-secondry"

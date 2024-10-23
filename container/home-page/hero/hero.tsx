@@ -66,30 +66,11 @@ const AnimatedText: React.FC = () => {
       className="bg-gradient-to-b from-[#96b9c6] to-[#ffffff]
     h-screen"
     >
-      <div>
-        <div className="absolute top-[15%] right-[3%]">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="362.17"
-            height="264.564"
-            viewBox="0 0 362.17 264.564"
-          >
-            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
-              <path
-                d="M730.3,421.212s9.091-293.939,130.3-172.727S1069.7,175.758,1069.7,175.758"
-                transform="translate(-718.8 -168.73)"
-                fill="none"
-                stroke="#11ade8"
-                strokeWidth="5"
-                strokeDasharray="10" // Adjust this for dash size
-                strokeDashoffset="0" // Start with no offset
-                opacity="0.44"
-              />
-            </g>
-          </svg>
-        </div>
-
-        <div className="absolute bottom-[10%] left-[-10%]">
+      <div className="sm:hidden">
+        <div
+          className="absolute bottom-[7%] left-[-10%] md:left-[-15%]
+        sm:left-[-45%]"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="257"
@@ -110,7 +91,10 @@ const AnimatedText: React.FC = () => {
           </svg>
         </div>
 
-        <div className="absolute bottom-[5%] left-[-8%] ">
+        <div
+          className="absolute bottom-[1%] left-[-8%] md:left-[-13%]
+        sm:left-[-40%]"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="257"
@@ -133,13 +117,12 @@ const AnimatedText: React.FC = () => {
       </div>
 
       <div
-        className="absolute sm:mt-[15rem] md:mt-[17rem] lg:mt-[17rem] w-full
-      sm:h-[30rem] md:h-screen lg:h-screen md:px-10 
-    font-montreal"
+        className=" sm:pt-[15rem] md:pt-[17rem] lg:pt-[17rem] w-full
+      sm:h-[30rem] md:h-screen lg:h-screen md:px-10"
       >
         <div
           className="w-full flex justify-center
-       md:ml-[-5rem]  lg:ml-[-5rem] text-[25px]  md:text-[50px] lg:text-[55px]
+       md:ml-[-1rem]  lg:ml-[-5rem] text-[25px]  md:text-[50px] lg:text-[55px]
              font-[700]"
         >
           <div>
@@ -177,12 +160,13 @@ const AnimatedText: React.FC = () => {
             lg:text-[25px]
             sm:ml-2  md:ml-[10px]  lg:ml-[8px]
            flex items-center md:space-x-8  lg:space-x-8 sm:space-x-2
-           small-text text-justify font-[500] font-NeueMontreal"
+           small-text text-justify font-[500] font-NeueMontreal "
             >
               {navItems.map((item, i) => (
-                <div key={item.id} className="flex items-center">
+                <div key={item.id} className="flex items-center text-gray-700">
                   <Link className="w-fit hover" href={item.href}>
                     <TextHoverSingle
+                     classname="text-gray-700"
                       subTitle1=""
                       subTitle2=""
                       title1={item.title}

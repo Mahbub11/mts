@@ -60,14 +60,14 @@ export default function Navbar() {
     >
       <div
         className="flex justify-between items-center mx-auto h-full 
-      text-secondry font-[800]"
+      text-gray-800 font-[800]"
       >
         <h3 className="text-[25px] font-[800]">mT</h3>
 
         <motion.div
           className=" flex items-center space-x-3 font-NeueMontreal text-[17px]
            tracking-wider 
-          text-secondry font-medium"
+           font-medium"
           variants={!isMobile ? containerVariants : containerVariantsMobile}
           initial="initial"
           animate={isScrolled ? "visible" : "initial"}
@@ -99,7 +99,7 @@ export default function Navbar() {
         <div>
           <h3
             className="text-[17px] tracking-wider 
-          text-secondry font-medium sm:hidden"
+           font-medium sm:hidden"
           >
             Blog
           </h3>
