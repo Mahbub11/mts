@@ -266,7 +266,7 @@ export default function Card() {
         >
           <div className="absolute xl:top-[51%] xl:left-[35%] 
           lg:top-[50%] lg:left-[60%] tlg:top-[55%] tlg:left-[70%]
-          slg:top-[65%]  slg:left-[50%]">
+          slg:top-[65%] sslg:top-[60%] slg:left-[50%]">
             <div
               className="w-full h-full 
 		   flex items-center justify-center flex-col"

@@ -153,6 +153,7 @@ export default function HorizontalScrollCarousel() {
                 slg:w-[178rem]
                 ttlg:w-[140rem]
                 tlg:w-[145rem]
+                sslg:w-[190rem]
                 
                  
                  "
