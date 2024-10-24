@@ -4,6 +4,8 @@ import Image from "next/image";
 import { TpageSkillsProps } from "@/types";
 import { useEffect, useRef, useState } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
+import HorizontalScrollCarouselTablet from "./horizontal-slider-tablet";
+import HorizontalScrollCarouselMobile from "./horizontal-slider-mobile";
 
 export default function HorizontalScrollCarousel() {
   const [data, setData] = useState<TpageSkillsProps[]>([
@@ -95,6 +97,9 @@ export default function HorizontalScrollCarousel() {
         path.style.strokeDashoffset = `${
           pathLength * (1 - adjustedPercentage)
         }`;
+
+        console.log(pathLength * (1 - adjustedPercentage));
+        console.log(totalDistance);
       }
     };
 
@@ -106,7 +111,7 @@ export default function HorizontalScrollCarousel() {
   return (
     <>
       <div>
-        <div className="px-10">
+        <div className="sm:px-3 px-10 md:mt-[10rem]">
           <h1
             className="text-btn_clr uppercase leading-none font-gvf
                 sm:text-[3rem] md:text-[6rem] lg:text-[6rem]
@@ -131,7 +136,10 @@ export default function HorizontalScrollCarousel() {
           </h1>
         </div>
 
-        <section ref={targetRef} className="relative h-[300rem] line-draw ">
+        <section
+          ref={targetRef}
+          className="sm:hidden md:hidden relative h-[300rem] line-draw "
+        >
           <div
             className="sticky top-0 flex h-screen items-center 
         overflow-hidden  svg-container"
@@ -173,6 +181,14 @@ export default function HorizontalScrollCarousel() {
             </motion.div>
           </div>
         </section>
+
+        <div className="hidden md:block">
+          <HorizontalScrollCarouselTablet></HorizontalScrollCarouselTablet>
+        </div>
+
+        <div className="hidden sm:block">
+       <HorizontalScrollCarouselMobile></HorizontalScrollCarouselMobile>
+        </div>
       </div>
     </>
   );
