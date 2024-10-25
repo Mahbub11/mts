@@ -11,7 +11,10 @@ export default function ContactUs() {
 
   return (
     <>
-      <div className="flex  justify-between items-center p-8 font-NeueMontreal">
+      <div
+        className="flex sm:flex-col  justify-between
+       items-center md:p-8 lg:p-8 font-NeueMontreal"
+      >
         <div>
           <h2
             className="text-[40px] font-gvf font-bold text-gray-600
@@ -27,8 +30,10 @@ export default function ContactUs() {
             back to you as soon as possible.{" "}
           </p>
 
-          <form className="w-full bg-transparent border-2
-          border-btn_clr/20 px-10 py-10 rounded mt-10">
+          <form
+            className="w-full bg-transparent border-2
+          border-btn_clr/20 px-10 py-10 rounded mt-10"
+          >
             <div className="mb-4">
               <label
                 className="block 
@@ -102,7 +107,7 @@ export default function ContactUs() {
 
         <div>
           <h2
-            className="font-gvf text-[20px] text-gray-800
+            className="sm:mt-10 font-gvf text-[20px] text-gray-800
           font-[500]"
           >
             Hi, I’m Karolina. I look forward to <br></br> discussing your
@@ -116,7 +121,7 @@ export default function ContactUs() {
              rounded-[10px] mt-5"
             />
 
-            <div className="font-montreal mt-5 font-[500] text-gray-800">
+            <div className=" font-montreal mt-5 font-[500] text-gray-800">
               <h2>Karolina Brewczynska</h2>
               <p>Business Development Manager</p>
             </div>

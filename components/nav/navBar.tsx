@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
 import MtIcon from "@/public/SVG/mt-svg";
+import Link from "next/link";
 
 const navItems = [
-  { title: "Case Studies" },
-  { title: "services" },
-  { title: "About Us" },
+  { title: "Case Studies", link: "/case-studies" },
+  { title: "Services", link: "/services" },
+  { title: "About Us", link: "/about" },
 ];
+
 
 const itemVariants = {
   initial: { opacity: 0 },
@@ -80,21 +82,25 @@ export default function Navbar() {
           transition={{ duration: 0.8 }}
         >
           {navItems.map((item, index) => (
-            <motion.div
-              key={item.title}
-              className="relative group sm:hidden "
-              variants={itemVariants}
-              initial="initial"
-              animate={isScrolled ? "visible" : "initial"}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-            >
-              <h3 className="z-10 cursor-pointer tracking-tight">{item.title}</h3>
-              <motion.div className="absolute left-0 bottom-0 h-[2px] bg-black w-full scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
-            </motion.div>
-          ))}
+        <motion.div
+          key={item.title}
+          className="relative group sm:hidden"
+          variants={itemVariants}
+          initial="initial"
+          animate={isScrolled ? "visible" : "initial"}
+          transition={{ duration: 0.8, delay: index * 0.2 }}
+        >
+          <Link href={item.link}>
+            <h3 className="z-10 cursor-pointer tracking-tight">{item.title}</h3>
+          </Link>
+          <motion.div className="absolute left-0 bottom-0 h-[2px] bg-black w-full scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+        </motion.div>
+      ))}
 
           <div className="relative group ">
-            <h3 className="text-center">contact US</h3>
+          <Link href='/contact-us'>
+            <h3 className="z-10 cursor-pointer tracking-tight">Contact US</h3>
+          </Link>
             <motion.div
               className="absolute left-0 bottom-0 h-[2px] bg-black w-full scale-x-0
                transition-transform duration-300 group-hover:scale-x-100"
