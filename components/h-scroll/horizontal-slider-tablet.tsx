@@ -14,8 +14,7 @@ const HorizontalScrollCarouselTablet: React.FC = () => {
     target: targetRef,
   });
 
-  const svgRef = useRef<SVGSVGElement | null>(null);
-  const pathRef = useRef<SVGPathElement | null>(null);
+
   const x = useTransform(scrollYProgress, [0, 1], ["20%", "-100%"]);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -46,8 +45,7 @@ const HorizontalScrollCarouselTablet: React.FC = () => {
   useEffect(() => {
     const handleScrollChange = () => {
       const currentScrollProgress = scrollYProgress.get();
-      console.log(currentScrollProgress);
-
+     
       const path = paths.current;
       if (!path) return;
 

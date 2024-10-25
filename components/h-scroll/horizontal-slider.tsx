@@ -66,7 +66,6 @@ export default function HorizontalScrollCarousel() {
     };
   }, []);
 
-  console.log(isVisible);
   useEffect(() => {
     const svg = svgRef.current;
     const path = pathRef.current;
@@ -187,7 +186,8 @@ export default function HorizontalScrollCarousel() {
         </div>
 
         <div className="hidden sm:block">
-       <HorizontalScrollCarouselMobile></HorizontalScrollCarouselMobile>
+          
+          <HorizontalScrollCarouselMobile></HorizontalScrollCarouselMobile>
         </div>
       </div>
     </>

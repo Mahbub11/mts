@@ -16,76 +16,74 @@ export default function Expectations() {
       <div className="w-full padding-x py-[20px]">
         <div className="w-full padding-x mb-[40px]">
           <h1
-            className="sub-heading font-medium 
-                font-NeueMontreal text-secondry text-[40px]"
+            className="sub-heading font-bold 
+                font-NeueMontreal text-gray-700 lg:text-[40px]"
           >
             Expectations
           </h1>
           <hr className=" mt-5"></hr>
         </div>
         <div className="w-full flex justify-end ">
-			<div className="flex justify-end w-[80%]">
-				<div className="w-full  flex flex-wrap gap-[20px] ">
-            {expectationsItems.map((item) => (
-              <div
-                className="w-[345px] flex justify-between gap-x-[20px] sm:flex-col xm:flex-col gap-[20px]"
-                key={item.id}
-              >
-                <div className="bg-[#a2e2f3] w-full flex flex-col rounded-[20px] px-[30px] py-[20px]">
-                  <div className="flex gap-x-[10px] items-center pb-[10px] mb-[100px] ">
-                    <h1 className="sub-heading font-normal font-NeueMontreal text-white">
-                      {item.title1}
-                    </h1>
-                  </div>
-                  <div className="w-full flex justify-between items-center">
-                    <button className="small-text font-normal font-NeueMontreal text-white">
-                      <TextHoverSingle
-                        title1={item.subTitle1}
-                        title2={item.subTitle1}
-                        subTitle1=""
-                        subTitle2=""
-                      />
-                    </button>
-                    <button
-                      onClick={() => handleButtonClick(item.id)}
-                      className="small-text uppercase font-normal font-NeueMontreal text-white"
-                    >
-                      {openItemId === item.id ? (
-                        "hide"
-                      ) : (
+          <div className="flex justify-end w-[80%]">
+            <div className="w-full  flex flex-wrap gap-[20px] ">
+              {expectationsItems.map((item) => (
+                <div
+                  className="w-[345px] flex justify-between gap-x-[20px] sm:flex-col xm:flex-col gap-[20px]"
+                  key={item.id}
+                >
+                  <div className="bg-[#a2e2f3] w-full flex flex-col rounded-[20px] px-[30px] py-[20px]">
+                    <div className="flex gap-x-[10px] items-center pb-[10px] mb-[100px] ">
+                      <h1 className="sub-heading font-normal font-NeueMontreal text-white">
+                        {item.title1}
+                      </h1>
+                    </div>
+                    <div className="w-full flex justify-between items-center">
+                      <button className="small-text font-normal font-NeueMontreal text-white">
                         <TextHoverSingle
-                          title1={item.btn}
-                          title2={item.btn}
+                          title1={item.subTitle1}
+                          title2={item.subTitle1}
                           subTitle1=""
                           subTitle2=""
                         />
-                      )}
-                    </button>
-                  </div>
-                  <AnimatePresence>
-                    {openItemId === item.id && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{
-                          ease: [0.4, 0, 0.2, 1],
-                          duration: 1,
-                        }}
+                      </button>
+                      <button
+                        onClick={() => handleButtonClick(item.id)}
+                        className="small-text uppercase font-normal font-NeueMontreal text-white"
                       >
-                        <div className="border-t border-[#f1f1f155] pt-[20px] text-background mt-[10px]">
-                          {item.para1}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                        {openItemId === item.id ? (
+                          "hide"
+                        ) : (
+                          <TextHoverSingle
+                            title1={item.btn}
+                            title2={item.btn}
+                            subTitle1=""
+                            subTitle2=""
+                          />
+                        )}
+                      </button>
+                    </div>
+                    <AnimatePresence>
+                      {openItemId === item.id && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{
+                            ease: [0.4, 0, 0.2, 1],
+                            duration: 1,
+                          }}
+                        >
+                          <div className="border-t border-[#f1f1f155] pt-[20px] text-background mt-[10px]">
+                            {item.para1}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-			</div>
-
-          
         </div>
       </div>
     </section>

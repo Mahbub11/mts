@@ -70,7 +70,6 @@ const SvgComponent: React.FC = () => {
       <svg
         ref={svgRef}
         xmlns="http://www.w3.org/2000/svg"
-       
         viewBox="0 0 871.3 215.106"
         className="lg:w-[66rem] md:w-[66rem] sm:[100rem]"
         style={{ position: "relative", zIndex: 1 }}
@@ -79,7 +78,7 @@ const SvgComponent: React.FC = () => {
           <linearGradient
             id="blueGradient"
             x1="0%"
-            y1="10%"
+            y1="0%"
             x2="100%"
             y2="100%"
           >

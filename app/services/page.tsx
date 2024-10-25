@@ -1,6 +1,8 @@
 "use client";
 
+import Clients from "@/container/home-page/review/Clients";
 import Expectations from "@/container/service-page/Expectations";
+import ClientsReviewExpectations from "@/container/service-page/clients-review";
 import ServiceHeroSection from "@/container/service-page/service-hero";
 import ServiceProcess from "@/container/service-page/service-process";
 
@@ -32,6 +34,10 @@ export default function APP() {
 
           <div className="mt-[10rem]">
             <Expectations></Expectations>
+          </div>
+
+          <div className="mt-[10rem]">
+           <ClientsReviewExpectations></ClientsReviewExpectations>
           </div>
         </div>
       </div>

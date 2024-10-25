@@ -81,6 +81,8 @@ export type TRoundedProps = {
     className?: string;
  };
  export type TpageSkillsProps = {
+    skillNo?:string
+    heading?:string
     id: string;
     title: string;
     heading1: string;
@@ -88,10 +90,12 @@ export type TRoundedProps = {
     heading3: string;
     heading4: string;
     heading5: string;
+    heading6?:string,
     skillNo1: string;
     skillNo2: string;
     skillNo3: string;
     skillNo4: string;
     skillNo5: string;
+    skillNo6?:string,
     images: string[];
  };

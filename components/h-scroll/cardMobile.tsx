@@ -1,368 +1,73 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { TpageSkillsProps } from "@/types";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+interface Skill {
+  id: number;
+  heading: string;
+  image: string;
+}
 
 export default function CardMobile() {
-  const [data, setData] = useState<TpageSkillsProps[]>([
+  const [data, setData] = useState<Skill[]>([
     {
-      id: "66c5134e380f22191abe833d",
-      title: "Process",
-      skillNo1: "01",
-      skillNo2: "02",
-      skillNo3: "03",
-      skillNo4: "04",
-      skillNo5: "05",
-      heading1: "Fusion 360",
-      heading2: "After Effect",
-      heading3: "Illustrator",
-      heading4: "Phtoshop",
-      heading5: "Indesign",
-      images: [
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/iaoj4urwnwinlye4j88s.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/ujylzfjmldhca2jhjkot.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/n80tcp6tagcoh5te0w0z.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/b9ydkrpnoeh3ny04xbiu.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/dvvs2ip97jt2xxxmmi1c.svg",
-      ],
+      id: 1,
+      heading: "Fusion 360",
+      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/n80tcp6tagcoh5te0w0z.svg",
+    },
+    {
+      id: 2,
+      heading: "After Effect",
+      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/iaoj4urwnwinlye4j88s.svg",
+    },
+    {
+      id: 3,
+      heading: "Illustrator",
+      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/ujylzfjmldhca2jhjkot.svg",
+    },
+    {
+      id: 4,
+      heading: "Photoshop",
+      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/b9ydkrpnoeh3ny04xbiu.svg",
+    },
+    {
+      id: 5,
+      heading: "InDesign",
+      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/dvvs2ip97jt2xxxmmi1c.svg",
     },
   ]);
 
   return (
-    <>
-      {data?.map((item) => (
-        <div
-          className="w-[50%] h-full flex-col flex 
-					items-center justify-between shrink-0 relative "
-          key={item.id}
-         >
-          <div className="absolute top-[57%] right-[65%]">
-            <div
-              className="w-full h-full 
-		      flex items-center justify-center flex-col"
-            >
-              <div className="flex flex-col items-center relative z-[99]">
-                <h1
-                  className="text-[#2E2E2E]/10 text-[200px]
-							 mdd:text-[120px] tracking-tighter 
-							  td:text-[60px] lg:text-[80px] 
-							 mht:text-[60px] md:text-[70px] 
-							 sm:text-[40px] xm:text-[40px] 
-							 font-extrabold leading-tight"
-                >
-                  {item.skillNo1}
-                </h1>
-                <h1
-                  className="drop-shadow-md lg:text-[30px] tracking-tighter
-							 font-IBMPlex font-extrabold uppercase text-btn_clr leading-tight"
-                >
-                  Requirenment
-                </h1>
-              </div>
-              {item.images.slice(1, 2).map((img, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                  className="w-[150px] h-[150px]  rounded-full 
-								border-4 border-[#bbb0d2] flex items-center
-								 justify-center bg-white z-50"
-                >
-                  <Image
-                    className="lg:w-[100px] td:h-[80px]
-									 lg:h-[100px] mht:h-[80px] md:w-[100px] md:h-[100px] "
-                    src={img}
-                    alt="Image"
-                    width={200}
-                    height={200}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </div>
+    <div className="w-full flex flex-col items-center space-y-10 z-10">
+      {data.map((item) => (
+        <div className="flex flex-col items-center text-center z-10" key={item.id}>
+          <h1 className="text-[#2E2E2E]/60 text-[40px] z-100 
+          font-extrabold leading-tight">
+            {`0${item.id}`}
+          </h1>
+          <h1 className=" text-[30px] z-10 tracking-tighter 
+           font-extrabold uppercase text-btn_clr leading-tight">
+            {item.heading}
+          </h1>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="w-[150px] h-[150px] z-10 rounded-full mt-2 border-4 border-[#bbb0d2] flex items-center justify-center bg-white"
+          >
+            <Image
+              className="h-[5rem] w-[5rem]"
+              src={item.image}
+              alt="Image"
+              width={100}
+              height={100}
+            />
+          </motion.div>
         </div>
       ))}
-
-      {data?.map((item) => (
-        <div
-          className=" w-[50%]  h-full flex-col flex 
-					items-center justify-between relative bg-red-200 "
-          key={item.id}
-        >
-          <div className="absolute w-full top-[13%] right-[40%]">
-            
-            <div
-              className="w-full h-full 
-		   flex items-center justify-center flex-col"
-            >
-              <div className="flex flex-col items-center relative z-[99]">
-                <h1
-                  className="text-[#2E2E2E]/10 text-[200px]
-							 mdd:text-[120px] tracking-tighter 
-							  td:text-[60px] lg:text-[80px] 
-							 mht:text-[60px] md:text-[70px] 
-							 sm:text-[40px] xm:text-[40px] 
-							 font-extrabold leading-tight"
-                >
-                  {item.skillNo2}
-                </h1>
-                <h1
-                  className="drop-shadow-md lg:text-[30px] tracking-tighter
-                  font-IBMPlex font-extrabold uppercase text-btn_clr leading-tight"
-                >
-                  Requirenment
-                </h1>
-              </div>
-              {item.images.slice(1, 2).map((img, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                  className="w-[150px] h-[150px]  rounded-full 
-								border-4 border-[#bbb0d2] flex items-center
-								 justify-center bg-white z-50"
-                >
-                  <Image
-                    className="lg:w-[100px] td:h-[80px]
-									 lg:h-[100px] mht:h-[80px] md:w-[100px] md:h-[100px] "
-                    src={img}
-                    alt="Image"
-                    width={200}
-                    height={200}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      ))}
-
-      {data?.map((item) => (
-        <div
-          className=" w-[80%] h-full flex-col flex 
-					items-center justify-between shrink-0 relative "
-          key={item.id}
-        >
-          <div className="absolute w-full top-[50%]  left-[60%] ">
-            <div
-              className="w-full h-full 
-		   flex items-center justify-center flex-col"
-            >
-              <div className="flex flex-col items-center relative z-[99]">
-                <h1
-                  className="text-[#2E2E2E]/10 text-[200px]
-							 mdd:text-[120px] tracking-tighter 
-							  td:text-[60px] lg:text-[80px] 
-							 mht:text-[60px] md:text-[70px] 
-							 sm:text-[40px] xm:text-[40px] 
-							 font-extrabold leading-tight"
-                >
-                  {item.skillNo3}
-                </h1>
-                <h1
-                  className="drop-shadow-md lg:text-[30px] tracking-tighter
-                  font-IBMPlex font-extrabold uppercase text-btn_clr leading-tight"
-                >
-                  Requirenment
-                </h1>
-              </div>
-              {item.images.slice(1, 2).map((img, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                  className="w-[150px] h-[150px]  rounded-full 
-								border-4 border-[#bbb0d2] flex items-center
-								 justify-center bg-white z-50"
-                >
-                  <Image
-                    className="lg:w-[100px] td:h-[80px]
-									 lg:h-[100px] mht:h-[80px] md:w-[100px] md:h-[100px] "
-                    src={img}
-                    alt="Image"
-                    width={200}
-                    height={200}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      ))}
-
-      {data?.map((item) => (
-        <div
-          className=" w-[100%] h-full flex-col flex 
-					 justify-between shrink-0 relative"
-          key={item.id}
-        >
-          <div className="absolute w-full top-[13%] left-[40%] ">
-            <div
-              className="w-full h-full 
-		   flex items-center justify-center flex-col"
-            >
-              <div className="flex flex-col items-center relative z-[99]">
-                <h1
-                  className="text-[#2E2E2E]/10 text-[200px]
-							 mdd:text-[120px] tracking-tighter 
-							  td:text-[60px] lg:text-[80px] 
-							 mht:text-[60px] md:text-[70px] 
-							 sm:text-[40px] xm:text-[40px] 
-							 font-extrabold leading-tight"
-                >
-                  {item.skillNo4}
-                </h1>
-                <h1
-                  className="drop-shadow-md lg:text-[30px] tracking-tighter
-                  font-IBMPlex font-extrabold uppercase text-btn_clr leading-tight"
-                >
-                  Requirenment
-                </h1>
-              </div>
-              {item.images.slice(1, 2).map((img, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                  className="w-[150px] h-[150px]  rounded-full 
-								border-4 border-[#bbb0d2] flex items-center
-								 justify-center bg-white z-50"
-                >
-                  <Image
-                    className="lg:w-[100px] td:h-[80px]
-									 lg:h-[100px] mht:h-[80px] md:w-[100px] md:h-[100px] "
-                    src={img}
-                    alt="Image"
-                    width={200}
-                    height={200}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      ))}
-
-      {data?.map((item) => (
-        <div
-          className=" w-[60%] h-full flex-col flex 
-					items-center justify-between shrink-0 relative "
-          key={item.id}
-        >
-          <div className="absolute w-full top-[50%] left-[110%]">
-            <div
-              className="w-full h-full 
-		   flex items-center justify-center flex-col"
-            >
-              <div className="flex flex-col items-center relative z-[99]">
-                <h1
-                  className="text-[#2E2E2E]/10 text-[200px]
-							 mdd:text-[120px] tracking-tighter 
-							  td:text-[60px] lg:text-[80px] 
-							 mht:text-[60px] md:text-[70px] 
-							 sm:text-[40px] xm:text-[40px] 
-							 font-extrabold leading-tight"
-                >
-                  {item.skillNo2}
-                </h1>
-                <h1
-                  className="drop-shadow-md lg:text-[30px] tracking-tighter
-                  font-IBMPlex font-extrabold uppercase text-btn_clr leading-tight"
-                >
-                  Requirenment
-                </h1>
-              </div>
-              {item.images.slice(1, 2).map((img, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                  className="w-[150px] h-[150px]  rounded-full 
-								border-4 border-[#bbb0d2] flex items-center
-								 justify-center bg-white z-50"
-                >
-                  <Image
-                    className="lg:w-[100px] td:h-[80px]
-									 lg:h-[100px] mht:h-[80px] md:w-[100px] md:h-[100px] "
-                    src={img}
-                    alt="Image"
-                    width={200}
-                    height={200}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      ))}
-
-
-{data?.map((item) => (
-        <div
-          className="w-full  h-full flex-col flex 
-					 justify-between shrink-0 relative "
-          key={item.id}
-        >
-          <div className="absolute top-[15%] right-[-55%]">
-            <div
-              className="w-full h-full 
-		   flex items-center justify-center flex-col"
-            >
-              <div className="flex flex-col items-center relative z-[99]">
-                <h1
-                  className="text-[#2E2E2E]/10 text-[200px]
-							 mdd:text-[120px] tracking-tighter 
-							  td:text-[60px] lg:text-[80px] 
-							 mht:text-[60px] md:text-[70px] 
-							 sm:text-[40px] xm:text-[40px] 
-							 font-extrabold leading-tight"
-                >
-                  {item.skillNo5}
-                </h1>
-                <h1
-                  className="drop-shadow-md lg:text-[30px] tracking-tighter
-                  font-IBMPlex font-extrabold uppercase text-btn_clr leading-tight"
-                >
-                  Requirenment
-                </h1>
-              </div>
-              {item.images.slice(1, 2).map((img, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                  className="w-[150px] h-[150px]  rounded-full 
-								border-4 border-[#bbb0d2] flex items-center
-								 justify-center bg-white z-50"
-                >
-                  <Image
-                    className="lg:w-[100px] td:h-[80px]
-									 lg:h-[100px] mht:h-[80px] md:w-[100px] md:h-[100px] "
-                    src={img}
-                    alt="Image"
-                    width={200}
-                    height={200}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      ))}
-
-    </>
+    </div>
   );
 }

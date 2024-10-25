@@ -23,7 +23,8 @@ const TextBannarSection: React.FC = () => {
   ];
 
   return (
-    <section className="w-full sm:mt-[5rem] md:mt-[10rem] lg:mt-[10rem] sm:text-[3rem] md:text-[5rem] lg:text-[5rem] overflow-hidden relative
+    <section className="w-full sm:mt-[2rem] md:mt-[10rem]
+     lg:mt-[35rem] sm:text-[3rem] md:text-[5rem] lg:text-[5rem] overflow-hidden relative
     font-montreal">
       <Marquee baseVelocity={0.5}>
         <h1 className="text-[#ffffff] uppercase font-semibold flex items-center justify-center w-full h-[10rem] z-10">

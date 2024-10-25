@@ -8,6 +8,7 @@ import SvgIcon from "../../public/SVG/MEGH.svg";
 import Image from "next/image";
 import TextHoverSingle from "@/animation/TextHoverSingle";
 import Link from "next/link";
+import SvgContainer from "../svg-section/svg-container";
 
 const texts: string[] = [
   "Best For E-commerce",
@@ -122,7 +123,7 @@ const AnimatedText: React.FC = () => {
       >
         <div
           className="w-full flex justify-center
-       md:ml-[-1rem]  lg:ml-[-5rem] text-[25px]  md:text-[50px] lg:text-[55px]
+       md:ml-[-1rem]  lg:ml-[-3rem] text-[25px]  md:text-[50px] lg:text-[55px]
              font-[700]"
         >
           <div>
@@ -166,7 +167,7 @@ const AnimatedText: React.FC = () => {
                 <div key={item.id} className="flex items-center text-gray-700">
                   <Link className="w-fit hover" href={item.href}>
                     <TextHoverSingle
-                     classname="text-gray-700"
+                      classname="text-gray-700"
                       subTitle1=""
                       subTitle2=""
                       title1={item.title}
@@ -182,20 +183,8 @@ const AnimatedText: React.FC = () => {
             </div>
           </div>
         </div>
-
-        {/* Uncomment if you want to display the SVG icon */}
-        {/* <div className="w-full mx-auto">
-        <div className="flex justify-center mt-[12rem] px-3 py-3">
-          <Image
-            priority
-            src={SvgIcon}
-            height={702}
-            width={702}
-            alt="Follow us on Twitter"
-          />
-        </div>
-      </div> */}
       </div>
+      <SvgContainer></SvgContainer>
     </div>
   );
 };

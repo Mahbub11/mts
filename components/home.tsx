@@ -13,6 +13,7 @@ import TransactionWrapper from "./Transaction-wrapper";
 import Curve from "./Curve/Curve";
 import HorizontalScrollCarousel from "./h-scroll/horizontal-slider";
 import { AnimatePresence } from "framer-motion";
+import SvgContainer from "@/container/home-page/svg-section/svg-container";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
           <AnimatedText></AnimatedText>
         </TransactionWrapper>
 
-        <SvgComponent></SvgComponent>
+      {/* <SvgContainer></SvgContainer> */}
         <TextBannarSection></TextBannarSection>
 
         <TransactionWrapper>
