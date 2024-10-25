@@ -19,6 +19,7 @@ const config: Config = {
         secondry: "#212121",
         marquee: "#004d43",
         about: "#cdea68",
+        purple: "#DB5095",
         background: "var(--background)",
         foreground: "var(--foreground)",
         customLight: "rgba(138, 235, 255, 0.93)", // Light gradient color

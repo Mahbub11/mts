@@ -17,7 +17,7 @@ export default function CaseBreakDown() {
             >
               <h2
                 className="ml-[-1rem] font-bold
-                    text-[20px] font-gvf "
+                    text-[20px] font-gvf uppercase text-btn_clr"
               >
                 Services
               </h2>
@@ -35,7 +35,7 @@ export default function CaseBreakDown() {
 
           <div
             className="w-[3px] h-auto 
-            rounded-lg bg-customDark"
+            rounded-lg bg-btn_clr"
           />
 
           <div>
@@ -45,7 +45,7 @@ export default function CaseBreakDown() {
             >
               <h2
                 className="ml-[-1rem] font-bold
-                    text-[20px] font-gvf "
+                    text-[20px] font-gvf uppercase text-btn_clr"
               >
                 Product type
               </h2>
@@ -60,7 +60,7 @@ export default function CaseBreakDown() {
 
           <div
             className="w-[3px] h-auto 
-            rounded-lg bg-customDark"
+            rounded-lg bg-btn_clr"
           />
 
           <div>
@@ -70,7 +70,7 @@ export default function CaseBreakDown() {
             >
               <h2
                 className="ml-[-1rem] font-bold
-                    text-[20px] font-gvf "
+                    text-[20px] font-gvf uppercase text-btn_clr"
               >
                 Expertise
               </h2>
@@ -88,7 +88,7 @@ export default function CaseBreakDown() {
 
           <div
             className="w-[3px] h-auto 
-            rounded-lg bg-customDark"
+            rounded-lg bg-btn_clr"
           />
 
           <div>
@@ -98,7 +98,7 @@ export default function CaseBreakDown() {
             >
               <h2
                 className="ml-[-1rem] font-bold
-                    text-[20px] font-gvf "
+                    text-[20px] font-gvf uppercase text-btn_clr"
               >
                 Industry
               </h2>
@@ -114,7 +114,7 @@ export default function CaseBreakDown() {
 
           <div
             className="w-[3px] h-auto 
-            rounded-lg bg-customDark"
+            rounded-lg bg-btn_clr"
           />
 
           <div>
@@ -124,7 +124,7 @@ export default function CaseBreakDown() {
             >
               <h2
                 className="ml-[-1rem] font-bold
-                    text-[20px] font-gvf "
+                    text-[20px] font-gvf uppercase text-btn_clr"
               >
                 Year
               </h2>

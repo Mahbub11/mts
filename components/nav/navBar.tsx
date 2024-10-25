@@ -3,6 +3,7 @@ import { navVarients } from "@/motion";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
+import MtIcon from "@/public/SVG/mt-svg";
 
 const navItems = [
   { title: "Case Studies" },
@@ -62,7 +63,12 @@ export default function Navbar() {
         className="flex justify-between items-center mx-auto h-full 
       text-gray-800 font-[800]"
       >
-        <h3 className="text-[25px] font-[800]">mT</h3>
+        <span className="sm:hidden">
+         <MtIcon height='3rem' width='3rem'></MtIcon>
+        </span>
+        <span className="hidden sm:block">
+         <MtIcon height='2rem' width='2rem'></MtIcon>
+        </span>
 
         <motion.div
           className=" flex items-center space-x-3 font-NeueMontreal text-[17px]

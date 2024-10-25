@@ -2,6 +2,7 @@
 import Curve from "@/components/Curve/Curve";
 import HeroCaseStudies from "@/container/case-studies-page/Hero";
 import Projectspresentation from "@/container/case-studies-page/Projects";
+import Ready from "@/container/home-page/ready/Ready";
 import Lenis from "lenis";
 import { useEffect, useState } from "react";
 
@@ -37,7 +38,7 @@ export default function CaseStudies() {
     <>
       {/* <Curve > */}
 
-      <div className="h-autow-full">
+      <div className="h-auto w-full">
         <HeroCaseStudies></HeroCaseStudies>
         <Projectspresentation></Projectspresentation>
       </div>

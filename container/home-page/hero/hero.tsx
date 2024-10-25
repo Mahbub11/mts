@@ -34,7 +34,7 @@ const variants = {
 const navItems = [
   { title: "Case Studies", href: "/case-studies", id: 1 },
   { title: "Services", href: "/services", id: 2 },
-  { title: "Contact Us", href: "/contact", id: 3 },
+  { title: "Contact Us", href: "/contact-us", id: 3 },
 ];
 
 const AnimatedText: React.FC = () => {
@@ -136,7 +136,7 @@ const AnimatedText: React.FC = () => {
               </h2>
               <AnimatePresence>
                 <motion.span
-                  className=" text-[#00B4D8] md:ml-2 w-fit
+                  className=" text-btn_clr md:ml-2 w-fit
                  text-[26px] md:text-[50px]  lg:text-[55px]
               sm:tracking-tighter"
                   style={{ position: "absolute" }}

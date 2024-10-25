@@ -16,87 +16,133 @@ export default function ServiceHeroSection() {
           From websites to web apps and beyond...
         </h2>
 
-        <div className="mt-2 text-gray-700 font-montreal">
+        <div className="mt-2 text-white font-montreal">
           <table className="table-fixed w-full border border-gray-200">
-            <thead>
-              <tr className="text-[30px] border-b-1 border-gray-300">
-                <th className="px-12 py-4 border-r border-gray-300">MVPs</th>
-                <th className="px-12 py-4 border-r border-gray-300">
+            <thead className="bg-[#48CAE4]">
+              <tr className="sm:text-[15px] text-[30px] ">
+                <th className="px-12 py-4 sm:px-0">MVPs</th>
+                <th className="px-12 py-4  sm:px-0 ">
                   Web Apps
                 </th>
-                <th className="px-12 py-4 border-r border-gray-300">
+                <th className="px-12 py-4  sm:p-0 ">
                   Web Sites
                 </th>
-                <th className="px-12 py-4">E-commerce</th>
+                <th className="px-12 py-4 sm:p-0">E-commerce</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody >
               <tr className="border-b border-gray-200">
-                <td className="border-t border-gray-200 px-12 py-2">
+                <td className=" border-gray-200 px-12 py-2">
                   <div className=" w-full mx-auto flex justify-center">
                     <span>
                       <IconAngularjsLine
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconAngularjsLine>
                     </span>
                   </div>
                 </td>
-                <td className="border-t border-gray-200 px-12 py-2">
+                <td className=" border-gray-200 px-12 py-2">
                   <div className=" w-full mx-auto flex justify-center">
                     <span>
                       <IconFigma
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconFigma>
                     </span>
                   </div>
                 </td>
-                <td className="border-t border-gray-200 px-12 py-2">
+                <td className=" border-gray-200 px-12 py-2">
                   <div className=" w-full mx-auto flex justify-center">
                     <span>
                       <IconHtml5
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconHtml5>
                     </span>
                   </div>
                 </td>
 
-                <td className="border-t border-gray-200 px-12 py-2">
+                <td className=" border-gray-200 px-12 py-2">
                   <div className=" w-full mx-auto flex justify-center">
                     <span>
                       <IconWordpressSimple
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconWordpressSimple>
                     </span>
                   </div>
                 </td>
               </tr>
               <tr className="border-b border-gray-200">
-                <td className="border-t border-gray-200 px-12 py-2">
+                <td className=" border-gray-200 px-12 py-2">
                   <div className=" w-full mx-auto flex justify-center">
                     <span>
                       <IconReact
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconReact>
                     </span>
                   </div>
                 </td>
+                <td className=" border-gray-200 px-12 py-2">
+                  <div className=" w-full mx-auto flex justify-center">
+                    <span>
+                      <IconReact
+                        height="3rem"
+                        width="3rem"
+                        fill="#005B96"
+                      ></IconReact>
+                    </span>
+                  </div>
+                </td>
+                <td className=" border-gray-200 px-12 py-2">
+                <div className=" w-full mx-auto flex justify-center">
+                    <span>
+                      <IconReact
+                        height="3rem"
+                        width="3rem"
+                        fill="#005B96"
+                      ></IconReact>
+                    </span>
+                  </div>
+                </td>
+                <td className=" border-gray-200 px-12 py-2">
+                  <div className=" w-full mx-auto flex justify-center">
+                    <span>
+                      <IconReact
+                        height="3rem"
+                        width="3rem"
+                        fill="#005B96"
+                      ></IconReact>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr className=" border-gray-200">
                 <td className="border-t border-gray-200 px-12 py-2">
                   <div className=" w-full mx-auto flex justify-center">
                     <span>
                       <IconReact
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
+                      ></IconReact>
+                    </span>
+                  </div>
+                </td>
+                <td className=" border-gray-200 px-12 py-2">
+                  <div className=" w-full mx-auto flex justify-center">
+                    <span>
+                      <IconReact
+                        height="3rem"
+                        width="3rem"
+                        fill="#005B96"
                       ></IconReact>
                     </span>
                   </div>
@@ -107,7 +153,7 @@ export default function ServiceHeroSection() {
                       <IconReact
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconReact>
                     </span>
                   </div>
@@ -118,7 +164,7 @@ export default function ServiceHeroSection() {
                       <IconReact
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconReact>
                     </span>
                   </div>
@@ -131,7 +177,7 @@ export default function ServiceHeroSection() {
                       <IconReact
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconReact>
                     </span>
                   </div>
@@ -142,7 +188,7 @@ export default function ServiceHeroSection() {
                       <IconReact
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconReact>
                     </span>
                   </div>
@@ -153,7 +199,7 @@ export default function ServiceHeroSection() {
                       <IconReact
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconReact>
                     </span>
                   </div>
@@ -164,53 +210,7 @@ export default function ServiceHeroSection() {
                       <IconReact
                         height="3rem"
                         width="3rem"
-                        fill="#00B4D8"
-                      ></IconReact>
-                    </span>
-                  </div>
-                </td>
-              </tr>
-              <tr className="border-b border-gray-200">
-                <td className="border-t border-gray-200 px-12 py-2">
-                  <div className=" w-full mx-auto flex justify-center">
-                    <span>
-                      <IconReact
-                        height="3rem"
-                        width="3rem"
-                        fill="#00B4D8"
-                      ></IconReact>
-                    </span>
-                  </div>
-                </td>
-                <td className="border-t border-gray-200 px-12 py-2">
-                  <div className=" w-full mx-auto flex justify-center">
-                    <span>
-                      <IconReact
-                        height="3rem"
-                        width="3rem"
-                        fill="#00B4D8"
-                      ></IconReact>
-                    </span>
-                  </div>
-                </td>
-                <td className="border-t border-gray-200 px-12 py-2">
-                <div className=" w-full mx-auto flex justify-center">
-                    <span>
-                      <IconReact
-                        height="3rem"
-                        width="3rem"
-                        fill="#00B4D8"
-                      ></IconReact>
-                    </span>
-                  </div>
-                </td>
-                <td className="border-t border-gray-200 px-12 py-2">
-                  <div className=" w-full mx-auto flex justify-center">
-                    <span>
-                      <IconReact
-                        height="3rem"
-                        width="3rem"
-                        fill="#00B4D8"
+                        fill="#005B96"
                       ></IconReact>
                     </span>
                   </div>

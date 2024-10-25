@@ -113,8 +113,7 @@ export default function HorizontalScrollCarousel() {
         <div className="sm:px-3 px-10 md:mt-[10rem]">
           <h1
             className="text-btn_clr uppercase leading-none font-gvf
-                sm:text-[3rem] md:text-[6rem] lg:text-[6rem]
-                  font-bold overflow-hidden -z-10 text-start"
+            sm:text-[3rem] md:text-[6rem] lg:text-[6rem]  font-bold overflow-hidden -z-10 text-start"
           >
             {"process".split("").map((item: string, i: number) => (
               <motion.span
@@ -174,7 +173,7 @@ export default function HorizontalScrollCarousel() {
                   transform="translate(1.652 -2912.571)"
                   fill="none"
                   stroke="#bbb0d2"
-                  stroke-width="5"
+                  stroke-width="8"
                 />
               </svg>
             </motion.div>

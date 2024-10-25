@@ -16,7 +16,7 @@ export default function ServiceProcess() {
       <div className="w-full padding-x mb-[40px]">
         <h1
           className="sub-heading font-bold 
-                font-NeueMontreal text-gray-700 text-[40px]"
+                font-NeueMontreal text-btn_clr text-[40px] uppercase"
         >
           Holistic process
         </h1>

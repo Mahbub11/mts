@@ -42,7 +42,9 @@ export default function ProjectCard({ item }: { item: any }) {
               duration: 0.5,
               ease: [0.4, 0, 0.2, 1],
             }}
-            className="sm:text-[50px] md:text-[90px] lg:text-[120px] leading-none inline-block uppercase text-customDark font-bold text-center pointer-events-none"
+            className="sm:text-[45px] md:text-[90px] 
+            lg:text-[120px] leading-none inline-block
+             uppercase text-customDark font-bold text-center pointer-events-none"
             key={i}
           >
             {char}

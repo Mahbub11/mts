@@ -41,7 +41,7 @@ interface Props {
 }
 
 const Container: React.FC<Props> = ({ scrollProgress }) => {
-  const y = useTransform(scrollProgress, [0, 1], [-400, 0]);
+  const y = useTransform(scrollProgress, [0, 1], [-300, 0]);
 
   return (
     <div className="h-full  overflow-hidden">

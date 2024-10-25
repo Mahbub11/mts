@@ -29,16 +29,19 @@ const DiscoveryCaseStudy = () => {
               </p>
             </div>
             <div className="flex flex-col gap-[10px] sm:mt-5">
-              <div className="w-fit rounded-[50px] border border-[#212121] cursor-pointer">
-                <div className="small-text font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-300 ease-in-out hover:text-white">
-                  <Rounded className="py-[3px]" backgroundColor="#000">
+              <div className="w-fit rounded-[50px] border border-[#212121] hover:border-btn_clr cursor-pointer">
+                <div className="small-text font-NeueMontreal text-secondry 
+                uppercase group-hover:text-btn_clr transition-all duration-300 ease-in-out hover:text-white">
+                  <Rounded className="py-[3px]" backgroundColor="#00B4D8">
                     <p className="z-10 px-[15px]">Business Objectives</p>
                   </Rounded>
                 </div>
               </div>
-              <div className="w-fit rounded-[50px] border border-[#212121] cursor-pointer">
-                <div className="small-text font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-300 ease-in-out hover:text-white">
-                  <Rounded className="py-[3px]" backgroundColor="#000">
+              <div className="w-fit rounded-[50px] border border-[#212121] hover:border-btn_clr  cursor-pointer">
+                <div className="small-text font-NeueMontreal text-secondry 
+                uppercase group-hover:text-btn_clr 
+                transition-all duration-300 ease-in-out hover:text-white">
+                  <Rounded className="py-[3px]" backgroundColor="#00B4D8">
                     <p className="z-10 px-[15px]">Platform Evaluation</p>
                   </Rounded>
                 </div>
@@ -68,22 +71,22 @@ const DiscoveryCaseStudy = () => {
               </p>
             </div>
             <div className="flex flex-col gap-[10px] sm:mt-5">
-              <div className="w-fit rounded-[50px] border border-[#212121] cursor-pointer">
+              <div className="w-fit rounded-[50px] border border-[#212121] hover:border-btn_clr cursor-pointer">
                 <Link
                   className="small-text font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-300 ease-in-out hover:text-white"
                   href="/services/"
                 >
-                  <Rounded className="py-[3px]" backgroundColor="#000">
+                  <Rounded className="py-[3px]" backgroundColor="#00B4D8">
                     <p className="z-10 px-[15px]">onboarding </p>
                   </Rounded>
                 </Link>
               </div>
-              <div className="w-fit rounded-[50px] border border-[#212121] cursor-pointer">
+              <div className="w-fit rounded-[50px] border border-[#212121] hover:border-btn_clr cursor-pointer">
                 <Link
                   className="small-text font-NeueMontreal text-secondry uppercase group-hover:text-background transition-all duration-300 ease-in-out hover:text-white"
                   href="/services/"
                 >
-                  <Rounded className="py-[3px]" backgroundColor="#000">
+                  <Rounded className="py-[3px]" backgroundColor="#00B4D8">
                     <p className="z-10 px-[15px]">policy deck </p>
                   </Rounded>
                 </Link>

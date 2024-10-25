@@ -17,7 +17,7 @@ export default function Expectations() {
         <div className="w-full padding-x mb-[40px]">
           <h1
             className="sub-heading font-bold 
-                font-NeueMontreal text-gray-700 lg:text-[40px]"
+                font-NeueMontreal text-btn_clr uppercase text-[40px]"
           >
             Expectations
           </h1>
@@ -31,7 +31,7 @@ export default function Expectations() {
                   className="w-[345px] flex justify-between gap-x-[20px] sm:flex-col xm:flex-col gap-[20px]"
                   key={item.id}
                 >
-                  <div className="bg-[#a2e2f3] w-full flex flex-col rounded-[20px] px-[30px] py-[20px]">
+                  <div className="bg-purple w-full flex flex-col rounded-[20px] px-[30px] py-[20px]">
                     <div className="flex gap-x-[10px] items-center pb-[10px] mb-[100px] ">
                       <h1 className="sub-heading font-normal font-NeueMontreal text-white">
                         {item.title1}
@@ -73,7 +73,7 @@ export default function Expectations() {
                             duration: 1,
                           }}
                         >
-                          <div className="border-t border-[#f1f1f155] pt-[20px] text-background mt-[10px]">
+                          <div className="border-t border-[#f1f1f155] pt-[20px] text-white mt-[10px]">
                             {item.para1}
                           </div>
                         </motion.div>

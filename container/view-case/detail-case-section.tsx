@@ -23,18 +23,18 @@ const DetailCaseStudy: React.FC = () => {
     <div className=" mx-4 my-8">
       <div className="flex-col  justify-center items-center ">
         <div>
-          <h2 className="text-4xl font-bold mb-4 text-gray-700">Discovery</h2>
+          <h2 className="text-4xl font-bold mb-4 uppercase text-btn_clr">Discovery</h2>
           <DiscoveryCaseStudy />
         </div>
 
         <div className="mt-[8rem]">
-          <h2 className="text-4xl font-bold mb-4 text-gray-700 ">Design</h2>
+          <h2 className="text-4xl font-bold mb-4 uppercase text-btn_clr ">Design</h2>
           <DesignCaseStudy></DesignCaseStudy>
         </div>
 
 
         <div className="mt-[8rem]">
-          <h2 className="text-4xl font-bold mb-4 text-gray-700">Development</h2>
+          <h2 className="text-4xl font-bold mb-4 uppercase text-btn_clr">Development</h2>
           <DevelopmentCaseStudy />
         </div>
       </div>

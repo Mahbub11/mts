@@ -32,7 +32,7 @@ export default function ClientsReviewExpectations() {
      <div className="w-full padding-x mb-[40px]">
           <h1
             className="sub-heading font-bold 
-                font-NeueMontreal text-gray-700 lg:text-[40px]"
+                font-NeueMontreal text-btn_clr uppercase text-[40px]"
           >
             What Client's Say
           </h1>

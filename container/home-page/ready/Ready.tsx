@@ -17,7 +17,7 @@ export default function Ready() {
       className="sm:w-full sm:px-10
        w-[80%] mx-auto relative z-30 min-h-screen mt-[10rem] 
       sm:h-screen xm:h-screen sm:rounded-none
-      sm:drop-shadow-none rounded-md bg-[#DB5095] drop-shadow-md"
+      sm:drop-shadow-none rounded-md bg-[#DB5095] drop-shadow-md py-10"
       ref={container}
     >
       <div
@@ -25,7 +25,7 @@ export default function Ready() {
        gap-[50px] items-center flex-col "
       >
         <motion.div
-          className="flex flex-col gap-[10px] mt-[3rem] text-center
+          className="flex flex-col gap-[10px] mt-[1rem] text-center
            text-gray-700"
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }} // Animate based on visibility
@@ -35,7 +35,7 @@ export default function Ready() {
             <motion.h1
             key={index}
             className="sm:text-[70px] sm:leading-[60px]
-              md:text-[120px] md:leading-[100px] lg:text-[150px]
+              md:text-[120px] md:leading-[100px] lg:text-[140px]
               lg:leading-[140px] 
               xm:text-[80px] 
               xm:leading-[60px] tracking-[2.5px] font-bold font-fg

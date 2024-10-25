@@ -22,7 +22,7 @@ export default function Process() {
     <section className="w-full mt-[5rem] sm:px-2 md:px-10 lg:px-10 font-gvf">
       <div className="">
         <h1
-          className="text-customDark uppercase leading-none font-gvf
+          className="text-btn_clr uppercase leading-none font-gvf
                 sm:text-[3rem] md:text-[6rem] lg:text-[6rem]  font-bold overflow-hidden -z-10 text-start"
         >
           {"process".split("").map((item: string, i: number) => (

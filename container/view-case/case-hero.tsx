@@ -7,9 +7,10 @@ export default function HeroCaseStudy() {
     <section
       className="w-full 
       bg-gradient-to-b from-[#9bd6eb] to-[#ffffff]
-       sticky top-0 py-10"
+       sticky top-0 py-5"
     >
-      <div className="flex justify-center sm:pt-[70px] pt-[130px] pb-[20px] sm:px-5 md:px-10">
+      <div className="flex justify-center sm:pt-[90px]
+       pt-[130px] pb-[20px] sm:px-5 md:px-10">
         <div
           className="sm:flex-col sm:space-y-10
          items-center flex justify-center md:space-x-[3rem] lg:space-x-[5rem]"
@@ -48,7 +49,7 @@ export default function HeroCaseStudy() {
           </div>
 
           <div className="relative sm:self-center sm:w-full sm:mx-auto ">
-            <div className="sm:h-[10rem] sm:w-[20rem] h-[30rem] w-[30rem] rounded-md">
+            <div className="sm:h-auto sm:w-auto h-[30rem] w-[30rem] rounded-md">
               <Image
                 className="object-cover rounded-md"
                 src={project1}

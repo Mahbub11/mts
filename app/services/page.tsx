@@ -1,46 +1,54 @@
+
+
+
 "use client";
+import Curve from "@/components/Curve/Curve";
+import HeroCaseStudies from "@/container/case-studies-page/Hero";
+import Projectspresentation from "@/container/case-studies-page/Projects";
+import Ready from "@/container/home-page/ready/Ready";
+import HeroServices from "@/container/service-page/hero-services";
+import ServiceSectionContainer from "@/container/service-page/service-section-container";
+import Lenis from "lenis";
+import { useEffect, useState } from "react";
 
-import Clients from "@/container/home-page/review/Clients";
-import Expectations from "@/container/service-page/Expectations";
-import ClientsReviewExpectations from "@/container/service-page/clients-review";
-import ServiceHeroSection from "@/container/service-page/service-hero";
-import ServiceProcess from "@/container/service-page/service-process";
+export default function CaseStudies() {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
 
-export default function APP() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+      document.body.style.cursor = "default";
+    }, 1000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
-      <div
-        className=" w-full 
-      bg-white"
-      >
-        <div
-          className="py-[10rem] w-[80%] mx-auto  h-full
-         pt-[10rem]"
-        >
-          <div>
-            <h2
-              className="w-full  pt-[20px] text-[60px] text-gray-700
-          font-gvf font-bold"
-            >
-              SERVICES
-            </h2>
-            <hr className="h-[5px] px-10 w-full"></hr>
-          </div>
+      {/* <Curve > */}
 
-          <ServiceHeroSection></ServiceHeroSection>
-          <div className="mt-[10rem]">
-            <ServiceProcess></ServiceProcess>
-          </div>
-
-          <div className="mt-[10rem]">
-            <Expectations></Expectations>
-          </div>
-
-          <div className="mt-[10rem]">
-           <ClientsReviewExpectations></ClientsReviewExpectations>
-          </div>
-        </div>
+      <div className="h-auto w-full">
+      <HeroServices></HeroServices>
+        <ServiceSectionContainer></ServiceSectionContainer>
       </div>
+
+      {/* </Curve> */}
     </>
   );
 }

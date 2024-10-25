@@ -17,16 +17,13 @@ export default function Project() {
 
   
 
-  // New opacity transformation
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0]);
-
   return (
     <div className="w-full mt-[15rem] sm:px-2 md:px-10 lg:px-10 font-gvf">
       <div className="w-full flex justify-start">
         <motion.h1
           className="text-btn_clr uppercase leading-none font-gvf
           sm:text-[3rem] md:text-[6rem] lg:text-[6rem]  font-bold overflow-hidden -z-10 text-start"
-          style={{ opacity }} // Apply opacity transformation
+         
         >
           {"Featured".split("").map((item: string, i: number) => (
             <motion.span
@@ -38,7 +35,7 @@ export default function Project() {
                 duration: 0.5,
                 ease: [0.4, 0, 0.2, 1],
               }}
-              className="inline-block"
+              className="inline-block text-btn_clr"
               key={i}
             >
               {item}
