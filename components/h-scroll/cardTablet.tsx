@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { TpageSkillsProps } from "@/types";
 import { useEffect, useState } from "react";
+import { process1, process2, process3, process4, process5 } from "@/public";
 
 export default function CardTablet() {
   const [data, setData] = useState<TpageSkillsProps[]>([
@@ -14,17 +15,18 @@ export default function CardTablet() {
       skillNo3: "03",
       skillNo4: "04",
       skillNo5: "05",
+      skillNo6: "06",
       heading1: "Fusion 360",
       heading2: "After Effect",
       heading3: "Illustrator",
       heading4: "Phtoshop",
       heading5: "Indesign",
       images: [
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/iaoj4urwnwinlye4j88s.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/ujylzfjmldhca2jhjkot.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/n80tcp6tagcoh5te0w0z.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/b9ydkrpnoeh3ny04xbiu.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/dvvs2ip97jt2xxxmmi1c.svg",
+        process1,
+       process2,
+        process3,
+        process4,
+        process5,
       ],
     },
   ]);
