@@ -28,7 +28,7 @@ export default function HeroCaseStudy() {
                 className="text-[40px]  sm:text-[25px] font-bold leading-tight tracking-tighter
                 font-gvf text-gray-600  mt-2"
               >
-                Design & development of a platform for the elder care startup
+                Design & development of a platform for AI based English Learning startup
                 <br />
               </h2>
             </div>
@@ -38,7 +38,7 @@ export default function HeroCaseStudy() {
                bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                  href="/presentation"
+                  href="https://www.practicecompanions.com/"
                   title="SHOW LIVE"
                   bgcolor="#00B4D8"
                   className="bg-white text-customDark"

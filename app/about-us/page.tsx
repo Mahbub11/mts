@@ -39,7 +39,7 @@ export default function AboutUs() {
 
   return (
     <>
-      {/* <Curve > */}
+      <Curve >
 
       <div className="h-auto w-full">
         <HeroAboutUS></HeroAboutUS>
@@ -50,7 +50,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* </Curve> */}
+      </Curve>
     </>
   );
 }

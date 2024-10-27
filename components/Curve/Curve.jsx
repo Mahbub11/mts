@@ -8,10 +8,9 @@ import "./style.scss"; // Ensure the SCSS file is imported
 const routes = {
   "/": "Home",
   "/services": "Services",
-  "/presentation": "Our Work",
-  "/ochi-team": "About Us",
-  "/insights": "Insights",
-  "/contact": "Contact Us",
+  "/case-studies": "Case Studies",
+  "/about-us": "About Us",
+  "/contact-us": "Contact US",
   "/case": "Workiz Easy",
 };
 

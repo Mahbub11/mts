@@ -242,11 +242,11 @@ export const projectItem = [
     {
        id: 1,
        website: "Practicemania",
-       href: "https://www.ochi.design",
+       href: "prcticecompanions.com",
        title: "Services:",
        name: "William Barnes",
        src: client01,
-       review: "They were transparent about the time and the stages of the project. The end product is high quality, and I feel confident about how they were handholding the client through the process. I feel like I can introduce them to someone who needs to put a sales deck together from scratch, and they would be able to handhold the client experience from 0 to 100 very effectively from story to design. 5/5",
+       review: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
        links: [
           {
              id: 1,
@@ -258,11 +258,11 @@ export const projectItem = [
     {
        id: 2,
        website: "Urbanun",
-       href: "https://www.planetly.com",
+       href: "",
        title: "Services:",
        name: "Nina Walloch",
        src: client02,
-       review: "Ihor and his team tackled the projects with great professionalism and creativity. They understood our brand value and turned this into excellent slide designs. The process was seamless and very effective, so we decided to roll this out across all our presentation decks. Furthermore, their understanding, professionalism, and creativity have secured a continued partnership.",
+       review: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
        links: [
           {
              id: 1,
@@ -275,11 +275,11 @@ export const projectItem = [
     {
        id: 3,
        website: "UbShop",
-       href: "https://www.workiz.com",
+       href: "",
        title: "Services:",
        name: "Tormer levy",
        src: client03,
-       review: "OCHI brought a certain level of professionalism into our presentations that we were lacking before. When I showed our management and HR teams the presentations OCHI developed, they were amazed — the final product was exactly what we needed to create a better experience for new employees and our clients.",
+       review: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
        links: [
           {
              id: 1,
@@ -292,11 +292,11 @@ export const projectItem = [
     {
        id: 4,
        website: "UbSocial",
-       href: "https://www.premium-blend.com",
+       href: "",
        title: "Services:",
        name: "Elien Kim",
        src: client04,
-       review: "They are truly changing the landscape of presentations!! Fast, effective, and nice humans that listened to every detail of our needs. Creating a deck with their template brings so much joy and ease. We proudly showcase their design in our calls and presentations.",
+       review: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
        links: [
           {
              id: 1,
@@ -309,11 +309,11 @@ export const projectItem = [
     {
        id: 5,
        website: "Hypercare Systems",
-       href: "https://www.hypercare-systems.com",
+       href: "",
        title: "Services:",
        name: "Brendon Goss",
        src: client05,
-       review: "The service received from OCHI was absolutely first-class. Their close attention to detail, and deep thought in terms of narrative, flow, and aesthetics, completely exceeded my expectations, which were very high from the outset. Especially loved and appreciated the creation of visuals, animation, and advice around the look and feel that we are after. We will definitely continue working with Ihor and his team. I cannot recommend them highly enough.",
+       review: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
        links: [
           {
              id: 1,
@@ -330,7 +330,7 @@ export const projectItem = [
     {
        id: 6,
        website: "Officevibe",
-       href: "https://www.officevibe.com",
+       href: "",
        title: "Services:",
        name: "Raff Labri",
        src: client06,
@@ -346,7 +346,7 @@ export const projectItem = [
     {
        id: 7,
        website: "Orderlion",
-       href: "https://www.orderlion.com",
+       href: "",
        title: "Services:",
        name: "Stefan Strohmer",
        src: client07,
@@ -382,7 +382,7 @@ export const projectItem = [
     {
        id: 8,
        website: "Black Book",
-       href: "https://www.blackbookapp.co",
+       href: "",
        title: "Services:",
        name: "Jacki Smith",
        src: client08,
@@ -403,7 +403,7 @@ export const projectItem = [
     {
        id: 9,
        website: "Trawa Energy",
-       href: "https://www.blackbookapp.co",
+       href: "",
        title: "Services:",
        name: "David Buddy",
        src: client09,
@@ -708,7 +708,7 @@ export const serviceProcessItems = [
    {
       id: 4,
       phase: "04. Phase",
-      name: "Feedback",
+      name: "Development",
       src: phase4,
       review: "We want to stay on the same page. Hence, each phase wraps up presenting the work to you to collect and implement your feedback if such appears.",
       button: "read"
@@ -716,7 +716,15 @@ export const serviceProcessItems = [
    {
       id: 5,
       phase: "05. Phase",
-      name: "Delivery",
+      name: "Quality Assurance",
+      src: phase5,
+      review: "We will carefully collect and prepare all the project files to ensure smooth future use.",
+      button: "read"
+   },
+   {
+      id: 6,
+      phase: "06. Phase",
+      name: "Deployment",
       src: phase5,
       review: "We will carefully collect and prepare all the project files to ensure smooth future use.",
       button: "read"
@@ -730,41 +738,41 @@ export const expectationsItems = [
       title1: "01",
       subTitle1: "Comunication",
       btn: "read",
-      para1: "The relationship with the clients is our top priority. We put extra effort into keeping mutual respect, honesty, and clarity in the conversation. For each client, we develop a project view site in Notion to track milestones and see the thinking behind steps. You always know what and when we do, as you feel confident in the results we bring.",
+      para1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
    },
    {
       id: 2,
       title1: "04",
       subTitle1: "One point of contact",
       btn: "read",
-      para1: "Every project is led by Ihor, the agency's founder and creative director. He ensures the whole project flows from start to finish. He puts together the right creative team for your specific project. You will always have this direct contact person available to speak your business language. He takes care of translating your business goals into the language of design for the team."
+      para1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
    },
    {
       id: 3,
       title1: "02",
       subTitle1: " Business",
       btn: "read",
-      para1: "We are a born business working mainly with international clients. And as Ukrainians, we offer an unshakable workforce that's proven it can handle anything. The international arena was our focus from the start. And each working day, we showed up as genuine innovators and Ukraine ambassadors. Part of our mission is to promote our homeland by doing the most incredible work we can, each project at a time.",
+      para1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
    },
    {
       id: 4,
       title1: "05",
       subTitle1: "Constantly Improving",
       btn: "read",
-      para1: "We are passionate about creating industry-shifting presentations. And as the world around us, we constantly evolve and improve. Our growth is fueled by an innovative ecosystem designed for each team member to grow. We provide them with frequent pieces for training both on design craft and personal development. We are constantly looking for new ways to support our creatives and our community as for our clients."
+      para1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
    },
    {
       id: 5,
       title1: "03",
       subTitle1: "Holistic Approach",
       btn: "read",
-      para1: "We simply ask lots of questions to understand your goals, business, and niche you operate. Our discovery process is essential as it informs our decisions throughout the project. Once we firmly define the goal, it is incredible to move towards that goal. That's why so much of our work is discovery, research, and asking good questions. The answers we get and the data we find go into the foundation of project success.",
+      para1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
    },
    {
       id: 6,
       title1: "06",
       subTitle1: "Limited Amount of Client",
       btn: "read",
-      para1: "We believe it is vital to dedicate sole focus and undivided attention to each project. To add as much value as possible, we serve a limited amount of clients per month. We have a rule that we follow to choosing projects: our client understands the value of the presentation as a communication tool. We believe in their products or ideas. Together, we work to create positive change."
+      para1: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
    },
 ];

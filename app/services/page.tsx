@@ -39,7 +39,7 @@ export default function CaseStudies() {
 
   return (
     <>
-      {/* <Curve > */}
+      <Curve >
 
       <div className="h-auto w-full">
         <HeroServices></HeroServices>
@@ -51,7 +51,7 @@ export default function CaseStudies() {
         </div>
       </div>
 
-      {/* </Curve> */}
+      </Curve>
     </>
   );
 }

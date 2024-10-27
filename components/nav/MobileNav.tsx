@@ -7,6 +7,7 @@ import { footernavbarItems } from "@/constants";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { AlignJustify, X } from "lucide-react";
+import MtIcon from "@/public/SVG/mt-svg";
 
 export default function MobileNav() {
   const [toggle, setToggle] = useState(false);
@@ -29,15 +30,19 @@ export default function MobileNav() {
           >
             <div className="w-full px-5 flex justify-between items-center h-[8vh] border-b border-[#f1f1f155] padding-x">
               <Link href={"/"}>
-                <h1 className="text-white">mT</h1>
+                <span className="hidden sm:block">
+                  <MtIcon height="2rem" width="2rem"></MtIcon>
+                </span>
               </Link>
               <X
                 onClick={() => setToggle(false)}
                 className="text-3xl cursor-pointer text-white"
               />
             </div>
-            <ul className="h-full w-full flex justify-center
-			 text-center flex-col gap-[10px] ">
+            <ul
+              className="h-full w-full flex justify-center
+			 text-center flex-col gap-[10px] "
+            >
               {footernavbarItems.map((item) => (
                 <Link
                   href={item.href}

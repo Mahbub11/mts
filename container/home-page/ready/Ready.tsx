@@ -56,7 +56,7 @@ export default function Ready() {
                bg-[#00B4D8] cursor-pointer rounded-full group "
             >
               <RoundButton
-                href="/presentation"
+                href="/case-studies"
                 title="view all case studies"
                 bgcolor="#01aacb"
                 className="bg-white text-customDark"
@@ -75,7 +75,7 @@ export default function Ready() {
             >
               <Rounded className="py-[6px]" backgroundColor="#00B4D8">
                 <p className="z-10 px-[10px] ml-[15px] py-[6px] group-hover:text-white text-white">
-                  hello@ochi.design
+                  hello@meghtech
                 </p>
                 <div
                   className="bg-white group-hover:bg-white text-black
