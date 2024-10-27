@@ -58,12 +58,12 @@ export default function Footer() {
                   />
                   <LinkHover
                     className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-                    title="30 Chukarina"
+                    title="30 Avy"
                     href="/"
                   />
                   <LinkHover
                     className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-                    title="St Lviv, Ukraine"
+                    title="St Lviv, USA"
                     href="/"
                   />
                 </div>
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col pt-[50px] ">
-            <div className="pt-[10px] flex sm:justify-center gap-x-[20px]">
+            <div className="pt-[10px] flex  gap-x-[20px]">
               <h1
                 className="paragraph 
                   font-medium font-NeueMontreal text-secondry"

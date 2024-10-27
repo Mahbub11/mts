@@ -1,5 +1,6 @@
 "use client";
 import Curve from "@/components/Curve/Curve";
+import TransactionWrapper from "@/components/Transaction-wrapper";
 import HeroCaseStudies from "@/container/case-studies-page/Hero";
 import Projectspresentation from "@/container/case-studies-page/Projects";
 import Ready from "@/container/home-page/ready/Ready";
@@ -36,14 +37,16 @@ export default function CaseStudies() {
 
   return (
     <>
-      {/* <Curve > */}
-
-      <div className="h-auto w-full">
-        <HeroCaseStudies></HeroCaseStudies>
-        <Projectspresentation></Projectspresentation>
-      </div>
-
-      {/* </Curve> */}
+      <Curve>
+        <div className="h-auto w-full">
+          <HeroCaseStudies></HeroCaseStudies>
+          <div className="mt-[-10rem] sm:mt-[-15rem]">
+            <TransactionWrapper>
+              <Projectspresentation></Projectspresentation>
+            </TransactionWrapper>
+          </div>
+        </div>
+      </Curve>
     </>
   );
 }

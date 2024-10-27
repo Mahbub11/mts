@@ -15,7 +15,7 @@ const HorizontalScrollCarouselMobile: React.FC = () => {
 
   const svgRef1 = useRef<SVGSVGElement | null>(null);
   const pathRef1 = useRef<SVGPathElement | null>(null);
-  const x = useTransform(scrollYProgress, [1, 0], ["0%", "-390%"]);
+  const x = useTransform(scrollYProgress, [1, 0], ["0%", "-290%"]);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -72,7 +72,7 @@ const HorizontalScrollCarouselMobile: React.FC = () => {
         <CardMobile></CardMobile>
         <svg
           ref={svgRef1}
-          className="h-[70rem] w-3 top-[15%] absolute -z-10 opacity-20"
+          className="h-[90rem] w-3 top-[12%] absolute -z-10 opacity-20"
           viewBox="0 0 1 388.697"
         >
           <path

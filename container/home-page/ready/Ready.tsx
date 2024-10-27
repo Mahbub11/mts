@@ -33,21 +33,20 @@ export default function Ready() {
         >
           {phrases.map((phrase, index) => (
             <motion.h1
-            key={index}
-            className="sm:text-[70px] sm:leading-[60px]
+              key={index}
+              className="sm:text-[70px] sm:leading-[60px]
               md:text-[120px] md:leading-[100px] lg:text-[140px]
               lg:leading-[140px] 
               xm:text-[80px] 
               xm:leading-[60px] tracking-[2.5px] font-bold font-fg
               text-white uppercase"
-            initial={{ y: 20, opacity: 0 }} // Start below with zero opacity
-            animate={inView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }} // Move to original position and increase opacity
-            exit={{ y: 20, opacity: 0 }} // Move down and fade out when exiting
-            transition={{ duration: 0.5, delay: index * 0.3 }} // Staggered animation with increased delay
-          >
-            {phrase}
-          </motion.h1>
-          
+              initial={{ y: 20, opacity: 0 }} // Start below with zero opacity
+              animate={inView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }} // Move to original position and increase opacity
+              exit={{ y: 20, opacity: 0 }} // Move down and fade out when exiting
+              transition={{ duration: 0.5, delay: index * 0.3 }} // Staggered animation with increased delay
+            >
+              {phrase}
+            </motion.h1>
           ))}
         </motion.div>
         <div className="flex flex-col items-center gap-[10px]">

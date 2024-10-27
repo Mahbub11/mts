@@ -82,3 +82,27 @@ export { default as phase2 } from './phase2.png';
 export { default as phase3 } from './phase3.png';
 export { default as phase4 } from './phase4.png';
 export { default as phase5 } from './phase5.png';
+
+//
+export { default as process1 } from './search.png';
+export { default as process2 } from './storytelling.png';
+export { default as process3 } from './design.png';
+export { default as process4 } from './development.png';
+export { default as process5 } from './sqa.png';
+export { default as process6 } from './deploy.png';
+export { default as aboutusbannar } from './about-us-bannar.jpg';
+
+
+//aboutUS
+export { default as abts1 } from './abts1.png';
+export { default as abts2 } from './abts2.png';
+export { default as abts3 } from './abts3.png';
+export { default as abts4 } from './abts4.png';
+export { default as abts5 } from './abts5.png';
+export { default as abts6 } from './abts6.png';
+export { default as abts7 } from './abts7.png';
+export { default as abts8 } from './abts8.png';
+
+export { default as caseBannar } from './case_study-bannar.jpg';
+export { default as servicesBannar } from './services.jpg';
+export { default as avaterContact } from './avater_contact.jpg';

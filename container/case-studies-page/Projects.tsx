@@ -16,14 +16,18 @@ export default function Projects() {
         <div
           data-scroll
           data-scroll-speed="-.2"
-          className="bg-[#96b9c623] sm:w-[90%]  w-[75%] py-[20px] rounded-t-[10px]	"
-        />
-        <div
-          className="bg-gradient-to-b from-[#eef7fa] to-[#ffffff] sm:w-full sm:rounded-none 
-          relative z-20 w-[90%] py-[20px] rounded-t-[10px]"
-          data-scroll
-          data-scroll-speed="-.1"
-        />
+          className="bg-gradient-to-b from-[#96b9c670] to-[#FFFF]
+           w-full py-[0px]	z-10 h-[8rem] "
+        >
+          <h2
+            className="px-5 py-5 text-center
+            text-[40px] sm:text-[30px] font-gvf font-[800]
+             text-gray-800 drop-shadow-sm
+            "
+          >
+         Transforming Ideas into  Solutions
+          </h2>
+        </div>
       </div>
       <section
         className="w-full relative z-30 

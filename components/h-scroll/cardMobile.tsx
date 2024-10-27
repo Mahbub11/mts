@@ -1,41 +1,49 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { process1, process2, process3, process4, process5, process6 } from "@/public";
 
 interface Skill {
   id: number;
   heading: string;
-  image: string;
+  image: StaticImageData;
 }
 
 export default function CardMobile() {
   const [data, setData] = useState<Skill[]>([
     {
       id: 1,
-      heading: "Fusion 360",
-      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/n80tcp6tagcoh5te0w0z.svg",
+      heading: "DISCOVERY",
+      image: process1,
+
     },
     {
       id: 2,
-      heading: "After Effect",
-      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/iaoj4urwnwinlye4j88s.svg",
+      heading: "STORYTELLING",
+      image: process2,
     },
     {
       id: 3,
-      heading: "Illustrator",
-      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/ujylzfjmldhca2jhjkot.svg",
+      heading: "DESIGN",
+      image: process3,
     },
     {
       id: 4,
-      heading: "Photoshop",
-      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/b9ydkrpnoeh3ny04xbiu.svg",
+      heading: "DEVELOPMENT",
+      image: process4,
     },
     {
       id: 5,
-      heading: "InDesign",
-      image: "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/dvvs2ip97jt2xxxmmi1c.svg",
+      heading: "SQA",
+      image: process5,
     },
+    {
+      id: 5,
+      heading: "DEPLOYMENT",
+      image: process6,
+    },
+   
   ]);
 
   return (
@@ -47,7 +55,7 @@ export default function CardMobile() {
             {`0${item.id}`}
           </h1>
           <h1 className=" text-[30px] z-10 tracking-tighter 
-           font-extrabold uppercase text-btn_clr leading-tight">
+           font-extrabold uppercase text-gray-700">
             {item.heading}
           </h1>
 
@@ -56,7 +64,8 @@ export default function CardMobile() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="w-[150px] h-[150px] z-10 rounded-full mt-2 border-4 border-[#bbb0d2] flex items-center justify-center bg-white"
+            className="w-[150px] h-[150px] z-10 rounded-full mt-2 
+              flex items-center justify-center bg-[#A8E4F1]"
           >
             <Image
               className="h-[5rem] w-[5rem]"

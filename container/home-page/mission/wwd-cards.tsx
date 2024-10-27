@@ -82,13 +82,13 @@ export default function Card() {
             <div className="w-fit  mt-10">
               <div
                 className="flex items-center justify-center
-               bg-[#6ae0f8] cursor-pointer rounded-full group "
+               bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                  href="/presentation"
+                  href="/case-studies"
                   title="view all case studies"
-                  bgcolor="#00d4ff"
-                  className="bg-white text-customDark sm:text-[15px]"
+                  bgcolor="#00B4D8"
+                  className="bg-white text-customDark"
                   style={{ color: "#fff" }}
                 />
               </div>
@@ -151,12 +151,12 @@ export default function Card() {
             <div className="w-fit  mt-10">
               <div
                 className="flex items-center justify-center
-               bg-[#6ae0f8] cursor-pointer rounded-full group "
+               bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                  href="/presentation"
+                   href="/case-studies"
                   title="view all case studies"
-                  bgcolor="#00d4ff"
+                  bgcolor="#00B4D8"
                   className="bg-white text-customDark"
                   style={{ color: "#fff" }}
                 />
@@ -165,7 +165,7 @@ export default function Card() {
           </div>
           <motion.div
             className="w-1/2 xm:w-full sm:w-full h-full flex items-center justify-center"
-            style={{ scale: imageScale1 }}
+            style={{ scale: imageScale2 }}
           >
             <Image
               width={300}
@@ -221,12 +221,12 @@ export default function Card() {
             <div className="w-fit  mt-10">
               <div
                 className="flex items-center justify-center
-               bg-[#6ae0f8] cursor-pointer rounded-full group "
+               bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                  href="/presentation"
+                   href="/case-studies"
                   title="view all case studies"
-                  bgcolor="#00d4ff"
+                  bgcolor="#00B4D8"
                   className="bg-white text-customDark"
                   style={{ color: "#fff" }}
                 />
@@ -235,7 +235,7 @@ export default function Card() {
           </div>
           <motion.div
             className="w-1/2 xm:w-full sm:w-full h-full flex items-center justify-center"
-            style={{ scale: imageScale1 }}
+            style={{ scale: imageScale3 }}
           >
             <Image
               width={300}
@@ -294,7 +294,7 @@ export default function Card() {
                bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                  href="/presentation"
+                   href="/case-studies"
                   title="view all case studies"
                   bgcolor="#00B4D8"
                   className="bg-white text-customDark"
@@ -305,7 +305,7 @@ export default function Card() {
           </div>
           <motion.div
             className="w-1/2 xm:w-full sm:w-full h-full flex items-center justify-center"
-            style={{ scale: imageScale1 }}
+            style={{ scale: imageScale4 }}
           >
             <Image
               width={300}

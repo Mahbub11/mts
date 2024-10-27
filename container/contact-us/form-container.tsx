@@ -1,8 +1,11 @@
 "use client";
 
-import { project2 } from "@/public";
+import Rounded from "@/components/Rounded";
+import { avaterContact, project2 } from "@/public";
+import { ArrowUpRight, SendHorizonal } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
+import RoundedCustom from "./RoundedCustom";
 
 export default function ContactUs() {
   const [name, setName] = useState("");
@@ -31,8 +34,8 @@ export default function ContactUs() {
           </p>
 
           <form
-            className="w-full bg-transparent border-2
-          border-btn_clr/20 px-10 py-10 rounded mt-10"
+            className="w-full 
+           bg-white px-10 py-10 rounded mt-10"
           >
             <div className="mb-4">
               <label
@@ -49,8 +52,8 @@ export default function ContactUs() {
                   id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full bg-transparent border-b-2
-                   border-white focus:border-btn_clr 
+                  className="w-full bg-transparent/5 border-b-2
+                   border-white focus:border-btn_clr rounded-md
                     outline-none p-2 transition-colors duration-200"
                   required
                 />
@@ -70,8 +73,8 @@ export default function ContactUs() {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-transparent border-b-2
-                border-white focus:border-btn_clr 
+                className="w-full bg-transparent/5 border-b-2
+                border-white focus:border-btn_clr rounded-md
                  outline-none p-2 transition-colors duration-200"
                 required
               />
@@ -89,19 +92,52 @@ export default function ContactUs() {
                 id="message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full bg-transparent border-b-2
-                border-white focus:border-btn_clr 
+                className="w-full bg-transparent/5 border-b-2
+                border-white focus:border-btn_clr rounded-md
                  outline-none p-2 transition-colors duration-200"
                 required
               />
             </div>
-            <button
+
+            <div
+              className="flex items-center justify-between bg-transparent cursor-pointer
+               rounded-md group border 
+          border-btn_clr
+           hover:border-[#00d4ff] hover:text-customDark "
+            >
+              <div className="w-full xl:text-[18px] xl:leading-[28px] text-[14px] leading-[24px] uppercase font-normal font-NeueMontreal">
+                <RoundedCustom
+                  className="py-[6px] w-full"
+                  backgroundColor="#00B4D8"
+                >
+                  <p
+                    className="z-10 px-[10px] ml-[15px] py-[6px] font-[500]
+                 group-hover:text-white text-black tracking-widest"
+                  >
+                    Submit
+                  </p>
+                  <div
+                    className="bg-black group-hover:bg-white text-white
+                p-[5px]
+                 rounded-full scale-[0.3] mr-[10px] group-hover:scale-[0.9] 
+                 transition-all z-10 transform duration-[0.3s] ease-[.215,.61,.355,1]"
+                  >
+                    <SendHorizonal
+                      strokeWidth={1.5}
+                      size={20}
+                      className="scale-[0] group-hover:scale-[1] text-black"
+                    />
+                  </div>
+                </RoundedCustom>
+              </div>
+            </div>
+            {/* <button
               type="submit"
               className="w-full bg-btn_clr text-white
                p-2 rounded hover:bg-blue-700"
             >
               Send Message
-            </button>
+            </button> */}
           </form>
         </div>
 
@@ -115,7 +151,7 @@ export default function ContactUs() {
           </h2>
           <div>
             <Image
-              src={project2}
+              src={avaterContact}
               alt="clientImg"
               className="w-[10rem] h-[10rem] object-cover
              rounded-[10px] mt-5"

@@ -97,5 +97,5 @@ export type TRoundedProps = {
     skillNo4: string;
     skillNo5: string;
     skillNo6?:string,
-    images: string[];
+    images: StaticImageData[];
  };

@@ -130,84 +130,109 @@ export const project = [
 export const projectItem = [
     {
        id: 1,
-       title: "fyde",
+       title: "Practicemania",
        href: "/case/",
        src: project1,
        links: [
           {
              id: 1,
-             title: "audit",
+             title: "React",
              href: "/services",
           },
           {
              id: 2,
-             title: "copywriting",
+             title: "Redux",
              href: "/services",
           },
           {
              id: 3,
-             title: "sales deck",
+             title: "Express",
              href: "/services",
           },
           {
              id: 4,
-             title: "slides design",
+             title: "postgres",
              href: "/services",
           },
        ]
     },
     {
        id: 2,
-       title: "vise",
+       title: "urbanun",
        href: "/case/",
        src: project2,
        links: [
           {
              id: 1,
-             title: "agency",
+             title: "Nextjs",
              href: "/services",
           },
           {
              id: 2,
-             title: "compony presentation",
+             title: "supabase",
              href: "/services",
           },
+          {
+            id: 3,
+            title: "clerk",
+            href: "/services",
+         },
+         {
+            id: 4,
+            title: "zustand",
+            href: "/services",
+         },
        ]
     },
     {
        id: 3,
-       title: "trawa",
+       title: "ubsocial",
        href: "/case/",
        src: project3,
        links: [
           {
              id: 1,
-             title: "brand identity",
+             title: "nextjs",
              href: "/services",
           },
           {
              id: 2,
-             title: "design research",
+             title: "django",
              href: "/services",
           },
           {
              id: 3,
-             title: "investor deck",
+             title: "zustand",
              href: "/services",
           },
        ]
     },
     {
        id: 4,
-       title: "premiumb",
+       title: "ubshop",
        href: "/case/",
        src: project4,
        links: [
-          {
-             id: 1,
-             title: "brand template",
-             href: "/services",
-          },
+         {
+            id: 1,
+            title: "Nextjs",
+            href: "/services",
+         },
+         {
+            id: 2,
+            title: "supabase",
+            href: "/services",
+         },
+         {
+           id: 3,
+           title: "clerk",
+           href: "/services",
+        },
+        {
+           id: 4,
+           title: "zustand",
+           href: "/services",
+        },
        ]
     },
  ];
@@ -216,7 +241,7 @@ export const projectItem = [
  export const clientsItem = [
     {
        id: 1,
-       website: "Karman Ventures",
+       website: "Practicemania",
        href: "https://www.ochi.design",
        title: "Services:",
        name: "William Barnes",
@@ -225,19 +250,14 @@ export const projectItem = [
        links: [
           {
              id: 1,
-             title: "investor deck",
-             href: "/services",
-          },
-          {
-             id: 2,
-             title: "sales deck",
+             title: "LMS",
              href: "/services",
           },
        ]
     },
     {
        id: 2,
-       website: "Planetly",
+       website: "Urbanun",
        href: "https://www.planetly.com",
        title: "Services:",
        name: "Nina Walloch",
@@ -246,44 +266,15 @@ export const projectItem = [
        links: [
           {
              id: 1,
-             title: "agency",
+             title: "Real Estate",
              href: "/services",
           },
-          {
-             id: 2,
-             title: "big news deck",
-             href: "/services",
-          },
-          {
-             id: 3,
-             title: "branded template",
-             href: "/services",
-          },
-          {
-             id: 4,
-             title: "investor deck",
-             href: "/services",
-          },
-          {
-             id: 5,
-             title: "product presentation",
-             href: "/services",
-          },
-          {
-             id: 6,
-             title: "sales deck",
-             href: "/services",
-          },
-          {
-             id: 7,
-             title: "startup pitch",
-             href: "/services",
-          },
+          
        ]
     },
     {
        id: 3,
-       website: "Workiz Easy",
+       website: "UbShop",
        href: "https://www.workiz.com",
        title: "Services:",
        name: "Tormer levy",
@@ -292,34 +283,15 @@ export const projectItem = [
        links: [
           {
              id: 1,
-             title: "compony presentation",
+             title: "Ecommerse",
              href: "/services",
           },
-          {
-             id: 2,
-             title: "onboarding presentation",
-             href: "/services",
-          },
-          {
-             id: 3,
-             title: "policy deck and playbook",
-             href: "/services",
-          },
-          {
-             id: 4,
-             title: "redesign",
-             href: "/services",
-          },
-          {
-             id: 5,
-             title: "sales deck",
-             href: "/services",
-          },
+          
        ]
     },
     {
        id: 4,
-       website: "Premium Blend",
+       website: "UbSocial",
        href: "https://www.premium-blend.com",
        title: "Services:",
        name: "Elien Kim",
@@ -328,14 +300,10 @@ export const projectItem = [
        links: [
           {
              id: 1,
-             title: "branded template",
+             title: "Social",
              href: "/services",
           },
-          {
-             id: 2,
-             title: "illustration",
-             href: "/services",
-          },
+          
        ]
     },
     {
@@ -497,23 +465,18 @@ export const footernavbarItems = [
    },
    {
       id: 3,
-      title: "Our work",
-      href: "presentation",
+      title: "Case Studies",
+      href: "case-studies",
    },
    {
       id: 4,
       title: "About us",
-      href: "ochi-team",
+      href: "about-us",
    },
    {
       id: 5,
-      title: "Insights",
-      href: "insights",
-   },
-   {
-      id: 6,
       title: "Contact us",
-      href: "contact",
+      href: "contact-us",
    },
 ];
 

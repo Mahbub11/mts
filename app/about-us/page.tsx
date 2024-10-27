@@ -1,15 +1,15 @@
 "use client";
 import Curve from "@/components/Curve/Curve";
 import TransactionWrapper from "@/components/Transaction-wrapper";
+import AboutUsBody from "@/container/about-us/aboutus-body";
+import HeroAboutUS from "@/container/about-us/hero-aboutus";
 import HeroCaseStudies from "@/container/case-studies-page/Hero";
 import Projectspresentation from "@/container/case-studies-page/Projects";
 import Ready from "@/container/home-page/ready/Ready";
-import HeroServices from "@/container/service-page/hero-services";
-import ServiceSectionContainer from "@/container/service-page/service-section-container";
 import Lenis from "lenis";
 import { useEffect, useState } from "react";
 
-export default function CaseStudies() {
+export default function AboutUs() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -42,11 +42,10 @@ export default function CaseStudies() {
       {/* <Curve > */}
 
       <div className="h-auto w-full">
-        <HeroServices></HeroServices>
-
+        <HeroAboutUS></HeroAboutUS>
         <div className="mt-[-10rem] sm:mt-[-15rem]">
           <TransactionWrapper>
-            <ServiceSectionContainer></ServiceSectionContainer>
+            <AboutUsBody></AboutUsBody>
           </TransactionWrapper>
         </div>
       </div>

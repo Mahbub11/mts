@@ -25,7 +25,8 @@ export default function ProjectCard({ item }: { item: any }) {
       </Link>
       <div
         // Adjust position for responsive behavior
-        className={`absolute w-fit flex top-[50%] -translate-x-[50%] -translate-y-1/2 overflow-hidden z-10 group-hover:opacity-100 opacity-0 transition duration-500 ease-[.4,0,.2,1] 
+        className={`absolute w-fit flex top-[50%] -translate-x-[50%]
+         -translate-y-1/2 overflow-hidden z-10 group-hover:opacity-100 opacity-0 transition duration-500 ease-[.4,0,.2,1] 
           ${
             item.id % 2 === 0
               ? "sm:left-1/2 md:left-[15%] lg:left-[15%]"
@@ -44,7 +45,7 @@ export default function ProjectCard({ item }: { item: any }) {
             }}
             className="sm:text-[45px] md:text-[90px] 
             lg:text-[120px] leading-none inline-block
-             uppercase text-customDark font-bold text-center pointer-events-none"
+             uppercase text-btn_clr font-bold text-center pointer-events-none"
             key={i}
           >
             {char}

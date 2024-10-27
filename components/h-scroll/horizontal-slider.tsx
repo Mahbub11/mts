@@ -8,30 +8,7 @@ import HorizontalScrollCarouselTablet from "./horizontal-slider-tablet";
 import HorizontalScrollCarouselMobile from "./horizontal-slider-mobile";
 
 export default function HorizontalScrollCarousel() {
-  const [data, setData] = useState<TpageSkillsProps[]>([
-    {
-      id: "66c5134e380f22191abe833d",
-      title: "My Skills",
-      skillNo1: "01",
-      skillNo2: "02",
-      skillNo3: "03",
-      skillNo4: "04",
-      skillNo5: "05",
-      heading1: "Fusion 360",
-      heading2: "After Effect",
-      heading3: "Illustrator",
-      heading4: "Phtoshop",
-      heading5: "Indesign",
-      images: [
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/iaoj4urwnwinlye4j88s.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/ujylzfjmldhca2jhjkot.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/n80tcp6tagcoh5te0w0z.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/b9ydkrpnoeh3ny04xbiu.svg",
-        "https://res.cloudinary.com/dnpqqwyhz/image/upload/v1724191543/dvvs2ip97jt2xxxmmi1c.svg",
-      ],
-    },
-  ]);
-
+  
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -172,7 +149,7 @@ export default function HorizontalScrollCarousel() {
                   d="M 6.923 3127.849 c 21.713 -49.069 66.11 -157.369 131.125 -193.487 c 23.739 -20.473 78.968 -16.427 87.189 -16.225 c 123.5 3.027 129.035 237.305 266.313 237.305 s 132.415 -237.305 282.8 -237.305 s 192.866 249.723 326.695 237.305 s 156.884 -230.407 285.884 -237.305 h 0"
                   transform="translate(1.652 -2912.571)"
                   fill="none"
-                  stroke="#bbb0d2"
+                  stroke="#00b4d84f"
                   stroke-width="8"
                 />
               </svg>
