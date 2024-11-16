@@ -66,7 +66,11 @@ const AnimatedText: React.FC = () => {
   const handleMouseLeave = () => {
     setHoveredIndex(null);
   };
+  const totalCharacters = infoMap.length; // Get the number of characters in the infoText
 
+  const durationPerCharacter = 5 / totalCharacters; // Total time (5s) divided by the number of characters
+  const staggerDuration = 0.01;  // Reduce stagger to make transitions almost simultaneous
+  
   const pathVariants = {
     hidden: { pathLength: 0, opacity: 0 },
     visible: { pathLength: 1, opacity: 1, transition: { duration: 2 } },
@@ -149,21 +153,21 @@ const AnimatedText: React.FC = () => {
               {" "}
               <div className="h-[30rem] w-full backdrop-blur-sm bg-white/30">
                 <div className="mt-[5rem] text-center">
-                 
-
-                  <div className="sm:px-2 sm:w-full w-[80%] mx-auto text-justify
-                  sm:pt-[2rem] pt-[5rem]">
+                  <div
+                    className="sm:px-2 sm:w-full w-[80%] mx-auto text-justify
+                  sm:pt-[2rem] pt-[5rem]"
+                  >
                     <motion.p
-                     viewport={{ once: true }}
+                      viewport={{ once: true }}
                       initial="hidden"
                       whileInView="reveal"
-                      transition={{ staggerChildren: 0.045 }}
+                      transition={{ staggerChildren: staggerDuration }} // Reduced stagger for quicker start
                       className="font-montreal sm:text-[15px] text-[18px] leading-loose tracking-wide"
                     >
                       {infoMap.map((char) => (
                         <motion.span
                           key={char}
-                          transition={{ duration: 0.1 }}
+                          transition={{ duration: durationPerCharacter }} // Duration for each character
                           variants={carVariants}
                         >
                           {char}
