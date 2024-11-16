@@ -46,7 +46,7 @@ export default function RootLayout({
               animate-rotate"
           >
             <div className="text-white font-gvf text-center rotate-90 whitespace-nowrap">
-              Contact US
+              Contact ME
             </div>
           </Link>
 

@@ -18,7 +18,7 @@ import SvgContainer from "@/container/home-page/svg-section/svg-container";
 export default function Home() {
   return (
     <>
-      <Curve>
+      {/* <Curve> */}
         <TransactionWrapper>
           <AnimatedText></AnimatedText>
         </TransactionWrapper>
@@ -49,7 +49,7 @@ export default function Home() {
         <TransactionWrapper>
           <Ready />
         </TransactionWrapper>
-      </Curve>
+      {/* </Curve> */}
     </>
   );
 }

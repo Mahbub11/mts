@@ -9,7 +9,6 @@ import Link from "next/link";
 const navItems = [
   { title: "Case Studies", link: "/case-studies" },
   { title: "Services", link: "/services" },
-  { title: "About Us", link: "/about-us" },
 ];
 
 const itemVariants = {
@@ -64,18 +63,19 @@ export default function Navbar() {
         className="flex justify-between items-center mx-auto h-full 
       text-gray-800 font-[800]"
       >
-        <Link href='/'>
-        <span className="sm:hidden">
-          <MtIcon height="3rem" width="3rem"></MtIcon>
-        </span>
-        <span className="hidden sm:block">
-          <MtIcon height="2rem" width="2rem"></MtIcon>
-        </span></Link>
+        <Link href="/">
+          <span className="sm:hidden">
+            <MtIcon height="3rem" width="3rem"></MtIcon>
+          </span>
+          <span className="hidden sm:block">
+            <MtIcon height="2rem" width="2rem"></MtIcon>
+          </span>
+        </Link>
 
         <motion.div
           className=" flex items-center space-x-3 font-NeueMontreal text-[17px]
            tracking-wider 
-           font-medium"
+           font-medium ml-[7rem]"
           variants={!isMobile ? containerVariants : containerVariantsMobile}
           initial="initial"
           animate={isScrolled ? "visible" : "initial"}
@@ -101,7 +101,7 @@ export default function Navbar() {
 
           <div className="relative group ">
             <Link href="/contact-us">
-              <h3 className="z-10 cursor-pointer tracking-tight">Contact US</h3>
+              <h3 className="z-10 cursor-pointer tracking-tight">Contact ME</h3>
             </Link>
             <motion.div
               className="absolute left-0 bottom-0 h-[2px] bg-black w-full scale-x-0

@@ -9,7 +9,15 @@ import Image from "next/image";
 import TextHoverSingle from "@/animation/TextHoverSingle";
 import Link from "next/link";
 import SvgContainer from "../svg-section/svg-container";
+import { client01 } from "@/public";
+import splitStringUsingRegex from "@/animation/SplitStringREGEX";
 
+const carVariants = {
+  hidden: { opacity: 0 },
+  reveal: { opacity: 1 },
+};
+const infoText =
+  "Hi, I’m Shamsun Nahar, a full stack developer and UI/UX designer with a Software Engineering degree and over six years of experience. Skilled in HTML, CSS, PHP, Laravel, Python, Django, Vue.js, and AI, I bring together technical precision and creative design to build functional, user-friendly websites and applications. I’m passionate about crafting meaningful digital experiences that resonate with users. Whether you need a custom website, a dynamic app, or an engaging design, I’m here to help turn your vision into reality. Let’s create something impactful together!";
 const texts: string[] = [
   "Best For E-commerce",
   "Targeted Website Redesign",
@@ -40,6 +48,8 @@ const navItems = [
 const AnimatedText: React.FC = () => {
   const [index, setIndex] = useState<number>(0);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const infoMap = splitStringUsingRegex(infoText);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -117,69 +127,55 @@ const AnimatedText: React.FC = () => {
         </div>
       </div>
 
-      <div
-        className=" sm:pt-[15rem] md:pt-[17rem] lg:pt-[17rem] w-full
-      sm:h-[30rem] md:h-screen lg:h-screen md:px-10"
-      >
-        <div
-          className="w-full flex justify-center
-       md:ml-[-1rem]  lg:ml-[-3rem] text-[25px]  md:text-[50px] lg:text-[55px]
-             font-[700]"
-        >
-          <div>
-            <div className="font-gvf ">
-              <h2
-                className="text-gray-800 text-[28px] md:text-[45px] 
-              sm:tracking-tighter  lg:text-[50px]"
+      <div className="h-screen w-full pt-[8rem]">
+        <div className="w-[80%] h-[40rem] mx-auto">
+          <div className="flex-col items-center justify-center">
+            <div className="w-full h-full flex justify-center">
+              {" "}
+              <div
+                className="self-center h-[10rem] w-[10rem] rounded-full
+               border-[2px] border-btn_clr z-20"
               >
-                Your Trusted Partner For
-              </h2>
-              <AnimatePresence>
-                <motion.span
-                  className=" text-btn_clr md:ml-2 w-fit
-                 text-[26px] md:text-[50px]  lg:text-[55px]
-              sm:tracking-tighter"
-                  style={{ position: "absolute" }}
-                  variants={variants}
-                  key={index}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  transition={{
-                    y: { type: "spring", stiffness: 400, damping: 100 },
-                    opacity: { duration: 0.2 },
-                  }}
-                >
-                  {texts[index]}
-                </motion.span>
-              </AnimatePresence>
+                <Image
+                  className="h-full w-full object-cover rounded-full"
+                  src={client01}
+                  alt="Logo"
+                  width={100}
+                  height={100}
+                />
+              </div>
             </div>
+            <div className="w-full h-full flex justify-center mt-[-4.5rem] z-10">
+              {" "}
+              <div className="h-[30rem] w-full backdrop-blur-sm bg-white/30">
+                <div className="mt-[5rem] text-center">
+                  <h2
+                    className="font-gvf text-[30px] font-[700] tracking-wide uppercase
+                 text-btn_clr mt-5"
+                  >
+                    Mickel Jackson
+                  </h2>
 
-            <div
-              className=" mt-[5rem] md:mt-[7rem] lg:mt-[8rem]
-             text-[16px] md:text-[25px]
-            lg:text-[25px]
-            sm:ml-2  md:ml-[10px]  lg:ml-[8px]
-           flex items-center md:space-x-8  lg:space-x-8 sm:space-x-2
-           small-text text-justify font-[500] font-NeueMontreal "
-            >
-              {navItems.map((item, i) => (
-                <div key={item.id} className="flex items-center text-gray-700">
-                  <Link className="w-fit hover" href={item.href}>
-                    <TextHoverSingle
-                      classname="text-gray-700"
-                      subTitle1=""
-                      subTitle2=""
-                      title1={item.title}
-                      title2={item.title}
-                    />
-                  </Link>
-                  {/* Add a dot after the second and third items */}
-                  {i < 2 && (
-                    <span className="w-2 h-2 bg-current rounded-full md:ml-5 lg:ml-8 sm:ml-2" />
-                  )}
+                  {/* <div className="w-[80%] mx-auto text-justify mt-10">
+                    <motion.p
+                      initial="hidden"
+                      whileInView="reveal"
+                      transition={{ staggerChildren: 0.045 }}
+                      className="font-nm text-[18px] leading-loose tracking-wide"
+                    >
+                      {infoMap.map((char) => (
+                        <motion.span
+                          key={char}
+                          transition={{ duration: 0.5 }}
+                          variants={carVariants}
+                        >
+                          {char}
+                        </motion.span>
+                      ))}
+                    </motion.p>
+                  </div> */}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
