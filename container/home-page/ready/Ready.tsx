@@ -50,33 +50,22 @@ export default function Ready() {
           ))}
         </motion.div>
         <div className="flex flex-col items-center gap-[10px]">
-          <div className="w-full flex justify-center mt-[3rem]">
-            <div
-              className="flex items-center justify-center
-               bg-[#00B4D8] cursor-pointer rounded-full group "
-            >
-              <RoundButton
-                href="/case-studies"
-                title="view all case studies"
-                bgcolor="#01aacb"
-                className="bg-white text-customDark"
-                style={{ color: "#fff" }}
-              />
-            </div>
-          </div>
-          <p className="text-[20px] font-NeueMontreal text-white">OR</p>
+         
+         
           <div
             className="flex items-center justify-between bg-transparent cursor-pointer rounded-full group border 
           border-white hover:border-[#00d4ff] hover:text-customDark "
           >
-            <Link
+            <button
+             onClick={() => window.location.href = 'mailto:shamsunnahar6905@gmail.com'}
               className="xl:text-[18px] xl:leading-[28px] text-[14px] leading-[24px] uppercase font-normal font-NeueMontreal"
-              href="/contact"
+             
             >
               <Rounded className="py-[6px]" backgroundColor="#00B4D8">
                 <p className="z-10 px-[10px] ml-[15px] py-[6px] group-hover:text-white text-white">
-                  hello@meghtech
+                  hello@shamsunNahar
                 </p>
+                
                 <div
                   className="bg-white group-hover:bg-white text-black
                 p-[10px]
@@ -90,7 +79,7 @@ export default function Ready() {
                   />
                 </div>
               </Rounded>
-            </Link>
+            </button>
           </div>
         </div>
       </div>

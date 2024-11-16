@@ -38,17 +38,7 @@ export default function RootLayout({
         <NavBar></NavBar>
 
         <div className="md:py-10 ">
-          <Link
-            href="/contact-us"
-            className="sm:hidden md:fixed lg:fixed z-50 right-0 top-1/2 transform 
-              -translate-y-1/2 w-10 h-[15rem] rounded-sm bg-btn_clr
-              flex flex-col items-center space-y-10 justify-center rotate-180 
-              animate-rotate"
-          >
-            <div className="text-white font-gvf text-center rotate-90 whitespace-nowrap">
-              Contact ME
-            </div>
-          </Link>
+        
 
           {/* <TransactionWrapper></TransactionWrapper> */}
 

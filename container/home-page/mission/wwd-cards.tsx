@@ -3,7 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRef } from "react";
 import { useTransform, motion, useScroll } from "framer-motion";
-import { project1, project2, project3, project4 } from "@/public";
+import {
+  attentionDetail,
+  customSoftware,
+  nicheDesign,
+  project1,
+  project2,
+  project3,
+  project4,
+  transParentResponsive,
+} from "@/public";
 import RoundButton from "../../../components/RoundButton";
 
 export default function Card() {
@@ -49,7 +58,8 @@ export default function Card() {
             backgroundColor: "#8aebff00", // Example color
             top: `calc(-5vh + ${1 * 25}px)`,
           }}
-          className="w-full p-20 xm:p-7 sm:p-7 flex justify-between rounded-[30px] gap-10 relative -top-[45%] h-[800px] transform origin-top xm:flex-col sm:flex-col"
+          className="w-full p-20 xm:p-7 sm:p-7 flex justify-between rounded-[30px] gap-10 relative -top-[45%] 
+          h-auto transform origin-top xm:flex-col sm:flex-col"
         >
           <div className="w-1/2 xm:w-full sm:w-full h-full flex flex-col gap-14 pt-10 xm:pt-5 sm:pt-5 xm:gap-5 sm:gap-5">
             <div className="flex flex-col gap-2">
@@ -101,9 +111,9 @@ export default function Card() {
             <Image
               width={300}
               height={300}
-              src={project1}
+              src={customSoftware}
               alt="whatwedoImg"
-              className="w-[80%] object-cover rounded-md"
+              className="w-full object-cover rounded-md"
             />
           </motion.div>
         </motion.div>
@@ -119,7 +129,8 @@ export default function Card() {
             backgroundColor: "#e7f5f7", // Example color
             top: `calc(-5vh + ${1 * 25}px)`,
           }}
-          className="w-full p-20 xm:p-7 sm:p-7 flex justify-between rounded-[30px] gap-10 relative -top-[45%] h-[800px] transform origin-top xm:flex-col sm:flex-col"
+          className="w-full p-20 xm:p-7 sm:p-7 flex justify-between rounded-[30px] gap-10 relative -top-[45%] 
+          h-auto transform origin-top xm:flex-col sm:flex-col"
         >
           <div className="w-1/2 xm:w-full sm:w-full h-full flex flex-col gap-14 pt-10 xm:pt-5 sm:pt-5 xm:gap-5 sm:gap-5">
             <div className="flex flex-col gap-2">
@@ -154,7 +165,7 @@ export default function Card() {
                bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                   href="/case-studies"
+                  href="/case-studies"
                   title="view all case studies"
                   bgcolor="#00B4D8"
                   className="bg-white text-customDark"
@@ -170,7 +181,7 @@ export default function Card() {
             <Image
               width={300}
               height={300}
-              src={project2}
+              src={nicheDesign}
               alt="whatwedoImg"
               className="w-[80%] object-cover rounded-md"
             />
@@ -188,7 +199,8 @@ export default function Card() {
             backgroundColor: "#def5fa", // Example color
             top: `calc(-5vh + ${1 * 25}px)`,
           }}
-          className="w-full p-20 xm:p-7 sm:p-7 flex justify-between rounded-[30px] gap-10 relative -top-[45%] h-[800px] transform origin-top xm:flex-col sm:flex-col"
+          className="w-full p-20 xm:p-7 sm:p-7 flex justify-between rounded-[30px] gap-10 relative -top-[45%] 
+          h-auto transform origin-top xm:flex-col sm:flex-col"
         >
           <div className="w-1/2 xm:w-full sm:w-full h-full flex flex-col gap-14 pt-10 xm:pt-5 sm:pt-5 xm:gap-5 sm:gap-5">
             <div className="flex flex-col gap-2">
@@ -224,7 +236,7 @@ export default function Card() {
                bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                   href="/case-studies"
+                  href="/case-studies"
                   title="view all case studies"
                   bgcolor="#00B4D8"
                   className="bg-white text-customDark"
@@ -240,7 +252,7 @@ export default function Card() {
             <Image
               width={300}
               height={300}
-              src={project3}
+              src={attentionDetail}
               alt="whatwedoImg"
               className="w-[80%] object-cover rounded-md"
             />
@@ -258,7 +270,8 @@ export default function Card() {
             backgroundColor: "#f0fdff", // Example color
             top: `calc(-5vh + ${1 * 25}px)`,
           }}
-          className="w-full p-20 xm:p-7 sm:p-7 flex justify-between rounded-[30px] gap-10 relative -top-[45%] h-[800px] transform origin-top xm:flex-col sm:flex-col"
+          className="w-full p-20 xm:p-7 sm:p-7 flex justify-between rounded-[30px] gap-10 relative -top-[45%] 
+          h-auto transform origin-top xm:flex-col sm:flex-col"
         >
           <div className="w-1/2 xm:w-full sm:w-full h-full flex flex-col gap-14 pt-10 xm:pt-5 sm:pt-5 xm:gap-5 sm:gap-5">
             <div className="flex flex-col gap-2">
@@ -294,7 +307,7 @@ export default function Card() {
                bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                   href="/case-studies"
+                  href="/case-studies"
                   title="view all case studies"
                   bgcolor="#00B4D8"
                   className="bg-white text-customDark"
@@ -310,7 +323,7 @@ export default function Card() {
             <Image
               width={300}
               height={300}
-              src={project4}
+              src={transParentResponsive}
               alt="whatwedoImg"
               className="w-[80%] object-cover rounded-md"
             />

@@ -15,10 +15,10 @@ export default function ContactUs() {
   return (
     <>
       <div
-        className="flex sm:flex-col  justify-between
+        className="flex space-x-10 sm:flex-col w-full justify-between
        items-center md:p-8 lg:p-8 font-NeueMontreal"
       >
-        <div>
+        <div className="w-[60%]">
           <h2
             className="text-[40px] font-gvf font-bold text-gray-600
           "
@@ -141,27 +141,14 @@ export default function ContactUs() {
           </form>
         </div>
 
-        <div>
+        <div className=" w-[40%] self-center px-5">
           <h2
-            className="sm:mt-10 font-gvf text-[20px] text-gray-800
-          font-[500]"
+            className="sm:mt-10 font-gvf text-[25px] text-gray-800
+          font-[600] text-start"
           >
-            Hi, I’m Karolina. I look forward to <br></br> discussing your
-            project.
+            "Action is the foundational key to all success."
           </h2>
-          <div>
-            <Image
-              src={avaterContact}
-              alt="clientImg"
-              className="w-[10rem] h-[10rem] object-cover
-             rounded-[10px] mt-5"
-            />
-
-            <div className=" font-montreal mt-5 font-[500] text-gray-800">
-              <h2>Karolina Brewczynska</h2>
-              <p>Business Development Manager</p>
-            </div>
-          </div>
+          <p className="italic underline">Pablo Picasso</p>
         </div>
       </div>
     </>

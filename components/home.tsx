@@ -14,41 +14,45 @@ import Curve from "./Curve/Curve";
 import HorizontalScrollCarousel from "./h-scroll/horizontal-slider";
 import { AnimatePresence } from "framer-motion";
 import SvgContainer from "@/container/home-page/svg-section/svg-container";
+import ServiceSection from "@/container/home-page/services/service-section";
 
 export default function Home() {
   return (
     <>
       {/* <Curve> */}
-        <TransactionWrapper>
-          <AnimatedText></AnimatedText>
-        </TransactionWrapper>
+      <TransactionWrapper>
+        <AnimatedText></AnimatedText>
+      </TransactionWrapper>
 
       {/* <SvgContainer></SvgContainer> */}
-        <TextBannarSection></TextBannarSection>
+      <TextBannarSection></TextBannarSection>
 
-        <TransactionWrapper>
-          <Whatwedo></Whatwedo>
-        </TransactionWrapper>
+      <TransactionWrapper>
+        <Whatwedo></Whatwedo>
+      </TransactionWrapper>
 
-        {/* <TransactionWrapper>
+      {/* <TransactionWrapper>
           <Process />
         </TransactionWrapper> */}
 
-        <div >
-          <HorizontalScrollCarousel></HorizontalScrollCarousel>
-        </div>
+      <div>
+        <HorizontalScrollCarousel></HorizontalScrollCarousel>
+      </div>
 
-        <TransactionWrapper>
-          <Project />
-        </TransactionWrapper>
+      <TransactionWrapper>
+        <Project />
+      </TransactionWrapper>
+      <TransactionWrapper>
+        <ServiceSection></ServiceSection>
+      </TransactionWrapper>
+      <TransactionWrapper>
+        <Clients />
+      </TransactionWrapper>
 
-        <TransactionWrapper>
-          <Clients />
-        </TransactionWrapper>
+      <TransactionWrapper>
+        <Ready />
+      </TransactionWrapper>
 
-        <TransactionWrapper>
-          <Ready />
-        </TransactionWrapper>
       {/* </Curve> */}
     </>
   );

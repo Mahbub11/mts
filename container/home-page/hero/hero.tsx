@@ -9,7 +9,7 @@ import Image from "next/image";
 import TextHoverSingle from "@/animation/TextHoverSingle";
 import Link from "next/link";
 import SvgContainer from "../svg-section/svg-container";
-import { client01 } from "@/public";
+import { client01, client02 } from "@/public";
 import splitStringUsingRegex from "@/animation/SplitStringREGEX";
 
 const carVariants = {
@@ -128,7 +128,7 @@ const AnimatedText: React.FC = () => {
       </div>
 
       <div className="h-screen w-full pt-[8rem]">
-        <div className="w-[80%] h-[40rem] mx-auto">
+        <div className="sm:w-full sm:px-2 w-[80%] h-[40rem] mx-auto">
           <div className="flex-col items-center justify-center">
             <div className="w-full h-full flex justify-center">
               {" "}
@@ -138,7 +138,7 @@ const AnimatedText: React.FC = () => {
               >
                 <Image
                   className="h-full w-full object-cover rounded-full"
-                  src={client01}
+                  src={client02}
                   alt="Logo"
                   width={100}
                   height={100}
@@ -149,31 +149,28 @@ const AnimatedText: React.FC = () => {
               {" "}
               <div className="h-[30rem] w-full backdrop-blur-sm bg-white/30">
                 <div className="mt-[5rem] text-center">
-                  <h2
-                    className="font-gvf text-[30px] font-[700] tracking-wide uppercase
-                 text-btn_clr mt-5"
-                  >
-                    Mickel Jackson
-                  </h2>
+                 
 
-                  {/* <div className="w-[80%] mx-auto text-justify mt-10">
+                  <div className="sm:px-2 sm:w-full w-[80%] mx-auto text-justify
+                  sm:pt-[2rem] pt-[5rem]">
                     <motion.p
+                     viewport={{ once: true }}
                       initial="hidden"
                       whileInView="reveal"
                       transition={{ staggerChildren: 0.045 }}
-                      className="font-nm text-[18px] leading-loose tracking-wide"
+                      className="font-montreal sm:text-[15px] text-[18px] leading-loose tracking-wide"
                     >
                       {infoMap.map((char) => (
                         <motion.span
                           key={char}
-                          transition={{ duration: 0.5 }}
+                          transition={{ duration: 0.1 }}
                           variants={carVariants}
                         >
                           {char}
                         </motion.span>
                       ))}
                     </motion.p>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>

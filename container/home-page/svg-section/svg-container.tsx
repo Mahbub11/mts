@@ -48,7 +48,7 @@ const Container: React.FC<Props> = ({ scrollProgress }) => {
       <motion.div
         style={{ y }}
         className="h-full 
-             flex justify-center gap-10 items-center p-10"
+             flex justify-center gap-10 items-center md:p-10"
       >
         <SvgComponent></SvgComponent>
       </motion.div>

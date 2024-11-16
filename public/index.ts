@@ -106,3 +106,20 @@ export { default as abts8 } from './abts8.png';
 export { default as caseBannar } from './case_study-bannar.jpg';
 export { default as servicesBannar } from './services.jpg';
 export { default as avaterContact } from './avater_contact.jpg';
+
+//section Two
+export { default as customSoftware } from './customSoftware.jpeg';
+export { default as nicheDesign } from './nicheDesign.jpeg';
+export { default as attentionDetail } from './attentionDetail.jpeg';
+export { default as transParentResponsive } from './transparentResponse.jpeg';
+
+//techLogo
+export { default as reactLogo } from './techLogo/reactLogo.png';
+export { default as nextJsLogo } from './techLogo/nextJsLogo.png';
+export { default as djangoLogo } from './techLogo/djangoLogo.png';
+export { default as shopifyLogo } from './techLogo/shopifyLogo.png';
+export { default as figmaLogo } from './techLogo/figmaLogo.png';
+export { default as wordpressLogo } from './techLogo/wordPressLogo.png';
+export { default as htmlLogo } from './techLogo/htmlLogo.png';
+export { default as devOpsLogo } from './techLogo/devOps.png';
+export { default as nodeLogo } from './techLogo/nodeLogo.png';

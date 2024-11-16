@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
 import MtIcon from "@/public/SVG/mt-svg";
 import Link from "next/link";
+import ButtonMailto from "../email/mail-to";
 
 const navItems = [
   { title: "Case Studies", link: "/case-studies" },
@@ -72,54 +73,23 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <motion.div
-          className=" flex items-center space-x-3 font-NeueMontreal text-[17px]
-           tracking-wider 
-           font-medium ml-[7rem]"
-          variants={!isMobile ? containerVariants : containerVariantsMobile}
-          initial="initial"
-          animate={isScrolled ? "visible" : "initial"}
-          transition={{ duration: 0.8 }}
-        >
-          {navItems.map((item, index) => (
-            <motion.div
-              key={item.title}
-              className="relative group sm:hidden"
-              variants={itemVariants}
-              initial="initial"
-              animate={isScrolled ? "visible" : "initial"}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-            >
-              <Link href={item.link}>
-                <h3 className="z-10 cursor-pointer tracking-tight">
-                  {item.title}
-                </h3>
-              </Link>
-              <motion.div className="absolute left-0 bottom-0 h-[2px] bg-black w-full scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
-            </motion.div>
-          ))}
-
-          <div className="relative group ">
-            <Link href="/contact-us">
-              <h3 className="z-10 cursor-pointer tracking-tight">Contact ME</h3>
-            </Link>
-            <motion.div
-              className="absolute left-0 bottom-0 h-[2px] bg-black w-full scale-x-0
-               transition-transform duration-300 group-hover:scale-x-100"
-            />
-          </div>
-        </motion.div>
+        <div>
+          <h2 className="font-montreal text-gray-700 tracking-wider uppercase">
+            Shamsun Nanhar
+          </h2>
+        </div>
 
         <div>
-          <h3
-            className="text-[17px] tracking-wider 
-           font-medium sm:hidden"
-          >
-            Blog
-          </h3>
-          <div className="lg:hidden md:hidden">
-            <MobileNav></MobileNav>
+          <div className="font-montreal text-gray-800 ">
+            <ButtonMailto
+              label="Contct Me"
+              mailto="mm@gmail.com"
+            ></ButtonMailto>
+            {/* <Link href="/contact-us">
+              <h3 className="z-10 cursor-pointer tracking-tight">Contact ME</h3>
+            </Link> */}
           </div>
+         
         </div>
       </div>
     </motion.nav>
