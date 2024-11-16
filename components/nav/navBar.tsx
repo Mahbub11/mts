@@ -75,7 +75,7 @@ export default function Navbar() {
 
         <div>
           <h2 className="font-montreal text-gray-700 tracking-wider uppercase">
-            Shamsun Nanhar
+            Shamsun Nahar
           </h2>
         </div>
 
