@@ -38,7 +38,7 @@ export default function HeroCaseStudy() {
                bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                  href="https://ecommerse.practicemania.com/"
+                  href="https://practicemania.com/"
                   title="SHOW LIVE"
                   bgcolor="#00B4D8"
                   className="bg-white text-customDark"

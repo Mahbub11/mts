@@ -29,15 +29,15 @@ export default function ClientsReviewExpectations() {
 
   return (
     <section className="w-full mt-[15rem] sm:px-2 md:px-10 lg:px-10 font-gvf">
-     <div className="w-full padding-x mb-[40px]">
-          <h1
-            className="sub-heading font-bold 
+      <div className="w-full padding-x mb-[40px]">
+        <h1
+          className="sub-heading font-bold 
                 font-NeueMontreal text-btn_clr uppercase text-[40px]"
-          >
-            What Client's Say
-          </h1>
-          <hr className=" mt-5"></hr>
-        </div>
+        >
+          What Client's Say
+        </h1>
+        <hr className=" mt-5"></hr>
+      </div>
 
       <div className="w-full flex justify-end mt-[3rem] ml-[-3rem]">
         <div className=" w-[70%] ">

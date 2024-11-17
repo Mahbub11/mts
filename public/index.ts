@@ -123,6 +123,15 @@ export { default as wordpressLogo } from './techLogo/wordPressLogo.png';
 export { default as htmlLogo } from './techLogo/htmlLogo.png';
 export { default as devOpsLogo } from './techLogo/devOps.png';
 export { default as nodeLogo } from './techLogo/nodeLogo.png';
+export { default as mongoIcon } from './techLogo/mongodb.png';
+export { default as expressjs } from './techLogo/Express.png';
+export { default as postgres } from './techLogo/PostgresSQL.png';
+export { default as vuejs } from './techLogo/Vue.js.png';
+export { default as tailwindCSS } from './techLogo/Tailwind CSS.png';
+export { default as dockerIcon } from './techLogo/Docker.png';
+export { default as awsLogo } from './techLogo/AWS.png';
+export { default as kubernets } from './techLogo/Kubernetes.png';
+
 
 //EcommerseApp
 
@@ -152,3 +161,5 @@ export { default as crmOne } from './construction/crmOne.png';
 export { default as crmTwo } from './construction/crmSix.png';
 
 
+//
+export { default as sheuliImage } from './sheuliImage.jpeg';

@@ -6,6 +6,7 @@ import MobileNav from "./MobileNav";
 import MtIcon from "@/public/SVG/mt-svg";
 import Link from "next/link";
 import ButtonMailto from "../email/mail-to";
+import IconSheuliLogo from "@/public/SVG/sheuli-logo";
 
 const navItems = [
   { title: "Case Studies", link: "/case-studies" },
@@ -66,10 +67,10 @@ export default function Navbar() {
       >
         <Link href="/">
           <span className="sm:hidden">
-            <MtIcon height="3rem" width="3rem"></MtIcon>
+            <IconSheuliLogo fill="#034d" height="3rem" width="3rem"></IconSheuliLogo>
           </span>
           <span className="hidden sm:block">
-            <MtIcon height="2rem" width="2rem"></MtIcon>
+            <IconSheuliLogo height="2rem" width="2rem"></IconSheuliLogo>
           </span>
         </Link>
 
