@@ -10,7 +10,7 @@ export default function ProjectCard({ item }: { item: any }) {
   return (
     <div className="relative group w-full rounded-md">
       <Link
-      href='/case-studies/1'
+      href={item.href}
         className="rounded-md overflow-hidden hover:scale-[0.95]
          transition cursor-pointer transform duration-[1s] ease-[.4,0,.2,1] block"
         onMouseEnter={() => setHovered(true)}
@@ -19,7 +19,7 @@ export default function ProjectCard({ item }: { item: any }) {
         <Image
           src={item.src}
           alt={`${item.title}Img`}
-          className="object-cover rounded-md
+          className="object-cover rounded-md h-[30rem] w-[35rem]
            group-hover:scale-[1.09] transform duration-[1s] ease-[.4,0,.2,1]"
         />
       </Link>

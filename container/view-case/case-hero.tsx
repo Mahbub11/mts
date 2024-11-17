@@ -1,5 +1,5 @@
 import RoundButton from "@/components/RoundButton";
-import { project1, project3, project4 } from "@/public";
+import { eBananr, pBannar, project1, project3, project4 } from "@/public";
 import Image from "next/image";
 
 export default function HeroCaseStudy() {
@@ -28,7 +28,7 @@ export default function HeroCaseStudy() {
                 className="text-[40px]  sm:text-[25px] font-bold leading-tight tracking-tighter
                 font-gvf text-gray-600  mt-2"
               >
-                Design & development of a platform for AI based English Learning startup
+                Design & development of a platform for <span className="text-btn_clr">AI tailored English Proficiency Enhance</span> Startup
                 <br />
               </h2>
             </div>
@@ -38,7 +38,7 @@ export default function HeroCaseStudy() {
                bg-btn_clr/80 cursor-pointer rounded-full group "
               >
                 <RoundButton
-                  href="https://www.practicecompanions.com/"
+                  href="https://ecommerse.practicemania.com/"
                   title="SHOW LIVE"
                   bgcolor="#00B4D8"
                   className="bg-white text-customDark"
@@ -49,23 +49,15 @@ export default function HeroCaseStudy() {
           </div>
 
           <div className="relative sm:self-center sm:w-full sm:mx-auto ">
-            <div className="sm:h-auto sm:w-auto h-[30rem] w-[30rem] rounded-md">
+            <div className="sm:h-auto sm:w-auto h-[30rem] w-[35rem]
+             rounded-md">
               <Image
-                className="object-cover rounded-md"
-                src={project1}
+                className="object-cover rounded-md h-full w-full"
+                src={pBannar}
                 alt="ddd"
               ></Image>
             </div>
-            <div
-              className="absolute sm:hidden top-0 left-[4rem] mt-[3rem] h-[30rem] 
-            w-[30rem]"
-            >
-              <Image
-                className="object-cover rounded-md opacity-70"
-                src={project4}
-                alt="ddd"
-              ></Image>
-            </div>
+           
           </div>
         </div>
       </div>

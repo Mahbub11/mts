@@ -123,3 +123,32 @@ export { default as wordpressLogo } from './techLogo/wordPressLogo.png';
 export { default as htmlLogo } from './techLogo/htmlLogo.png';
 export { default as devOpsLogo } from './techLogo/devOps.png';
 export { default as nodeLogo } from './techLogo/nodeLogo.png';
+
+//EcommerseApp
+
+export { default as eBananr } from './ecommerce/eBannar.png';
+export { default as eTwo } from './ecommerce/eTwo.png'
+export { default as eThree } from './ecommerce/eThree.png'
+export { default as eFour } from './ecommerce/efour.png'
+
+
+export { default as rBannar } from './realestate/rBannar.png';
+export { default as rTwo } from './realestate/rTwo.png';
+export { default as rThree } from './realestate/rThree.png';
+export { default as rFour } from './realestate/rFour.png';
+
+//pc
+export { default as pBannar } from './pc/pBannar.png';
+export { default as pOne } from './pc/pOne.jpg';
+export { default as pTwo } from './pc/pTwo.png';
+export { default as pThree } from './pc/pThree.png';
+export { default as pFour } from './pc/pFour.png';
+
+//
+export { default as cBannar } from './construction/cBannar.png';
+export { default as cOne } from './construction/cOne.png';
+export { default as cTwo } from './construction/cTwo.png';
+export { default as crmOne } from './construction/crmOne.png';
+export { default as crmTwo } from './construction/crmSix.png';
+
+

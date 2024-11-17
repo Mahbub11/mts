@@ -89,20 +89,7 @@ export default function Card() {
                 competition.
               </h4>
             </div>
-            <div className="w-fit  mt-10">
-              <div
-                className="flex items-center justify-center
-               bg-btn_clr/80 cursor-pointer rounded-full group "
-              >
-                <RoundButton
-                  href="/case-studies"
-                  title="view all case studies"
-                  bgcolor="#00B4D8"
-                  className="bg-white text-customDark"
-                  style={{ color: "#fff" }}
-                />
-              </div>
-            </div>
+           
           </div>
           <motion.div
             className="w-1/2 xm:w-full sm:w-full h-full flex items-center justify-center"
@@ -159,20 +146,7 @@ export default function Card() {
                 applications are not only functional but also enjoyable to use.
               </h4>
             </div>
-            <div className="w-fit  mt-10">
-              <div
-                className="flex items-center justify-center
-               bg-btn_clr/80 cursor-pointer rounded-full group "
-              >
-                <RoundButton
-                  href="/case-studies"
-                  title="view all case studies"
-                  bgcolor="#00B4D8"
-                  className="bg-white text-customDark"
-                  style={{ color: "#fff" }}
-                />
-              </div>
-            </div>
+          
           </div>
           <motion.div
             className="w-1/2 xm:w-full sm:w-full h-full flex items-center justify-center"
@@ -230,20 +204,7 @@ export default function Card() {
                 projects meet the highest standards.
               </h4>
             </div>
-            <div className="w-fit  mt-10">
-              <div
-                className="flex items-center justify-center
-               bg-btn_clr/80 cursor-pointer rounded-full group "
-              >
-                <RoundButton
-                  href="/case-studies"
-                  title="view all case studies"
-                  bgcolor="#00B4D8"
-                  className="bg-white text-customDark"
-                  style={{ color: "#fff" }}
-                />
-              </div>
-            </div>
+           
           </div>
           <motion.div
             className="w-1/2 xm:w-full sm:w-full h-full flex items-center justify-center"
@@ -301,20 +262,7 @@ export default function Card() {
                 achieve exceptional results.
               </h4>
             </div>
-            <div className="w-fit  mt-10">
-              <div
-                className="flex items-center justify-center
-               bg-btn_clr/80 cursor-pointer rounded-full group "
-              >
-                <RoundButton
-                  href="/case-studies"
-                  title="view all case studies"
-                  bgcolor="#00B4D8"
-                  className="bg-white text-customDark"
-                  style={{ color: "#fff" }}
-                />
-              </div>
-            </div>
+           
           </div>
           <motion.div
             className="w-1/2 xm:w-full sm:w-full h-full flex items-center justify-center"

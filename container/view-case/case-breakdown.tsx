@@ -54,6 +54,7 @@ export default function CaseBreakDown() {
                   text-[15px] font-gmvf"
               >
                 <li>MVP</li>
+             
               </ul>
             </div>
           </div>
@@ -79,8 +80,9 @@ export default function CaseBreakDown() {
                   text-[15px] font-gmvf"
               >
                 <li>Next JS</li>
-                <li>SUPABASE</li>
+                <li>Postgres</li>
                 <li>Next Auth</li>
+                <li>REDUX</li>
                 <li>AWS</li>
               </ul>
             </div>
@@ -106,7 +108,7 @@ export default function CaseBreakDown() {
                 className="list-disc  mt-4 space-y-1
                   text-[15px] font-gmvf"
               >
-                <li>E-Commerse</li>
+                <li>LMS</li>
                 <li>CMS</li>
               </ul>
             </div>

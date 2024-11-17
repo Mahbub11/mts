@@ -75,20 +75,7 @@ export default function Project() {
             </div>
           ))}
         </div>
-        <div className="w-full flex justify-center mt-[5rem]">
-          <div
-            className="flex items-center justify-center
-               bg-btn_clr/80 cursor-pointer rounded-full group "
-          >
-            <RoundButton
-              href="/presentation"
-              title="view all case studies"
-              bgcolor="#00B4D8"
-              className="bg-white text-customDark"
-              style={{ color: "#fff" }}
-            />
-          </div>
-        </div>
+       
       </div>
       {/* <div
         className="mt-10 w-full flex justify-between gap-y-[2rem] padding-x flex-wrap"

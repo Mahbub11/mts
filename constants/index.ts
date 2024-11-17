@@ -2,7 +2,7 @@
 
 import {client01, client02, client03, client04, client05, client06, client07, client08, client09,project1, project2, project3, project4, project5, project6,
      project7, project8, project9, avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8, avatar9, chatgpt, code, css3, docker, figma, github, gpt3, hoobank, html, ipdc, js, lassles, metaverse, mongodb, next, nike, node,
-     ochi, prisma, python, react_query, redux, rhf, tailwind, trpc, typescript, zod, phase5, phase4, phase3, phase2, phase1 } from "@/public";
+     ochi, prisma, python, react_query, redux, rhf, tailwind, trpc, typescript, zod, phase5, phase4, phase3, phase2, phase1, eBananr, rBannar, pBannar, cBannar } from "@/public";
 export const paragraph =
     "I’m a multi-disciplinary designer and Next js developer, passionate about crafting ideas, visuals, and typography into unforgettable digital experiences.  With a genuine belief in the transformative power of design, I am constantly exploring the vast creative world, from architecture, art, graphic design, illustration, motion design, and UX design. My passion for limitless creativity led me to explore the endless possibilities that creative development has to offer.";
 
@@ -131,8 +131,8 @@ export const projectItem = [
     {
        id: 1,
        title: "Practicemania",
-       href: "/case/",
-       src: project1,
+       href: "/case-studies/case-one",
+       src: pBannar,
        links: [
           {
              id: 1,
@@ -158,9 +158,9 @@ export const projectItem = [
     },
     {
        id: 2,
-       title: "urbanun",
-       href: "/case/",
-       src: project2,
+       title: "Realestate",
+       href: "/case-studies/case-three",
+       src:rBannar,
        links: [
           {
              id: 1,
@@ -186,9 +186,9 @@ export const projectItem = [
     },
     {
        id: 3,
-       title: "ubsocial",
-       href: "/case/",
-       src: project3,
+       title: "E-commerce",
+       href: "/case-studies/case-two",
+       src: eBananr,
        links: [
           {
              id: 1,
@@ -209,18 +209,18 @@ export const projectItem = [
     },
     {
        id: 4,
-       title: "ubshop",
-       href: "/case/",
-       src: project4,
+       title: "crm",
+       href:"/case-studies/case-four",
+       src: cBannar,
        links: [
          {
             id: 1,
-            title: "Nextjs",
+            title: "React",
             href: "/services",
          },
          {
             id: 2,
-            title: "supabase",
+            title: "postgres",
             href: "/services",
          },
          {
@@ -230,7 +230,7 @@ export const projectItem = [
         },
         {
            id: 4,
-           title: "zustand",
+           title: "Redux",
            href: "/services",
         },
        ]

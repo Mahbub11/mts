@@ -6,6 +6,11 @@ import Image from "next/image";
 import {
   after,
   chelengeBg,
+  pBannar,
+  pFour,
+  pOne,
+  pThree,
+  pTwo,
   showcase1,
   showcase2,
   showcase3,
@@ -68,55 +73,45 @@ const DesignCaseStudy = () => {
 
       <div className="mt-[5rem] flex-col space-y-10">
         <div className="w-full padding-x padding-y">
-          <BackgroundImg src={chelengeBg} />
+          <BackgroundImg src={pBannar} />
         </div>
         <div className="w-[80%] mx-auto padding-x flex gap-[40px] sm:w-full xm:w-full sm:flex-col xm:flex-col">
           <div className="w-[49%] sm:w-full xm:w-full">
             <Image
-              src={showcase1}
+              src={pThree}
               className="w-full  object-cover rounded-[20px]"
               alt="chelengeBgImg"
             />
           </div>
           <div className="w-[49%] sm:w-full xm:w-full">
             <Image
-              src={showcase2}
+              src={pFour}
+              className="w-full  object-cover rounded-[20px]"
+              alt="chelengeBgImg"
+            />
+          </div>
+        </div>
+      
+        <div className="w-[80%] mx-auto padding-x flex gap-[40px] sm:w-full xm:w-full sm:flex-col xm:flex-col">
+          <div className="w-[49%] sm:w-full xm:w-full">
+            <Image
+              src={pOne}
+              className="w-full  object-cover rounded-[20px]"
+              alt="chelengeBgImg"
+            />
+          </div>
+          <div className="w-[49%] sm:w-full xm:w-full">
+            <Image
+              src={pTwo}
               className="w-full  object-cover rounded-[20px]"
               alt="chelengeBgImg"
             />
           </div>
         </div>
         <div className="w-full padding-x padding-y">
-          <BackgroundImg src={showcase3} />
+          <BackgroundImg src={pOne} />
         </div>
-        <div className="w-[80%] mx-auto padding-x flex gap-[40px] sm:w-full xm:w-full sm:flex-col xm:flex-col">
-          <div className="w-[49%] sm:w-full xm:w-full">
-            <Image
-              src={showcase4}
-              className="w-full  object-cover rounded-[20px]"
-              alt="chelengeBgImg"
-            />
-          </div>
-          <div className="w-[49%] sm:w-full xm:w-full">
-            <Image
-              src={showcase5}
-              className="w-full  object-cover rounded-[20px]"
-              alt="chelengeBgImg"
-            />
-          </div>
-        </div>
-        <div className="w-full padding-x padding-y">
-          <BackgroundImg src={showcase6} />
-        </div>
-        <div className="w-[80%] sm:w-full xm:w-full mx-auto padding-x flex gap-[20px]">
-          <div className="w-full">
-            <Image
-              src={after}
-              className="w-full object-cover rounded-[20px]"
-              alt="chelengeBgImg"
-            />
-          </div>
-        </div>
+       
       </div>
     </div>
   );
