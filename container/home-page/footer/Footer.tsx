@@ -18,12 +18,12 @@ export default function Footer() {
        sm:flex-col sm:space-y-5 xm:flex-col text-[20px]"
       >
         <div>
-          <h2
+          <button
             className="uppercase link-flash cursor-pointer"
             onClick={() => window.open("https://www.linkedin.com/in/shamsun-nahar-651119242", "_blank")}
           >
             LinkDIN
-          </h2>
+          </button>
         </div>
         <div className="">
           <h2>@2025</h2>
