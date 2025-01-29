@@ -18,14 +18,21 @@ export default function Footer() {
        sm:flex-col sm:space-y-5 xm:flex-col text-[20px]"
       >
         <div>
-          <h2 className="uppercase link-flash cursor-pointer">LinkDIN</h2>
+          <h2
+            className="uppercase link-flash cursor-pointer"
+            onClick={() => window.open("https://www.linkedin.com/in/shamsun-nahar-651119242", "_blank")}
+          >
+            LinkDIN
+          </h2>
         </div>
         <div className="">
-          <h2 >@2024</h2>
+          <h2>@2025</h2>
         </div>
 
         <div className=" ">
-          <h2 className="link-flash cursor-pointer">shamsunnahar6905@gmail.com</h2>
+          <h2 className="link-flash cursor-pointer">
+            shamsunnahar6905@gmail.com
+          </h2>
         </div>
       </div>
     </footer>
