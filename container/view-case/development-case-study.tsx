@@ -23,7 +23,7 @@ const DevelopmentCaseStudy = () => {
             <div className="w-[50%] sm:w-full xm:w-full flex flex-col gap-y-[40px]">
               <p className="paragraph font-NeueMontreal text-secondry">
                 Adopted an agile development approach, facilitating iterative
-                progress and regular feedback from stakeholders.
+                progress and regular feedback.
               </p>
             </div>
             <div className="flex flex-col gap-[10px] sm:mt-5">

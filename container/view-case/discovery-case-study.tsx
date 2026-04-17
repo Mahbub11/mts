@@ -13,7 +13,7 @@ const DiscoveryCaseStudy = () => {
         >
           <div className="w-[30%] sm:w-full xm:w-full ">
             <h3 className="paragraph font-medium text-secondry font-NeueMontreal">
-              Client Needs Assessment
+              Needs Assessment
             </h3>
           </div>
           <div
@@ -22,8 +22,8 @@ const DiscoveryCaseStudy = () => {
           >
             <div className="w-[50%] sm:w-full xm:w-full flex flex-col gap-y-[40px]">
               <p className="paragraph font-NeueMontreal text-secondry">
-                Conducted in-depth discussions with the client to understand
-                their business objectives <br />
+                Conducted in-depth discussions to understand
+                the business objectives <br />
                 target audience, and specific challenges they faced with their
                 previous website.
               </p>

@@ -47,7 +47,7 @@ const DesignCaseStudy = () => {
             <div className="w-[50%] sm:w-full xm:w-full flex flex-col gap-y-[40px]">
               <p className="paragraph font-NeueMontreal text-secondry">
                 Built interactive prototypes to simulate the user experience,
-                allowing stakeholders to interact with the design before
+               SQA the full design before
                 development began.
               </p>
             </div>
