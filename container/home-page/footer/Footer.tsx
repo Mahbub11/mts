@@ -1,3 +1,4 @@
+'use client'
 import { footerItems, footernavbarItems } from "@/constants";
 import LinkHover from "@/animation/LinkHover";
 import MeghNameFooter from "./company-name";
